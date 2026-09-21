@@ -1,36 +1,52 @@
 # Doina Stratulescu website
 
-A static, multilingual portfolio for Doina Stratulescu. It builds without external packages and is ready for GitHub Pages.
+A static portfolio and PJ collection website for Doina Stratulescu, available in English, German, Russian and Romanian. The site includes seven styling services, a three-piece PJ catalogue, photo galleries, videos and contact links. It uses plain HTML, CSS and JavaScript, with no external package dependencies or backend.
 
-## Local preview
+[View the website on GitHub Pages](https://kongor-co.github.io/doina-stylist-test/)
 
-Use Node.js 24 or later.
+## Local development
+
+Use Node.js 24 or later. No package installation is required.
 
 ```text
-node scripts/build.mjs
-node scripts/check.mjs
-node scripts/serve.mjs
+npm run build
+npm run check
+npm run serve
 ```
 
-Open `http://127.0.0.1:4173/doina-stylist-test/`.
+Open `http://127.0.0.1:4173/doina-stylist-test/`. The build writes to the ignored `dist/` directory, and the local server serves that build. Rebuild after changing source files.
 
-## Content sources and placeholders
+## Repository structure
 
-- `locales/en.json`, `de.json`, `ru.json` and `ro.json`: interface copy, biography and PJ item descriptions.
-- `content/services.json`: the seven services from the services catalogue, including descriptions, inclusions and prices in four languages.
-- `content/pj.json`: product data, prices, image paths and availability.
-- `content/media.json`: local video files. The build includes every image in `assets/images/doina/professional/` and `assets/images/doina/work/` in its matching gallery category.
-- `content/contact.json`: email and official social profile URLs.
-- `assets/images/`: the supplied portrait, PJ campaign photos, professional portraits and photos of Doina at work.
-- `assets/videos/`: browser compatible MP4 copies of the supplied videos. The original MOV files stay local and are ignored by Git.
-- `public/logo.png`: the supplied Doina S. signature used in the header, footer and favicon.
+| Path | Purpose |
+| --- | --- |
+| `scripts/build.mjs` | Builds all four language versions, PJ detail pages, the sitemap and the root redirect. |
+| `locales/` | Interface text, biography, PJ descriptions and metadata for `en`, `de`, `ru` and `ro`. |
+| `content/services.json` | The seven services, including descriptions, inclusions and prices in all four languages. |
+| `content/pj.json` | The three PJ products, image references and illustrative product details. |
+| `content/media.json` | Paths to the two local MP4 videos. The photo galleries are populated from the professional and work image folders during the build. |
+| `content/contact.json` | Doina's email, Instagram URL and TikTok URL. |
+| `assets/images/doina/` | The homepage portrait, nine professional photos and 26 photos of Doina at work. |
+| `assets/images/pj/` | PJ collection photos. |
+| `assets/videos/` | Browser compatible MP4 videos. Original MOV files are kept locally and ignored by Git. |
+| `public/` | Source stylesheet, JavaScript and signature logo used as the site logo and favicon. |
+| `en/`, `de/`, `ru/`, `ro/` and root site files | Generated pages and assets used by GitHub Pages. Edit the source files above, then regenerate these files. |
 
-The site labels temporary content in the footer. It does not include invented legal wording. Privacy and imprint pages contain a short holding message until approved information is supplied.
+Each language has Home, Services, PJ Collection, About, Media, Contact, Privacy and Imprint pages, plus a page for each PJ product. The Media page has Photoshootings, At work and Videos categories.
 
-## Publish
+## Content still to finalize
 
-The repository includes generated pages at its root for the current GitHub Pages source: **Deploy from a branch**, with `main` and `/(root)` selected. Run `npm run publish:root` after editing site content, then commit and push the generated files. The GitHub Actions workflow checks that the published pages match the source. GitHub Pages deploys the branch.
+The service descriptions and prices come from the supplied services catalogue. The contact details are Doina's supplied details. PJ product names, materials, sizes, availability and prices are illustrative. The biography is placeholder copy. Privacy and Imprint contain holding text until approved legal information is available. The site has no booking, account or checkout functions.
 
-The build uses the repository's Pages address for canonical URLs, social metadata and the sitemap. For a custom domain, set `SITE_URL` to the final full URL before building and configure the domain in GitHub Pages settings.
+## Publishing to GitHub Pages
 
-No booking, checkout or account functions are included in this release.
+The repository uses generated pages at its root. GitHub Pages should use **Deploy from a branch**, with `main` and `/(root)` selected. After editing source content, run:
+
+```text
+npm run publish:root
+npm run check:published
+```
+
+`publish:root` builds the site, checks localized pages and links, then copies generated pages to the repository root. Commit and push those changes when they are ready to publish. The workflow in `.github/workflows/pages.yml` runs on pushes to `main` and checks that the committed pages match a fresh build. GitHub Pages performs the deployment from the branch.
+
+The default site address is `https://kongor-co.github.io/doina-stylist-test/`. Set `SITE_URL` to a full replacement address before building for a custom domain. The build uses it for internal paths, canonical links, social metadata and the sitemap.
