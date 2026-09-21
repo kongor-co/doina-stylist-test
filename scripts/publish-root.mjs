@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const output = path.join(root, 'dist');
-const files = ['index.html', '404.html', 'app.js', 'styles.css', 'logo.svg', 'favicon.svg', 'robots.txt', 'sitemap.xml'];
+const files = ['index.html', '404.html', 'app.js', 'styles.css', 'logo.png', 'robots.txt', 'sitemap.xml'];
 const languages = ['en', 'de', 'ru', 'ro'];
 
 await access(path.join(output, 'index.html'));

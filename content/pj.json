@@ -1,12 +1,12 @@
 [
   {
-    "id": "midnight-blue",
+    "id": "blue-stripe",
     "price": "€190",
     "material": "cottonSateen",
     "sizes": ["XS", "S", "M", "L"],
-    "colors": ["royalBlue"],
+    "colors": ["blueStripe"],
     "status": "madeToOrder",
-    "images": ["/assets/images/pj/editorial-pj.jpg", "/assets/images/pj/editorial-pj.jpg"]
+    "images": ["/assets/images/pj/IMG_1115.JPG", "/assets/images/pj/IMG_1023.JPG", "/assets/images/pj/IMG_1114.JPG"]
   },
   {
     "id": "rose-morning",
@@ -15,15 +15,15 @@
     "sizes": ["XS", "S", "M", "L"],
     "colors": ["powderPink"],
     "status": "comingSoon",
-    "images": ["/assets/images/pj/editorial-pj.jpg", "/assets/images/pj/editorial-pj.jpg"]
+    "images": ["/assets/images/pj/IMG_1019.JPG", "/assets/images/pj/IMG_1121.JPG", "/assets/images/pj/IMG_1020.JPG"]
   },
   {
     "id": "soft-hour",
     "price": "€210",
     "material": "silkBlend",
     "sizes": ["S", "M", "L"],
-    "colors": ["warmBeige"],
+    "colors": ["softIvory"],
     "status": "madeToOrder",
-    "images": ["/assets/images/pj/editorial-pj.jpg", "/assets/images/pj/editorial-pj.jpg"]
+    "images": ["/assets/images/pj/IMG_1117.JPG", "/assets/images/pj/IMG_1016.JPG", "/assets/images/pj/IMG_1111.JPG"]
   }
 ]

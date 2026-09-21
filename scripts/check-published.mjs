@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const output = path.join(root, 'dist');
 const languages = ['en', 'de', 'ru', 'ro'];
-const files = ['.nojekyll', 'index.html', '404.html', 'app.js', 'styles.css', 'logo.svg', 'favicon.svg', 'robots.txt', 'sitemap.xml'];
+const files = ['.nojekyll', 'index.html', '404.html', 'app.js', 'styles.css', 'logo.png', 'robots.txt', 'sitemap.xml'];
 
 async function collect(directory, relative = '') {
   const found = [];

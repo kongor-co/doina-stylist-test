@@ -1,6 +1,6 @@
-# Doina Stratulesscu website
+# Doina Stratulescu website
 
-A static, multilingual portfolio for Doina Stratulesscu. It builds without external packages and is ready for GitHub Pages.
+A static, multilingual portfolio for Doina Stratulescu. It builds without external packages and is ready for GitHub Pages.
 
 ## Local preview
 
@@ -21,8 +21,8 @@ Open `http://127.0.0.1:4173/doina-stylist-test/`.
 - `content/pj.json`: product data, prices, image paths and availability.
 - `content/media.json`: gallery items and video links.
 - `content/contact.json`: email and official social profile URLs.
-- `assets/images/`: temporary editorial photography. Replace the anonymous portrait with approved photos of Doina and add distinct product images.
-- `public/logo.svg`: temporary monogram. Replace it with the approved logo.
+- `assets/images/`: the supplied portrait and PJ campaign photos, plus a temporary wardrobe image. The source portrait is high resolution.
+- `public/logo.png`: the supplied Doina S. signature used in the header, footer and favicon.
 
 The site labels temporary content in the footer. It does not include invented legal wording. Privacy and imprint pages contain a short holding message until approved information is supplied.
 

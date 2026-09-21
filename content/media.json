@@ -1,8 +1,8 @@
 {
   "photos": [
-    { "id": "portrait", "image": "/assets/images/doina/editorial-portrait.jpg" },
+    { "id": "portrait", "image": "/assets/images/doina/doina-portrait.jpg" },
     { "id": "wardrobe", "image": "/assets/images/services/editorial-wardrobe.jpg" },
-    { "id": "pj", "image": "/assets/images/pj/editorial-pj.jpg" }
+    { "id": "pj", "image": "/assets/images/pj/IMG_1013.JPG" }
   ],
   "videos": [
     { "id": "introduction", "url": "https://www.youtube.com/" },

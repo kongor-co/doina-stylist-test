@@ -1,9 +1,9 @@
 {
   "site": {
-    "name": "Doina Stratulesscu",
+    "name": "Doina Stratulescu",
     "descriptor": "Personal Stylist and Designer",
     "slogan": "leading you to self discovery from within",
-    "preview": "Preview content: photography, prices, biography and contact links are placeholders."
+    "preview": "Preview content: prices, biography and contact links are placeholders."
   },
   "nav": { "home": "Home", "services": "Services", "pj": "PJ Collection", "about": "About Doina", "media": "Media", "contact": "Contact" },
   "ui": { "skip": "Skip to content", "menu": "Open menu", "closeMenu": "Close menu", "theme": "Switch colour theme", "light": "Light mode", "dark": "Dark mode", "language": "Language", "viewDetails": "View details", "close": "Close", "previous": "Previous image", "next": "Next image", "image": "Image", "of": "of", "placeholderPhoto": "Editorial placeholder photograph" },
@@ -58,11 +58,11 @@
     "comingSoon": "Coming soon",
     "detail": "Design details",
     "materials": { "cottonSateen": "Cotton sateen", "cottonPoplin": "Cotton poplin", "silkBlend": "Silk blend" },
-    "colourNames": { "royalBlue": "Royal blue", "powderPink": "Powder pink", "warmBeige": "Warm beige" },
+    "colourNames": { "blueStripe": "Blue stripe", "powderPink": "Powder pink", "softIvory": "Soft ivory" },
     "products": {
-      "midnight-blue": { "name": "Midnight Blue", "short": "A relaxed silhouette with a quietly confident colour.", "description": "A simple set imagined for slow evenings and unhurried mornings.", "alt": "Placeholder editorial image for Midnight Blue pajamas" },
-      "rose-morning": { "name": "Rose Morning", "short": "Soft lines and a gentle blush tone.", "description": "A light, comfortable design with a delicate feel.", "alt": "Placeholder editorial image for Rose Morning pajamas" },
-      "soft-hour": { "name": "Soft Hour", "short": "An understated piece for everyday ease.", "description": "An easy set with a fluid shape and a calm neutral palette.", "alt": "Placeholder editorial image for Soft Hour pajamas" }
+      "blue-stripe": { "name": "Blue Stripe", "short": "A relaxed striped set with fine red piping.", "description": "A simple set imagined for slow evenings and unhurried mornings.", "alt": "Model wearing the blue striped PJ set" },
+      "rose-morning": { "name": "Rose Morning", "short": "Soft lines and a gentle blush tone.", "description": "A light, comfortable design with a delicate feel.", "alt": "Model wearing the blush pink PJ set" },
+      "soft-hour": { "name": "Soft Hour", "short": "An understated piece for everyday ease.", "description": "An easy set with a fluid shape and a calm neutral palette.", "alt": "Model wearing the pale ivory PJ set" }
     }
   },
   "about": {
@@ -84,9 +84,9 @@
     "videos": "Videos",
     "videoNote": "Video links are placeholders until Doina's films are supplied.",
     "photosData": {
-      "portrait": { "alt": "Placeholder portrait for Doina's media gallery", "caption": "Portrait study" },
+      "portrait": { "alt": "Doina in a checked blazer outside", "caption": "Doina" },
       "wardrobe": { "alt": "Placeholder wardrobe styling scene", "caption": "The wardrobe" },
-      "pj": { "alt": "Placeholder pajama editorial scene", "caption": "Quiet Hours" }
+      "pj": { "alt": "Models wearing PJ sets from the collection", "caption": "Quiet Hours" }
     },
     "videosData": {
       "introduction": { "title": "Meet Doina", "description": "An introduction video will appear here." },
@@ -105,13 +105,13 @@
   "legal": { "privacy": "Privacy", "imprint": "Imprint", "pending": "Information will be added when approved details are provided." },
   "notFound": { "title": "This page could not be found.", "text": "The link may have moved. You can return to the home page and continue exploring." },
   "meta": {
-    "home": "Personal styling, considered design and a more authentic way to get dressed with Doina Stratulesscu.",
+    "home": "Personal styling, considered design and a more authentic way to get dressed with Doina Stratulescu.",
     "services": "Explore personal styling services, what is included and illustrative prices.",
-    "pj": "Explore the PJ Collection designed by Doina Stratulesscu.",
+    "pj": "Explore the PJ Collection designed by Doina Stratulescu.",
     "about": "Learn about Doina's personal styling philosophy and design approach.",
     "media": "See portraits, styling work and videos from Doina's creative world.",
     "contact": "Contact Doina about styling services or PJ designs.",
-    "privacy": "Privacy information for Doina Stratulesscu's website.",
-    "imprint": "Imprint information for Doina Stratulesscu's website."
+    "privacy": "Privacy information for Doina Stratulescu's website.",
+    "imprint": "Imprint information for Doina Stratulescu's website."
   }
 }

@@ -29,7 +29,7 @@ function pageTitle(m, key, detail) { return `${detail || m.nav[key] || m.legal[k
 function selectedPage(route) { return route === 'privacy' || route === 'imprint' ? '' : route; }
 
 function logo(extra = '') {
-  return `<img class="brand-logo ${extra}" src="${asset('logo.svg')}" width="46" height="46" alt="" decoding="async">`;
+  return `<span class="brand-mark ${extra}" aria-hidden="true"></span>`;
 }
 
 function socialLinks(m, className = '') {
@@ -47,7 +47,7 @@ function header(m, lang, route, detail) {
   return `<a class="skip-link" href="#main">${esc(m.ui.skip)}</a>
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="${localPath(lang)}" aria-label="${esc(m.site.name)}">${logo()}<span class="brand-name">Doina <span>Stratulesscu</span></span></a>
+      <a class="brand" href="${localPath(lang)}" aria-label="${esc(m.site.name)}">${logo()}</a>
       <nav class="desktop-nav" aria-label="${esc(m.ui.menu)}">${nav}</nav>
       <div class="header-tools">
         ${languageLinks(lang, route, detail, 'desktop-languages')}
@@ -78,14 +78,14 @@ function layout(lang, route, body, options = {}) {
   const description = options.description || m.meta[route];
   const url = absolute(localPath(lang, route, detail).slice(base.length));
   const alternates = locales.map((code) => `<link rel="alternate" hreflang="${code}" href="${absolute(localPath(code, route, detail).slice(base.length))}">`).join('');
-  const ogImage = absolute(asset('assets/images/doina/editorial-portrait.jpg').slice(base.length));
+  const ogImage = absolute(asset('assets/images/doina/doina-portrait.jpg').slice(base.length));
   return `<!doctype html><html lang="${lang}"><head>
     <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${esc(title)}</title><meta name="description" content="${esc(description)}">
     <link rel="canonical" href="${url}">${alternates}
     <meta property="og:type" content="website"><meta property="og:site_name" content="${esc(m.site.name)}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${url}"><meta property="og:image" content="${ogImage}">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" type="image/svg+xml" href="${asset('favicon.svg')}">
+    <link rel="icon" type="image/png" href="${asset('logo.png')}">
     <link rel="stylesheet" href="${asset('styles.css')}">
     <script>try{var savedTheme=localStorage.getItem('doina-theme');document.documentElement.dataset.theme=savedTheme||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(error){document.documentElement.dataset.theme='light'}</script>
     <script defer src="${asset('app.js')}"></script>
@@ -107,11 +107,11 @@ function home(lang) {
     return `<a class="featured-card" href="${localPath(lang, 'services')}#${service.id}"><span class="card-index">0${index + 1}</span><h3>${esc(copy.title)}</h3><p>${esc(copy.short)}</p><span class="card-bottom"><strong>${esc(service.price)}</strong><span>${esc(m.cta.viewService)} <span aria-hidden="true">↗</span></span></span></a>`;
   }).join('');
   const firstProduct = products[0];
-  return `<section class="hero"><div class="hero-copy"><p class="eyebrow">${esc(m.home.eyebrow)}</p><p class="hero-descriptor">${esc(m.site.descriptor)}</p><h1>Doina<br>Stratulesscu<span class="hero-dot">.</span></h1><p class="hero-slogan">${esc(m.site.slogan)}</p><div class="button-row"><a class="button button-primary" href="${localPath(lang, 'services')}">${esc(m.cta.services)} <span aria-hidden="true">↗</span></a><a class="button button-outline" href="${localPath(lang, 'contact')}">${esc(m.cta.contact)}</a></div></div><div class="hero-image-wrap">${image('assets/images/doina/editorial-portrait.jpg', m.ui.placeholderPhoto, 'hero-image', true)}<span class="image-label">${esc(m.ui.placeholderPhoto)}</span></div><div class="hero-side-note" aria-hidden="true">01 / 05</div></section>
+  return `<section class="hero"><div class="hero-copy"><p class="eyebrow">${esc(m.home.eyebrow)}</p><p class="hero-descriptor">${esc(m.site.descriptor)}</p><h1>Doina<br>Stratulescu<span class="hero-dot">.</span></h1><p class="hero-slogan">${esc(m.site.slogan)}</p><div class="button-row"><a class="button button-primary" href="${localPath(lang, 'services')}">${esc(m.cta.services)} <span aria-hidden="true">↗</span></a><a class="button button-outline" href="${localPath(lang, 'contact')}">${esc(m.cta.contact)}</a></div></div><div class="hero-image-wrap">${image('assets/images/doina/doina-portrait.jpg', m.site.name, 'hero-image', true)}</div><div class="hero-side-note" aria-hidden="true">01 / 05</div></section>
   <section class="intro-section section-shell"><div class="intro-mark">✳</div><div><p class="eyebrow">${esc(m.site.slogan)}</p><h2>${esc(m.home.introTitle)}</h2><p>${esc(m.home.introText)}</p></div></section>
   <section class="section-shell services-preview">${sectionHeading('', m.home.featuredTitle, m.home.featuredText)}<div class="featured-grid">${featured}</div><a class="text-link" href="${localPath(lang, 'services')}">${esc(m.cta.allServices)} <span aria-hidden="true">↗</span></a></section>
   <section class="approach-section"><div class="section-shell approach-inner"><div>${sectionHeading(m.home.approachLabel, m.home.approachTitle, m.home.approachText)}<a class="text-link" href="${localPath(lang, 'about')}">${esc(m.nav.about)} <span aria-hidden="true">↗</span></a></div><ol class="approach-steps">${m.home.steps.map((step, i) => `<li><span>0${i + 1}</span>${esc(step)}</li>`).join('')}</ol></div></section>
-  <section class="section-shell pj-preview"><div class="pj-preview-image">${image(firstProduct.images[0], m.pj.products[firstProduct.id].alt)}<span class="image-label">${esc(m.ui.placeholderPhoto)}</span></div><div class="pj-preview-copy"><p class="eyebrow">${esc(m.home.pjLabel)}</p><h2>${esc(m.home.pjTitle)}</h2><p>${esc(m.home.pjText)}</p><a class="button button-outline" href="${localPath(lang, 'pj')}">${esc(m.cta.collection)} <span aria-hidden="true">↗</span></a></div></section>
+  <section class="section-shell pj-preview"><div class="pj-preview-image">${image(firstProduct.images[0], m.pj.products[firstProduct.id].alt)}</div><div class="pj-preview-copy"><p class="eyebrow">${esc(m.home.pjLabel)}</p><h2>${esc(m.home.pjTitle)}</h2><p>${esc(m.home.pjText)}</p><a class="button button-outline" href="${localPath(lang, 'pj')}">${esc(m.cta.collection)} <span aria-hidden="true">↗</span></a></div></section>
   <section class="social-section section-shell">${sectionHeading('', m.home.socialTitle, m.home.socialText)}${socialLinks(m)}</section>`;
 }
 
@@ -141,12 +141,12 @@ function pjPage(lang) {
 function productPage(lang, product) {
   const m = messages[lang];
   const copy = m.pj.products[product.id];
-  return `<section class="section-shell product-detail"><a class="back-link" href="${localPath(lang, 'pj')}">← ${esc(m.cta.allPj)}</a><div class="product-detail-grid"><div class="product-gallery"><div class="product-main-image">${image(product.images[0], copy.alt, '', true)}</div><div class="product-secondary-image">${image(product.images[1], copy.alt)}</div></div><div class="product-detail-copy"><p class="eyebrow">${esc(m.pj.collection)}</p><h1>${esc(copy.name)}</h1><p class="large-copy">${esc(copy.description)}</p><div class="product-facts"><div><span>${esc(m.pj.material)}</span><strong>${esc(m.pj.materials[product.material])}</strong></div><div><span>${esc(m.pj.sizes)}</span><strong>${esc(product.sizes.join(', '))}</strong></div><div><span>${esc(m.pj.colours)}</span><strong>${esc(product.colors.map((color) => m.pj.colourNames[color]).join(', '))}</strong></div><div><span>${esc(m.pj.status)}</span><strong>${esc(m.pj[product.status])}</strong></div><div><span>${esc(m.pj.price)}</span><strong>${esc(product.price)}</strong></div></div><a class="button button-primary" href="${localPath(lang, 'contact')}">${esc(m.cta.askPiece)} <span aria-hidden="true">↗</span></a><p class="content-note">${esc(m.pj.priceNote)}</p></div></div></section>`;
+  return `<section class="section-shell product-detail"><a class="back-link" href="${localPath(lang, 'pj')}">← ${esc(m.cta.allPj)}</a><div class="product-detail-grid"><div class="product-gallery">${product.images.map((src, index) => `<div class="${index === 0 ? 'product-main-image' : 'product-secondary-image'}">${image(src, copy.alt, '', index === 0)}</div>`).join('')}</div><div class="product-detail-copy"><p class="eyebrow">${esc(m.pj.collection)}</p><h1>${esc(copy.name)}</h1><p class="large-copy">${esc(copy.description)}</p><div class="product-facts"><div><span>${esc(m.pj.material)}</span><strong>${esc(m.pj.materials[product.material])}</strong></div><div><span>${esc(m.pj.sizes)}</span><strong>${esc(product.sizes.join(', '))}</strong></div><div><span>${esc(m.pj.colours)}</span><strong>${esc(product.colors.map((color) => m.pj.colourNames[color]).join(', '))}</strong></div><div><span>${esc(m.pj.status)}</span><strong>${esc(m.pj[product.status])}</strong></div><div><span>${esc(m.pj.price)}</span><strong>${esc(product.price)}</strong></div></div><a class="button button-primary" href="${localPath(lang, 'contact')}">${esc(m.cta.askPiece)} <span aria-hidden="true">↗</span></a><p class="content-note">${esc(m.pj.priceNote)}</p></div></div></section>`;
 }
 
 function aboutPage(lang) {
   const m = messages[lang];
-  return `<section class="page-intro section-shell"><p class="eyebrow">${esc(m.site.descriptor)}</p><h1>${esc(m.about.title)}</h1><p>${esc(m.about.intro)}</p></section><section class="section-shell about-grid"><div class="about-image">${image('assets/images/doina/editorial-portrait.jpg', m.ui.placeholderPhoto)}<span class="image-label">${esc(m.ui.placeholderPhoto)}</span></div><div class="about-content"><article><span class="article-number">01</span><h2>${esc(m.about.storyTitle)}</h2><p>${esc(m.about.story)}</p></article><article><span class="article-number">02</span><h2>${esc(m.about.philosophyTitle)}</h2><p>${esc(m.about.philosophy)}</p></article><article><span class="article-number">03</span><h2>${esc(m.about.workTitle)}</h2><p>${esc(m.about.work)}</p></article><article><span class="article-number">04</span><h2>${esc(m.about.designTitle)}</h2><p>${esc(m.about.design)}</p></article><a class="button button-primary" href="${localPath(lang, 'contact')}">${esc(m.cta.contact)} <span aria-hidden="true">↗</span></a></div></section>`;
+  return `<section class="page-intro section-shell"><p class="eyebrow">${esc(m.site.descriptor)}</p><h1>${esc(m.about.title)}</h1><p>${esc(m.about.intro)}</p></section><section class="section-shell about-grid"><div class="about-image">${image('assets/images/doina/doina-portrait.jpg', m.site.name)}</div><div class="about-content"><article><span class="article-number">01</span><h2>${esc(m.about.storyTitle)}</h2><p>${esc(m.about.story)}</p></article><article><span class="article-number">02</span><h2>${esc(m.about.philosophyTitle)}</h2><p>${esc(m.about.philosophy)}</p></article><article><span class="article-number">03</span><h2>${esc(m.about.workTitle)}</h2><p>${esc(m.about.work)}</p></article><article><span class="article-number">04</span><h2>${esc(m.about.designTitle)}</h2><p>${esc(m.about.design)}</p></article><a class="button button-primary" href="${localPath(lang, 'contact')}">${esc(m.cta.contact)} <span aria-hidden="true">↗</span></a></div></section>`;
 }
 
 function mediaPage(lang) {
@@ -193,7 +193,7 @@ for (const lang of locales) {
   }
 }
 
-await write('index.html', `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="canonical" href="${absolute(localPath('en').slice(base.length))}"><title>Doina Stratulesscu</title><script>try{var lang=localStorage.getItem('doina-lang');if(!['en','de','ru','ro'].includes(lang))lang='en';location.replace('${base}'+lang+'/')}catch(error){location.replace('${localPath('en')}')}</script></head><body><a href="${localPath('en')}">Doina Stratulesscu</a></body></html>`);
+await write('index.html', `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="canonical" href="${absolute(localPath('en').slice(base.length))}"><title>Doina Stratulescu</title><script>try{var lang=localStorage.getItem('doina-lang');if(!['en','de','ru','ro'].includes(lang))lang='en';location.replace('${base}'+lang+'/')}catch(error){location.replace('${localPath('en')}')}</script></head><body><a href="${localPath('en')}">Doina Stratulescu</a></body></html>`);
 await write('404.html', layout('en', 'home', `<section class="page-intro section-shell legal-page"><p class="eyebrow">404</p><h1>${esc(messages.en.notFound.title)}</h1><p>${esc(messages.en.notFound.text)}</p><a class="button button-primary" href="${localPath('en')}">${esc(messages.en.cta.home)}</a></section>`, { title: `404 | ${messages.en.site.name}`, description: messages.en.notFound.text }));
 await write('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${absolute('sitemap.xml')}\n`);
 await write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${allUrls.map((url) => `<url><loc>${url}</loc></url>`).join('')}</urlset>`);
