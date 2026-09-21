@@ -197,4 +197,5 @@ await write('index.html', `<!doctype html><html lang="en"><head><meta charset="u
 await write('404.html', layout('en', 'home', `<section class="page-intro section-shell legal-page"><p class="eyebrow">404</p><h1>${esc(messages.en.notFound.title)}</h1><p>${esc(messages.en.notFound.text)}</p><a class="button button-primary" href="${localPath('en')}">${esc(messages.en.cta.home)}</a></section>`, { title: `404 | ${messages.en.site.name}`, description: messages.en.notFound.text }));
 await write('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${absolute('sitemap.xml')}\n`);
 await write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${allUrls.map((url) => `<url><loc>${url}</loc></url>`).join('')}</urlset>`);
+await write('.nojekyll', '');
 console.log(`Built ${allUrls.length} localized pages at ${siteUrl.href}`);

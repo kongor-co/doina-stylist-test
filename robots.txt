@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kongor-co.github.io/doina-stylist-test/sitemap.xml

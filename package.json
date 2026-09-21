@@ -4,7 +4,9 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
+    "publish:root": "node scripts/build.mjs && node scripts/check.mjs && node scripts/publish-root.mjs",
     "serve": "node scripts/serve.mjs",
-    "check": "node scripts/check.mjs"
+    "check": "node scripts/check.mjs",
+    "check:published": "node scripts/check-published.mjs"
   }
 }

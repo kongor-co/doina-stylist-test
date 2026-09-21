@@ -28,6 +28,8 @@ The site labels temporary content in the footer. It does not include invented le
 
 ## Publish
 
-Set the repository's GitHub Pages source to **GitHub Actions**. A push to `main` builds, checks and deploys the site. The workflow uses the repository's Pages address for canonical URLs, social metadata and the sitemap. For a custom domain, set `SITE_URL` to the final full URL in the workflow before deployment, then configure the domain in GitHub Pages settings.
+The repository includes generated pages at its root for the current GitHub Pages source: **Deploy from a branch**, with `main` and `/(root)` selected. Run `npm run publish:root` after editing site content, then commit and push the generated files. The GitHub Actions workflow checks that the published pages match the source. GitHub Pages deploys the branch.
+
+The build uses the repository's Pages address for canonical URLs, social metadata and the sitemap. For a custom domain, set `SITE_URL` to the final full URL before building and configure the domain in GitHub Pages settings.
 
 No booking, checkout or account functions are included in this release.
