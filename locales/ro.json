@@ -3,7 +3,7 @@
     "name": "Doina Stratulescu",
     "descriptor": "Stilist personal și designer",
     "slogan": "leading you to self discovery from within",
-    "preview": "Conținut de prezentare: detaliile produselor PJ, biografia și datele de contact sunt provizorii."
+    "preview": "Conținut de prezentare: detaliile produselor PJ și biografia sunt provizorii."
   },
   "nav": {
     "home": "Acasă",
@@ -26,8 +26,7 @@
     "previous": "Imaginea anterioară",
     "next": "Imaginea următoare",
     "image": "Imaginea",
-    "of": "din",
-    "placeholderPhoto": "Fotografie editorială provizorie"
+    "of": "din"
   },
   "cta": {
     "services": "Descoperă serviciile",
@@ -49,16 +48,6 @@
     "introText": "O garderobă aleasă cu grijă poate reflecta cine ești astăzi și îți poate lăsa loc să evoluezi. Împreună descoperim culorile, formele și piesele care te reprezintă.",
     "featuredTitle": "Cum putem lucra împreună",
     "featuredText": "Începe cu o conversație, o nouă privire asupra garderobei sau o direcție pentru ce urmează.",
-    "approachLabel": "Abordarea",
-    "approachTitle": "De la descoperire la exprimare",
-    "approachText": "Stilul este un proces personal. Observăm ce ți se potrivește, rafinăm restul și construim o garderobă care simplifică alegerile zilnice.",
-    "steps": [
-      "Descoperă",
-      "Înțelege",
-      "Rafinează",
-      "Construiește",
-      "Exprimă"
-    ],
     "pjLabel": "Creat de Doina",
     "pjTitle": "Colecția PJ",
     "pjText": "Piese atent gândite pentru orele pe care ți le păstrezi pentru tine.",
@@ -127,43 +116,20 @@
   },
   "media": {
     "title": "Media",
-    "intro": "Portrete, detalii și momente din lumea creativă a Doinei.",
-    "photos": "Fotografii",
+    "intro": "Portrete profesionale, momente de la lucru și videoclipuri cu Doina.",
+    "photos": "Fotografii profesionale",
+    "work": "La lucru",
     "videos": "Videoclipuri",
-    "videoNote": "Linkurile video sunt provizorii până la primirea filmelor Doinei.",
-    "photosData": {
-      "portrait": {
-        "alt": "Doina în sacou în carouri, în aer liber",
-        "caption": "Studiu de portret"
-      },
-      "wardrobe": {
-        "alt": "Scenă provizorie de styling pentru garderobă",
-        "caption": "Garderoba"
-      },
-      "pj": {
-        "alt": "Modele purtând seturi din colecția PJ",
-        "caption": "Ore liniștite"
-      }
-    },
-    "videosData": {
-      "introduction": {
-        "title": "Cunoaște-o pe Doina",
-        "description": "Aici va apărea un videoclip de prezentare."
-      },
-      "process": {
-        "title": "Procesul de styling",
-        "description": "Aici va apărea o scurtă prezentare a procesului."
-      }
-    }
+    "professionalCaption": "Doina, portret profesional",
+    "workCaption": "Doina la lucru",
+    "videoLabel": "Videoclip"
   },
   "contact": {
     "title": "Să vorbim despre stilul tău.",
     "intro": "Spune-i Doinei ce cauți, fie un serviciu de styling, fie o piesă din colecția PJ.",
     "email": "Scrie-i Doinei",
     "instagram": "Mesaj pe Instagram",
-    "tiktok": "Găsește-o pe Doina pe TikTok",
-    "whatsapp": "Mesaj pe WhatsApp",
-    "placeholder": "Aceste date de contact și linkuri sociale sunt provizorii. Înlocuiește-le înainte de a prezenta site-ul clienților."
+    "tiktok": "Găsește-o pe Doina pe TikTok"
   },
   "legal": {
     "privacy": "Confidențialitate",
@@ -179,7 +145,7 @@
     "services": "Serviciile Doinei Stratulescu: consultanță de stil, garderobă, shopping, croitorie și ședințe foto cu prețuri.",
     "pj": "Descoperă colecția PJ creată de Doina Stratulescu.",
     "about": "Află despre filosofia de styling și abordarea de design a Doinei.",
-    "media": "Vezi portrete, proiecte de styling și videoclipuri din lumea Doinei.",
+    "media": "Descoperă portrete profesionale, imagini cu Doina la lucru și videoclipuri.",
     "contact": "Contactează-o pe Doina pentru servicii de styling sau modele PJ.",
     "privacy": "Informații despre confidențialitate pentru site-ul Doinei Stratulescu.",
     "imprint": "Date de identificare pentru site-ul Doinei Stratulescu."

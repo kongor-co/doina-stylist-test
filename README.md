@@ -19,9 +19,10 @@ Open `http://127.0.0.1:4173/doina-stylist-test/`.
 - `locales/en.json`, `de.json`, `ru.json` and `ro.json`: interface copy, biography and PJ item descriptions.
 - `content/services.json`: the seven services from the services catalogue, including descriptions, inclusions and prices in four languages.
 - `content/pj.json`: product data, prices, image paths and availability.
-- `content/media.json`: gallery items and video links.
+- `content/media.json`: local video files. The build includes every image in `assets/images/doina/professional/` and `assets/images/doina/work/` in its matching gallery category.
 - `content/contact.json`: email and official social profile URLs.
-- `assets/images/`: the supplied portrait and PJ campaign photos, plus a temporary wardrobe image. The source portrait is high resolution.
+- `assets/images/`: the supplied portrait, PJ campaign photos, professional portraits and photos of Doina at work.
+- `assets/videos/`: browser compatible MP4 copies of the supplied videos. The original MOV files stay local and are ignored by Git.
 - `public/logo.png`: the supplied Doina S. signature used in the header, footer and favicon.
 
 The site labels temporary content in the footer. It does not include invented legal wording. Privacy and imprint pages contain a short holding message until approved information is supplied.

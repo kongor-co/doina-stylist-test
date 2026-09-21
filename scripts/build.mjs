@@ -1,4 +1,4 @@
-import { readFile, writeFile, mkdir, cp, rm } from 'node:fs/promises';
+import { readFile, readdir, writeFile, mkdir, cp, rm } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -16,6 +16,13 @@ const services = await readJson('content/services.json');
 const products = await readJson('content/pj.json');
 const media = await readJson('content/media.json');
 const contact = await readJson('content/contact.json');
+const photoGroups = Object.fromEntries(await Promise.all(['professional', 'work'].map(async (group) => {
+  const directory = `assets/images/doina/${group}`;
+  const names = (await readdir(path.join(root, directory)))
+    .filter((name) => /\.(jpe?g|png|webp)$/i.test(name))
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+  return [group, names.map((name) => `${directory}/${name}`)];
+})));
 const allUrls = [];
 
 function esc(value) {
@@ -102,16 +109,15 @@ function sectionHeading(eyebrow, title, text = '') {
 
 function home(lang) {
   const m = messages[lang];
-  const featured = services.slice(0, 3).map((service, index) => {
+  const featured = services.slice(0, 3).map((service) => {
     const copy = service.translations[lang];
     const summary = copy.lead || copy.points[0].description;
-    return `<a class="featured-card" href="${localPath(lang, 'services')}#${service.id}"><span class="card-index">0${index + 1}</span><h3>${esc(copy.title)}</h3><p>${esc(summary)}</p><span class="card-bottom"><strong>${esc(copy.displayPrice)}</strong><span>${esc(m.cta.viewService)} <span aria-hidden="true">↗</span></span></span></a>`;
+    return `<a class="featured-card" href="${localPath(lang, 'services')}#${service.id}"><h3>${esc(copy.title)}</h3><p>${esc(summary)}</p><span class="card-bottom"><strong>${esc(copy.displayPrice)}</strong><span>${esc(m.cta.viewService)} <span aria-hidden="true">↗</span></span></span></a>`;
   }).join('');
   const firstProduct = products[0];
-  return `<section class="hero"><div class="hero-copy"><p class="eyebrow">${esc(m.home.eyebrow)}</p><p class="hero-descriptor">${esc(m.site.descriptor)}</p><h1>Doina<br>Stratulescu<span class="hero-dot">.</span></h1><p class="hero-slogan">${esc(m.site.slogan)}</p><div class="button-row"><a class="button button-primary" href="${localPath(lang, 'services')}">${esc(m.cta.services)} <span aria-hidden="true">↗</span></a><a class="button button-outline" href="${localPath(lang, 'contact')}">${esc(m.cta.contact)}</a></div></div><div class="hero-image-wrap">${image('assets/images/doina/doina-portrait.jpg', m.site.name, 'hero-image', true)}</div><div class="hero-side-note" aria-hidden="true">01 / 05</div></section>
+  return `<section class="hero"><div class="hero-copy"><p class="eyebrow">${esc(m.home.eyebrow)}</p><p class="hero-descriptor">${esc(m.site.descriptor)}</p><h1>Doina<br>Stratulescu<span class="hero-dot">.</span></h1><p class="hero-slogan">${esc(m.site.slogan)}</p><div class="button-row"><a class="button button-primary" href="${localPath(lang, 'services')}">${esc(m.cta.services)} <span aria-hidden="true">↗</span></a><a class="button button-outline" href="${localPath(lang, 'contact')}">${esc(m.cta.contact)}</a></div></div><div class="hero-image-wrap">${image('assets/images/doina/doina-portrait.jpg', m.site.name, 'hero-image', true)}</div></section>
   <section class="intro-section section-shell"><div class="intro-mark">✳</div><div><p class="eyebrow">${esc(m.site.slogan)}</p><h2>${esc(m.home.introTitle)}</h2><p>${esc(m.home.introText)}</p></div></section>
   <section class="section-shell services-preview">${sectionHeading('', m.home.featuredTitle, m.home.featuredText)}<div class="featured-grid">${featured}</div><a class="text-link" href="${localPath(lang, 'services')}">${esc(m.cta.allServices)} <span aria-hidden="true">↗</span></a></section>
-  <section class="approach-section"><div class="section-shell approach-inner"><div>${sectionHeading(m.home.approachLabel, m.home.approachTitle, m.home.approachText)}<a class="text-link" href="${localPath(lang, 'about')}">${esc(m.nav.about)} <span aria-hidden="true">↗</span></a></div><ol class="approach-steps">${m.home.steps.map((step, i) => `<li><span>0${i + 1}</span>${esc(step)}</li>`).join('')}</ol></div></section>
   <section class="section-shell pj-preview"><div class="pj-preview-image">${image(firstProduct.images[0], m.pj.products[firstProduct.id].alt)}</div><div class="pj-preview-copy"><p class="eyebrow">${esc(m.home.pjLabel)}</p><h2>${esc(m.home.pjTitle)}</h2><p>${esc(m.home.pjText)}</p><a class="button button-outline" href="${localPath(lang, 'pj')}">${esc(m.cta.collection)} <span aria-hidden="true">↗</span></a></div></section>
   <section class="social-section section-shell">${sectionHeading('', m.home.socialTitle, m.home.socialText)}${socialLinks(m)}</section>`;
 }
@@ -123,7 +129,7 @@ function serviceCard(lang, service, index) {
   const detailHeading = copy.detailHeading !== copy.subtitle ? copy.detailHeading : '';
   const points = copy.points.map((point) => `<div class="service-inclusion"><h4>${esc(point.title)}</h4>${point.description ? `<p>${esc(point.description)}</p>` : ''}</div>`).join('');
   const pricing = copy.pricing.map((item) => `<div><span>${esc(item.label)}</span><strong>${esc(item.value)}</strong></div>`).join('');
-  return `<details class="service-card" id="${service.id}" ${index === 0 ? 'open' : ''}><summary><span class="service-card-category">${String(index + 1).padStart(2, '0')} / ${String(services.length).padStart(2, '0')}</span><span class="service-card-title">${esc(copy.title)}</span><span class="service-card-short">${esc(summary)}</span><span class="service-card-price">${esc(copy.displayPrice)}</span><span class="service-card-expand" aria-hidden="true">+</span></summary><div class="service-card-detail">${copy.subtitle ? `<p class="eyebrow">${esc(copy.subtitle)}</p>` : ''}${copy.lead ? `<p class="detail-lead">${esc(copy.lead)}</p>` : ''}${detailHeading ? `<h3 class="service-detail-heading">${esc(detailHeading)}</h3>` : ''}${copy.listLead ? `<p class="detail-lead">${esc(copy.listLead)}</p>` : ''}<div class="service-inclusions">${points}</div>${copy.closing ? `<p class="service-closing">${esc(copy.closing)}</p>` : ''}<div class="service-pricing">${pricing}</div><a class="button button-primary" href="${localPath(lang, 'contact')}">${esc(m.cta.contact)} <span aria-hidden="true">↗</span></a></div></details>`;
+  return `<details class="service-card" id="${service.id}" ${index === 0 ? 'open' : ''}><summary><span class="service-card-title">${esc(copy.title)}</span><span class="service-card-short">${esc(summary)}</span><span class="service-card-price">${esc(copy.displayPrice)}</span><span class="service-card-expand" aria-hidden="true">+</span></summary><div class="service-card-detail">${copy.subtitle ? `<p class="eyebrow">${esc(copy.subtitle)}</p>` : ''}${copy.lead ? `<p class="detail-lead">${esc(copy.lead)}</p>` : ''}${detailHeading ? `<h3 class="service-detail-heading">${esc(detailHeading)}</h3>` : ''}${copy.listLead ? `<p class="detail-lead">${esc(copy.listLead)}</p>` : ''}<div class="service-inclusions">${points}</div>${copy.closing ? `<p class="service-closing">${esc(copy.closing)}</p>` : ''}<div class="service-pricing">${pricing}</div><a class="button button-primary" href="${localPath(lang, 'contact')}">${esc(m.cta.contact)} <span aria-hidden="true">↗</span></a></div></details>`;
 }
 
 function servicesPage(lang) {
@@ -150,20 +156,28 @@ function productPage(lang, product) {
 
 function aboutPage(lang) {
   const m = messages[lang];
-  return `<section class="page-intro section-shell"><p class="eyebrow">${esc(m.site.descriptor)}</p><h1>${esc(m.about.title)}</h1><p>${esc(m.about.intro)}</p></section><section class="section-shell about-grid"><div class="about-image">${image('assets/images/doina/doina-portrait.jpg', m.site.name)}</div><div class="about-content"><article><span class="article-number">01</span><h2>${esc(m.about.storyTitle)}</h2><p>${esc(m.about.story)}</p></article><article><span class="article-number">02</span><h2>${esc(m.about.philosophyTitle)}</h2><p>${esc(m.about.philosophy)}</p></article><article><span class="article-number">03</span><h2>${esc(m.about.workTitle)}</h2><p>${esc(m.about.work)}</p></article><article><span class="article-number">04</span><h2>${esc(m.about.designTitle)}</h2><p>${esc(m.about.design)}</p></article><a class="button button-primary" href="${localPath(lang, 'contact')}">${esc(m.cta.contact)} <span aria-hidden="true">↗</span></a></div></section>`;
+  return `<section class="page-intro section-shell"><p class="eyebrow">${esc(m.site.descriptor)}</p><h1>${esc(m.about.title)}</h1><p>${esc(m.about.intro)}</p></section><section class="section-shell about-grid"><div class="about-image">${image('assets/images/doina/doina-portrait.jpg', m.site.name)}</div><div class="about-content"><article><h2>${esc(m.about.storyTitle)}</h2><p>${esc(m.about.story)}</p></article><article><h2>${esc(m.about.philosophyTitle)}</h2><p>${esc(m.about.philosophy)}</p></article><article><h2>${esc(m.about.workTitle)}</h2><p>${esc(m.about.work)}</p></article><article><h2>${esc(m.about.designTitle)}</h2><p>${esc(m.about.design)}</p></article><a class="button button-primary" href="${localPath(lang, 'contact')}">${esc(m.cta.contact)} <span aria-hidden="true">↗</span></a></div></section>`;
 }
 
 function mediaPage(lang) {
   const m = messages[lang];
-  const photos = media.photos.map((photo, i) => `<button type="button" class="gallery-item gallery-${i + 1}" data-gallery-open="${i}" aria-label="${esc(m.media.photosData[photo.id].caption)}">${image(photo.image, m.media.photosData[photo.id].alt)}<span>${esc(m.media.photosData[photo.id].caption)}</span></button>`).join('');
-  const videos = media.videos.map((video, i) => `<a class="video-card" href="${esc(video.url)}" target="_blank" rel="noopener noreferrer"><span class="video-poster video-poster-${i + 1}">${image(i === 0 ? media.photos[0].image : media.photos[1].image, m.ui.placeholderPhoto)}<span class="play-icon" aria-hidden="true">▶</span></span><span class="video-text"><strong>${esc(m.media.videosData[video.id].title)}</strong><span>${esc(m.media.videosData[video.id].description)}</span></span></a>`).join('');
-  const galleryData = media.photos.map((photo) => ({ src: asset(photo.image), alt: m.media.photosData[photo.id].alt, caption: m.media.photosData[photo.id].caption }));
-  return `<section class="page-intro section-shell"><p class="eyebrow">${esc(m.site.name)}</p><h1>${esc(m.media.title)}</h1><p>${esc(m.media.intro)}</p></section><section class="section-shell catalog-section"><div class="tabs" role="tablist" aria-label="${esc(m.media.title)}" data-tabs="media"><button type="button" role="tab" id="media-tab-photos" aria-selected="true" aria-controls="media-photos" tabindex="0">${esc(m.media.photos)}</button><button type="button" role="tab" id="media-tab-videos" aria-selected="false" aria-controls="media-videos" tabindex="-1">${esc(m.media.videos)}</button></div><div id="media-photos" role="tabpanel" aria-labelledby="media-tab-photos" class="media-panel"><div class="gallery-grid">${photos}</div></div><div id="media-videos" role="tabpanel" aria-labelledby="media-tab-videos" class="media-panel" hidden><div class="video-grid">${videos}</div><p class="content-note">${esc(m.media.videoNote)}</p></div></section><dialog class="lightbox" data-lightbox aria-label="${esc(m.media.photos)}"><div class="lightbox-frame"><button type="button" class="lightbox-close" data-lightbox-close aria-label="${esc(m.ui.close)}">×</button><button type="button" class="lightbox-prev" data-lightbox-prev aria-label="${esc(m.ui.previous)}">‹</button><figure><img src="" alt=""><figcaption></figcaption></figure><button type="button" class="lightbox-next" data-lightbox-next aria-label="${esc(m.ui.next)}">›</button></div></dialog><script type="application/json" id="gallery-data">${JSON.stringify(galleryData).replaceAll('<', '\\u003c')}</script>`;
+  const groups = [
+    { key: 'professional', label: m.media.photos, caption: m.media.professionalCaption },
+    { key: 'work', label: m.media.work, caption: m.media.workCaption }
+  ];
+  const photoTabs = groups.map((group, index) => `<button type="button" role="tab" id="media-tab-${group.key}" aria-selected="${index === 0}" aria-controls="media-${group.key}" tabindex="${index === 0 ? '0' : '-1'}">${esc(group.label)}</button>`).join('');
+  const galleries = groups.map((group, groupIndex) => {
+    const photos = photoGroups[group.key].map((src, index) => `<button type="button" class="gallery-item" data-gallery-group="${group.key}" data-gallery-open="${index}" aria-label="${esc(group.caption)} ${index + 1}">${image(src, `${group.caption} ${index + 1}`)}<span>${esc(group.caption)}</span></button>`).join('');
+    return `<div id="media-${group.key}" role="tabpanel" aria-labelledby="media-tab-${group.key}" class="media-panel" ${groupIndex === 0 ? '' : 'hidden'}><div class="gallery-grid">${photos}</div></div>`;
+  }).join('');
+  const videos = media.videos.map((src, index) => `<div class="video-card"><video controls preload="metadata" playsinline aria-label="${esc(m.media.videoLabel)} ${index + 1}"><source src="${asset(src)}" type="video/mp4"><a href="${asset(src)}">${esc(m.media.videoLabel)} ${index + 1}</a></video><span class="video-text"><strong>${esc(m.media.videoLabel)} ${index + 1}</strong></span></div>`).join('');
+  const galleryData = Object.fromEntries(groups.map((group) => [group.key, photoGroups[group.key].map((src, index) => ({ src: asset(src), alt: `${group.caption} ${index + 1}`, caption: group.caption }))]));
+  return `<section class="page-intro section-shell"><p class="eyebrow">${esc(m.site.name)}</p><h1>${esc(m.media.title)}</h1><p>${esc(m.media.intro)}</p></section><section class="section-shell catalog-section"><div class="tabs" role="tablist" aria-label="${esc(m.media.title)}" data-tabs="media">${photoTabs}<button type="button" role="tab" id="media-tab-videos" aria-selected="false" aria-controls="media-videos" tabindex="-1">${esc(m.media.videos)}</button></div>${galleries}<div id="media-videos" role="tabpanel" aria-labelledby="media-tab-videos" class="media-panel" hidden><div class="video-grid">${videos}</div></div></section><dialog class="lightbox" data-lightbox aria-label="${esc(m.media.title)}"><div class="lightbox-frame"><button type="button" class="lightbox-close" data-lightbox-close aria-label="${esc(m.ui.close)}">×</button><button type="button" class="lightbox-prev" data-lightbox-prev aria-label="${esc(m.ui.previous)}">‹</button><figure><img src="" alt=""><figcaption></figcaption></figure><button type="button" class="lightbox-next" data-lightbox-next aria-label="${esc(m.ui.next)}">›</button></div></dialog><script type="application/json" id="gallery-data">${JSON.stringify(galleryData).replaceAll('<', '\\u003c')}</script>`;
 }
 
 function contactPage(lang) {
   const m = messages[lang];
-  return `<section class="contact-page section-shell"><div class="contact-intro"><p class="eyebrow">${esc(m.nav.contact)}</p><h1>${esc(m.contact.title)}</h1><p>${esc(m.contact.intro)}</p></div><div class="contact-options"><a href="mailto:${esc(contact.email)}"><span>01</span><strong>${esc(m.contact.email)}</strong><em>${esc(contact.email)}</em><b aria-hidden="true">↗</b></a><a href="${esc(contact.instagram)}" target="_blank" rel="noopener noreferrer"><span>02</span><strong>${esc(m.contact.instagram)}</strong><em>Instagram</em><b aria-hidden="true">↗</b></a><a href="${esc(contact.tiktok)}" target="_blank" rel="noopener noreferrer"><span>03</span><strong>${esc(m.contact.tiktok)}</strong><em>TikTok</em><b aria-hidden="true">↗</b></a></div><p class="content-note">${esc(m.contact.placeholder)}</p></section>`;
+  return `<section class="contact-page section-shell"><div class="contact-intro"><p class="eyebrow">${esc(m.nav.contact)}</p><h1>${esc(m.contact.title)}</h1><p>${esc(m.contact.intro)}</p></div><div class="contact-options"><a href="mailto:${esc(contact.email)}"><strong>${esc(m.contact.email)}</strong><em>${esc(contact.email)}</em><b aria-hidden="true">↗</b></a><a href="${esc(contact.instagram)}" target="_blank" rel="noopener noreferrer"><strong>${esc(m.contact.instagram)}</strong><em>Instagram</em><b aria-hidden="true">↗</b></a><a href="${esc(contact.tiktok)}" target="_blank" rel="noopener noreferrer"><strong>${esc(m.contact.tiktok)}</strong><em>TikTok</em><b aria-hidden="true">↗</b></a></div></section>`;
 }
 
 function legalPage(lang, route) {

@@ -3,7 +3,7 @@
     "name": "Doina Stratulescu",
     "descriptor": "Personal Stylist and Designer",
     "slogan": "leading you to self discovery from within",
-    "preview": "Preview content: PJ product details, biography and contact links are placeholders."
+    "preview": "Preview content: PJ product details and biography are placeholders."
   },
   "nav": {
     "home": "Home",
@@ -26,8 +26,7 @@
     "previous": "Previous image",
     "next": "Next image",
     "image": "Image",
-    "of": "of",
-    "placeholderPhoto": "Editorial placeholder photograph"
+    "of": "of"
   },
   "cta": {
     "services": "Explore services",
@@ -49,16 +48,6 @@
     "introText": "A considered wardrobe can reflect who you are today and give you room to become. Together, we explore the colours, shapes and pieces that feel like yours.",
     "featuredTitle": "How we can work together",
     "featuredText": "Begin with a conversation, a fresh look at your wardrobe or a new direction for what comes next.",
-    "approachLabel": "The approach",
-    "approachTitle": "From discovery to expression",
-    "approachText": "Styling is a personal process. We notice what feels right, refine what does not and build a wardrobe that makes everyday choices easier.",
-    "steps": [
-      "Discover",
-      "Understand",
-      "Refine",
-      "Build",
-      "Express"
-    ],
     "pjLabel": "Designed by Doina",
     "pjTitle": "The PJ Collection",
     "pjText": "Thoughtful pieces for the hours you keep for yourself.",
@@ -127,43 +116,20 @@
   },
   "media": {
     "title": "Media",
-    "intro": "Portraits, details and moments from Doina's creative world.",
-    "photos": "Photos",
+    "intro": "Professional portraits, moments at work and videos featuring Doina.",
+    "photos": "Professional photos",
+    "work": "At work",
     "videos": "Videos",
-    "videoNote": "Video links are placeholders until Doina's films are supplied.",
-    "photosData": {
-      "portrait": {
-        "alt": "Doina in a checked blazer outside",
-        "caption": "Doina"
-      },
-      "wardrobe": {
-        "alt": "Placeholder wardrobe styling scene",
-        "caption": "The wardrobe"
-      },
-      "pj": {
-        "alt": "Models wearing PJ sets from the collection",
-        "caption": "Quiet Hours"
-      }
-    },
-    "videosData": {
-      "introduction": {
-        "title": "Meet Doina",
-        "description": "An introduction video will appear here."
-      },
-      "process": {
-        "title": "The styling process",
-        "description": "A short look at the process will appear here."
-      }
-    }
+    "professionalCaption": "Doina, professional portrait",
+    "workCaption": "Doina at work",
+    "videoLabel": "Video"
   },
   "contact": {
     "title": "Let's talk about your style.",
     "intro": "Tell Doina what you are looking for, whether it is a styling service or a piece from the PJ Collection.",
     "email": "Email Doina",
     "instagram": "Message on Instagram",
-    "tiktok": "Find Doina on TikTok",
-    "whatsapp": "Message on WhatsApp",
-    "placeholder": "These contact details and social links are placeholders. Replace them before sharing the site with clients."
+    "tiktok": "Find Doina on TikTok"
   },
   "legal": {
     "privacy": "Privacy",
@@ -179,7 +145,7 @@
     "services": "Explore Doina Stratulescu's styling, wardrobe, shopping, made-to-measure and photoshoot services with prices.",
     "pj": "Explore the PJ Collection designed by Doina Stratulescu.",
     "about": "Learn about Doina's personal styling philosophy and design approach.",
-    "media": "See portraits, styling work and videos from Doina's creative world.",
+    "media": "Explore professional portraits, Doina at work and videos.",
     "contact": "Contact Doina about styling services or PJ designs.",
     "privacy": "Privacy information for Doina Stratulescu's website.",
     "imprint": "Imprint information for Doina Stratulescu's website."

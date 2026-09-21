@@ -39,10 +39,10 @@ function setupTabs(container) {
       item.setAttribute('aria-selected', String(selected));
       item.tabIndex = selected ? 0 : -1;
     });
-    if (container.dataset.tabs === 'media') {
-      document.querySelector('#media-photos').hidden = tab.id !== 'media-tab-photos';
-      document.querySelector('#media-videos').hidden = tab.id !== 'media-tab-videos';
-    }
+    tabs.forEach((item) => {
+      const panel = document.getElementById(item.getAttribute('aria-controls'));
+      if (panel) panel.hidden = item !== tab;
+    });
   }
   tabs.forEach((tab, index) => {
     tab.addEventListener('click', () => activate(tab));
@@ -70,9 +70,10 @@ if (serviceFromHash?.matches('.service-card')) {
 const lightbox = document.querySelector('[data-lightbox]');
 const galleryData = document.querySelector('#gallery-data');
 if (lightbox && galleryData) {
-  const items = JSON.parse(galleryData.textContent);
+  const groups = JSON.parse(galleryData.textContent);
   const photo = lightbox.querySelector('img');
   const caption = lightbox.querySelector('figcaption');
+  let items = [];
   let index = 0;
   function show(next) {
     index = (next + items.length) % items.length;
@@ -81,6 +82,8 @@ if (lightbox && galleryData) {
     caption.textContent = items[index].caption;
   }
   document.querySelectorAll('[data-gallery-open]').forEach((button) => button.addEventListener('click', () => {
+    items = groups[button.dataset.galleryGroup] || [];
+    if (!items.length) return;
     show(Number(button.dataset.galleryOpen));
     lightbox.showModal();
   }));

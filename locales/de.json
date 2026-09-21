@@ -3,7 +3,7 @@
     "name": "Doina Stratulescu",
     "descriptor": "Personal Stylistin und Designerin",
     "slogan": "leading you to self discovery from within",
-    "preview": "Vorschau: PJ-Produktdetails, Biografie und Kontaktlinks sind Platzhalter."
+    "preview": "Vorschau: PJ-Produktdetails und Biografie sind Platzhalter."
   },
   "nav": {
     "home": "Start",
@@ -26,8 +26,7 @@
     "previous": "Vorheriges Bild",
     "next": "Nächstes Bild",
     "image": "Bild",
-    "of": "von",
-    "placeholderPhoto": "Redaktionelles Platzhalterfoto"
+    "of": "von"
   },
   "cta": {
     "services": "Leistungen entdecken",
@@ -49,16 +48,6 @@
     "introText": "Eine bewusst gestaltete Garderobe kann zeigen, wer du heute bist, und Raum für Entwicklung lassen. Gemeinsam entdecken wir Farben, Formen und Stücke, die sich nach dir anfühlen.",
     "featuredTitle": "So können wir zusammenarbeiten",
     "featuredText": "Beginne mit einem Gespräch, einem neuen Blick auf deine Garderobe oder einer Richtung für das, was kommt.",
-    "approachLabel": "Der Ansatz",
-    "approachTitle": "Von der Entdeckung zum Ausdruck",
-    "approachText": "Styling ist ein persönlicher Prozess. Wir erkennen, was sich richtig anfühlt, verfeinern den Rest und erleichtern Entscheidungen im Alltag.",
-    "steps": [
-      "Entdecken",
-      "Verstehen",
-      "Verfeinern",
-      "Aufbauen",
-      "Ausdrücken"
-    ],
     "pjLabel": "Von Doina entworfen",
     "pjTitle": "Die PJ Kollektion",
     "pjText": "Durchdachte Stücke für die Stunden, die dir gehören.",
@@ -127,43 +116,20 @@
   },
   "media": {
     "title": "Medien",
-    "intro": "Porträts, Details und Momente aus Doinas kreativer Welt.",
-    "photos": "Fotos",
+    "intro": "Professionelle Porträts, Einblicke in Doinas Arbeitsumfeld und Videos.",
+    "photos": "Professionelle Fotos",
+    "work": "Bei der Arbeit",
     "videos": "Videos",
-    "videoNote": "Die Videolinks sind Platzhalter, bis Doinas Filme vorliegen.",
-    "photosData": {
-      "portrait": {
-        "alt": "Doina im karierten Blazer im Freien",
-        "caption": "Porträtstudie"
-      },
-      "wardrobe": {
-        "alt": "Platzhalter für eine Garderobenszene",
-        "caption": "Die Garderobe"
-      },
-      "pj": {
-        "alt": "Models in PJ Sets der Kollektion",
-        "caption": "Ruhige Stunden"
-      }
-    },
-    "videosData": {
-      "introduction": {
-        "title": "Doina kennenlernen",
-        "description": "Hier wird ein Einführungsvideo erscheinen."
-      },
-      "process": {
-        "title": "Der Styling Prozess",
-        "description": "Hier wird ein kurzer Einblick in den Ablauf erscheinen."
-      }
-    }
+    "professionalCaption": "Doina, professionelles Porträt",
+    "workCaption": "Doina bei der Arbeit",
+    "videoLabel": "Video"
   },
   "contact": {
     "title": "Lass uns über deinen Stil sprechen.",
     "intro": "Erzähle Doina, wonach du suchst, ob Styling oder ein Stück aus der PJ Kollektion.",
     "email": "Doina eine E-Mail senden",
     "instagram": "Nachricht auf Instagram",
-    "tiktok": "Doina auf TikTok finden",
-    "whatsapp": "Nachricht auf WhatsApp",
-    "placeholder": "Diese Kontaktdaten und Social Links sind Platzhalter. Bitte vor der Weitergabe an Kundinnen ersetzen."
+    "tiktok": "Doina auf TikTok finden"
   },
   "legal": {
     "privacy": "Datenschutz",
@@ -179,7 +145,7 @@
     "services": "Entdecken Sie die Stilberatung, den Garderoben-Check, Shopping, Maßanfertigung und Fotoshootings mit Preisen.",
     "pj": "Entdecke die PJ Kollektion von Doina Stratulescu.",
     "about": "Lerne Doinas Styling Philosophie und Designansatz kennen.",
-    "media": "Entdecke Porträts, Styling Arbeiten und Videos aus Doinas Welt.",
+    "media": "Entdecken Sie professionelle Porträts, Doina bei der Arbeit und Videos.",
     "contact": "Kontaktiere Doina zu Styling Leistungen oder PJ Designs.",
     "privacy": "Datenschutzinformationen für die Website von Doina Stratulescu.",
     "imprint": "Impressumsinformationen für die Website von Doina Stratulescu."
