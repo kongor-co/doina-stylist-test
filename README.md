@@ -14,10 +14,10 @@ node scripts/serve.mjs
 
 Open `http://127.0.0.1:4173/doina-stylist-test/`.
 
-## Content to replace
+## Content sources and placeholders
 
-- `locales/en.json`, `de.json`, `ru.json` and `ro.json`: all visible copy, including the biography and item descriptions.
-- `content/services.json`: service order, categories, prices, duration and location keys.
+- `locales/en.json`, `de.json`, `ru.json` and `ro.json`: interface copy, biography and PJ item descriptions.
+- `content/services.json`: the seven services from the services catalogue, including descriptions, inclusions and prices in four languages.
 - `content/pj.json`: product data, prices, image paths and availability.
 - `content/media.json`: gallery items and video links.
 - `content/contact.json`: email and official social profile URLs.

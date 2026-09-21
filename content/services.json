@@ -1,38 +1,1393 @@
 [
   {
-    "id": "style-discovery",
-    "category": "personal",
-    "price": "€250",
-    "duration": "twoHours",
-    "location": "either",
-    "order": 1,
-    "active": true
+    "id": "style-consultation",
+    "translations": {
+      "en": {
+        "title": "STYLE CONSULTATION",
+        "subtitle": "",
+        "detailHeading": "What is included in the consultation?",
+        "lead": "",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Determining your color type",
+            "description": "A personalized analysis of your appearance based on the French methodology of ESR Paris. We will identify the shades that most harmoniously enhance your natural features."
+          },
+          {
+            "title": "Defining your personal color palette",
+            "description": "I will teach you how to combine the colors that suit you best."
+          },
+          {
+            "title": "Determining your body type and the right cuts",
+            "description": "We will analyze the characteristics of your figure and identify the styles, silhouettes, and clothing cuts that suit you best."
+          },
+          {
+            "title": "Defining your individual style",
+            "description": "We will find a style direction that matches your appearance, lifestyle, and personal preferences."
+          },
+          {
+            "title": "Creating a personal capsule wardrobe",
+            "description": "We will build a thoughtfully curated capsule wardrobe based on your goals, wishes, and needs."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Consultation price",
+            "value": "€600"
+          },
+          {
+            "label": "Short consultation",
+            "value": "€300"
+          }
+        ],
+        "displayPrice": "€600"
+      },
+      "de": {
+        "title": "STILBERATUNG",
+        "subtitle": "",
+        "detailHeading": "Was beinhaltet die Beratung?",
+        "lead": "",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Bestimmung Ihres Farbtyps",
+            "description": "Eine individuelle Farbanalyse nach der französischen Methode der ESR Paris. Gemeinsam bestimmen wir die Farbtöne, die Ihre natürliche Ausstrahlung besonders harmonisch unterstreichen."
+          },
+          {
+            "title": "Bestimmung Ihrer persönlichen Farbpalette",
+            "description": "Ich zeige Ihnen, wie Sie die Farben, die optimal zu Ihnen passen, harmonisch miteinander kombinieren."
+          },
+          {
+            "title": "Analyse Ihrer Figur und der passenden Schnitte",
+            "description": "Wir analysieren Ihre Proportionen und bestimmen Schnitte, Silhouetten und Kleidungsformen, die optimal zu Ihnen passen."
+          },
+          {
+            "title": "Entwicklung Ihres individuellen Stils",
+            "description": "Wir finden eine Stilrichtung, die zu Ihrer Persönlichkeit, Ihrem Erscheinungsbild und Ihrem Lebensstil passt."
+          },
+          {
+            "title": "Zusammenstellung einer persönlichen Capsule Wardrobe",
+            "description": "Auf Basis Ihrer Wünsche, Bedürfnisse und Ziele entwickeln wir eine durchdachte, individuell auf Sie abgestimmte Garderobe."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Preis der Beratung",
+            "value": "600 €"
+          },
+          {
+            "label": "Preis der Kurzberatung",
+            "value": "300 €"
+          }
+        ],
+        "displayPrice": "600 €"
+      },
+      "ru": {
+        "title": "КОНСУЛЬТАЦИЯ ПО СТИЛЮ",
+        "subtitle": "",
+        "detailHeading": "Что входит в консультацию?",
+        "lead": "",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Определение вашего цветотипа",
+            "description": "Персональный анализ внешности по французской методике школы ESR Paris. Определим оттенки, которые наиболее гармонично подчёркивают вашу внешность."
+          },
+          {
+            "title": "Определение вашей индивидуальной цветовой палитры",
+            "description": "Научу вас сочетать цвета, которые подходят именно вам."
+          },
+          {
+            "title": "Определение типа фигуры и подходящего кроя",
+            "description": "Разберём особенности вашей фигуры и определим фасоны, силуэты и крой одежды, которые подходят именно вам."
+          },
+          {
+            "title": "Определение вашего индивидуального стиля",
+            "description": "Найдём стилевое направление, которое соответствует вашей внешности, образу жизни и личным предпочтениям."
+          },
+          {
+            "title": "Составление персональной капсулы",
+            "description": "Сформируем продуманную капсулу с учётом ваших задач, пожеланий и потребностей."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Стоимость консультации",
+            "value": "600 €"
+          },
+          {
+            "label": "Стоимость короткой версии консультации",
+            "value": "300 €"
+          }
+        ],
+        "displayPrice": "600 €"
+      },
+      "ro": {
+        "title": "CONSULTANȚĂ DE STIL",
+        "subtitle": "",
+        "detailHeading": "Ce include consultația?",
+        "lead": "",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Determinarea tipologiei cromatice",
+            "description": "O analiză personalizată a aspectului dumneavoastră, realizată conform metodei franceze a școlii ESR Paris. Vom identifica nuanțele care vă pun cel mai armonios în valoare trăsăturile naturale."
+          },
+          {
+            "title": "Stabilirea paletei cromatice personale",
+            "description": "Vă voi arăta cum să combinați culorile care vi se potrivesc."
+          },
+          {
+            "title": "Determinarea tipului de siluetă și a croielilor potrivite",
+            "description": "Vom analiza particularitățile siluetei dumneavoastră și vom identifica modelele, siluetele și croielile care vi se potrivesc cel mai bine."
+          },
+          {
+            "title": "Definirea stilului personal",
+            "description": "Vom găsi direcția stilistică potrivită aspectului, stilului dumneavoastră de viață și preferințelor personale."
+          },
+          {
+            "title": "Crearea unei garderobe capsulă personalizate",
+            "description": "Vom crea o garderobă capsulă bine gândită, adaptată obiectivelor, dorințelor și nevoilor dumneavoastră."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Prețul consultației",
+            "value": "600 €"
+          },
+          {
+            "label": "Prețul consultației în versiune scurtă",
+            "value": "300 €"
+          }
+        ],
+        "displayPrice": "600 €"
+      }
+    }
   },
   {
-    "id": "wardrobe-edit",
-    "category": "wardrobe",
-    "price": "€390",
-    "duration": "threeHours",
-    "location": "inPerson",
-    "order": 2,
-    "active": true
+    "id": "wardrobe-review",
+    "translations": {
+      "en": {
+        "title": "WARDROBE REVIEW",
+        "subtitle": "",
+        "detailHeading": "What is included in the wardrobe review?",
+        "lead": "",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Defining your goals and style objectives",
+            "description": "We will discuss your lifestyle, preferences, and how you would like your wardrobe to look."
+          },
+          {
+            "title": "Wardrobe review and sorting",
+            "description": "We will go through your clothes and determine what should stay, what needs adjustment, and what you can let go of."
+          },
+          {
+            "title": "Try-on and fit analysis",
+            "description": "We will assess how well your clothes suit you in terms of style, cut, color, and fit."
+          },
+          {
+            "title": "Working with color",
+            "description": "We will analyze the color palette of your wardrobe and identify the most harmonious combinations."
+          },
+          {
+            "title": "Creating new outfits",
+            "description": "We will create current looks using the clothes you already own and discover new ways to combine them."
+          },
+          {
+            "title": "Identifying missing pieces",
+            "description": "We will determine what is missing to make your wardrobe functional and harmonious."
+          },
+          {
+            "title": "Personal shopping list",
+            "description": "You will receive a specific list of items that are genuinely worth adding to your wardrobe, helping you avoid unnecessary and spontaneous purchases."
+          },
+          {
+            "title": "Recommendations for alterations and improvements",
+            "description": "We will identify which garments should be tailored, repaired, or updated."
+          },
+          {
+            "title": "Wardrobe organization and seasonal storage",
+            "description": "We will create a practical storage system so your clothes remain visible, easy to combine, and comfortable to use in everyday life."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Wardrobe review price",
+            "value": "€750"
+          }
+        ],
+        "displayPrice": "€750"
+      },
+      "de": {
+        "title": "GARDEROBEN-CHECK",
+        "subtitle": "",
+        "detailHeading": "Was beinhaltet der Garderoben-Check?",
+        "lead": "",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Definition Ihrer persönlichen Ziele und Stilwünsche",
+            "description": "Wir besprechen Ihren Lebensstil, Ihre persönlichen Vorlieben und wie Sie sich Ihre ideale Garderobe vorstellen."
+          },
+          {
+            "title": "Analyse und Sortierung Ihrer Garderobe",
+            "description": "Gemeinsam gehen wir Ihre Kleidung durch und entscheiden, welche Stücke bleiben, welche angepasst werden sollten und von welchen Sie sich trennen können."
+          },
+          {
+            "title": "Anprobe und Passformanalyse",
+            "description": "Wir prüfen, welche Kleidungsstücke hinsichtlich Schnitt, Passform, Farbe und Silhouette optimal zu Ihnen passen."
+          },
+          {
+            "title": "Farbanalyse Ihrer Garderobe",
+            "description": "Wir analysieren die Farbwelt Ihrer Garderobe und finden harmonische Farbkombinationen, die zu Ihnen passen."
+          },
+          {
+            "title": "Zusammenstellung neuer Outfits",
+            "description": "Aus den bereits vorhandenen Kleidungsstücken kreieren wir neue, stilvolle Looks und entdecken zusätzliche Kombinationsmöglichkeiten."
+          },
+          {
+            "title": "Ermittlung fehlender Kleidungsstücke",
+            "description": "Wir stellen fest, welche Teile noch fehlen, um Ihre Garderobe vielseitig, harmonisch und funktional zu ergänzen."
+          },
+          {
+            "title": "Persönliche Einkaufsliste",
+            "description": "Sie erhalten eine konkrete Liste mit Kleidungsstücken, die Ihre Garderobe sinnvoll ergänzen, für gezielte Einkäufe statt unnötiger Spontankäufe."
+          },
+          {
+            "title": "Empfehlungen für Änderungen und Optimierungen",
+            "description": "Wir bestimmen, welche Kleidungsstücke angepasst, repariert oder modernisiert werden können."
+          },
+          {
+            "title": "Organisation der Garderobe und saisonale Aufbewahrung",
+            "description": "Wir entwickeln ein übersichtliches und praktisches Ordnungssystem, damit Ihre Kleidung gut sichtbar, leicht kombinierbar und Ihre Garderobe im Alltag einfach zu nutzen ist."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Preis des Garderoben-Checks",
+            "value": "750 €"
+          }
+        ],
+        "displayPrice": "750 €"
+      },
+      "ru": {
+        "title": "РАЗБОР ГАРДЕРОБА",
+        "subtitle": "",
+        "detailHeading": "Что входит в разбор гардероба?",
+        "lead": "",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Определение ваших целей и стилевых задач",
+            "description": "Обсудим ваш образ жизни, предпочтения и то, каким вы хотите видеть свой гардероб."
+          },
+          {
+            "title": "Ревизия и сортировка гардероба",
+            "description": "Разберём вещи и определим, что стоит оставить, что требует доработки, а с чем лучше расстаться."
+          },
+          {
+            "title": "Примерка и анализ посадки",
+            "description": "Оценим, насколько вещи подходят вам по фасону, крою, цвету и посадке."
+          },
+          {
+            "title": "Работа с цветом",
+            "description": "Проанализируем цветовую гамму гардероба и определим наиболее гармоничные сочетания."
+          },
+          {
+            "title": "Составление новых образов",
+            "description": "Создадим актуальные комплекты из вещей, которые уже есть в вашем гардеробе, и найдём новые варианты их сочетания."
+          },
+          {
+            "title": "Выявление недостающих вещей",
+            "description": "Определим, чего не хватает для функционального и гармоничного гардероба."
+          },
+          {
+            "title": "Персональный список покупок",
+            "description": "Составим конкретный список вещей, которые действительно стоит добавить в гардероб, без лишних и спонтанных покупок."
+          },
+          {
+            "title": "Рекомендации по коррекции вещей",
+            "description": "Определим, какие вещи стоит подогнать по фигуре, отремонтировать или обновить."
+          },
+          {
+            "title": "Организация гардероба и сезонного хранения",
+            "description": "Выстроим удобную систему хранения, чтобы вещи были на виду, легко сочетались между собой, а гардеробом было удобно пользоваться каждый день."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Стоимость разбора гардероба",
+            "value": "750 €"
+          }
+        ],
+        "displayPrice": "750 €"
+      },
+      "ro": {
+        "title": "ANALIZA GARDEROBEI",
+        "subtitle": "",
+        "detailHeading": "Ce include analiza garderobei?",
+        "lead": "",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Stabilirea obiectivelor și a direcției stilistice",
+            "description": "Vom discuta despre stilul dumneavoastră de viață, preferințe și despre cum vă doriți să arate garderoba."
+          },
+          {
+            "title": "Revizuirea și sortarea garderobei",
+            "description": "Vom analiza hainele și vom stabili ce merită păstrat, ce necesită ajustări și la ce articole este mai bine să renunțați."
+          },
+          {
+            "title": "Probarea și analiza potrivirii",
+            "description": "Vom evalua cât de bine vi se potrivesc hainele din punctul de vedere al modelului, croielii, culorii și felului în care se așază."
+          },
+          {
+            "title": "Analiza cromatică a garderobei",
+            "description": "Vom analiza paleta de culori a garderobei și vom identifica cele mai armonioase combinații."
+          },
+          {
+            "title": "Crearea unor ținute noi",
+            "description": "Vom crea ținute actuale folosind piesele pe care le aveți deja și vom descoperi noi variante de combinare."
+          },
+          {
+            "title": "Identificarea pieselor lipsă",
+            "description": "Vom determina ce lipsește pentru ca garderoba să fie funcțională și armonioasă."
+          },
+          {
+            "title": "Listă personalizată de cumpărături",
+            "description": "Vom crea o listă concretă de articole care merită cu adevărat adăugate în garderobă, evitând cumpărăturile inutile și impulsive."
+          },
+          {
+            "title": "Recomandări pentru ajustarea și îmbunătățirea hainelor",
+            "description": "Vom stabili ce articole trebuie ajustate pe siluetă, reparate sau actualizate."
+          },
+          {
+            "title": "Organizarea garderobei și depozitarea sezonieră",
+            "description": "Vom crea un sistem practic de organizare, astfel încât hainele să fie vizibile, ușor de combinat și garderoba să fie comod de utilizat în viața de zi cu zi."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Prețul analizei garderobei",
+            "value": "750 €"
+          }
+        ],
+        "displayPrice": "750 €"
+      }
+    }
   },
   {
-    "id": "colour-direction",
-    "category": "colour",
-    "price": "€180",
-    "duration": "ninetyMinutes",
-    "location": "either",
-    "order": 3,
-    "active": true
+    "id": "personal-shopping",
+    "translations": {
+      "en": {
+        "title": "PERSONAL SHOPPING",
+        "subtitle": "",
+        "detailHeading": "What is included in the service?",
+        "lead": "",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Defining your shopping goals",
+            "description": "We will discuss your needs, lifestyle, wishes, and budget."
+          },
+          {
+            "title": "Preliminary analysis of your wardrobe and needs",
+            "description": "We will identify which pieces are missing and which purchases are genuinely necessary to create a complete and functional wardrobe."
+          },
+          {
+            "title": "Planning an individual shopping route",
+            "description": "I will select suitable stores and brands in advance, taking into account your style, figure, color palette, and budget."
+          },
+          {
+            "title": "Personal shopping support",
+            "description": "I will help you choose garments, cuts, colors, and sizes so that every purchase works as part of your wardrobe."
+          },
+          {
+            "title": "Creating complete looks",
+            "description": "During the shopping session, we will put together complete outfits and determine how the new pieces can be combined with one another and with your existing wardrobe."
+          },
+          {
+            "title": "Final selection",
+            "description": "Together, we will choose only the pieces that truly suit you and correspond to your goals."
+          },
+          {
+            "title": "Post-shopping support",
+            "description": "If necessary, after the shopping session we will review the purchased items and explore additional ways to combine them."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Personal shopping price",
+            "value": "€750"
+          }
+        ],
+        "displayPrice": "€750"
+      },
+      "de": {
+        "title": "PERSONAL SHOPPING",
+        "subtitle": "",
+        "detailHeading": "Was beinhaltet die Shopping-Begleitung?",
+        "lead": "",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Definition Ihrer Shopping-Ziele",
+            "description": "Wir besprechen Ihre Bedürfnisse, Ihren Lebensstil, Ihre Wünsche und Ihr Budget."
+          },
+          {
+            "title": "Vorabanalyse Ihrer Garderobe und Ihres Bedarfs",
+            "description": "Wir ermitteln, welche Kleidungsstücke Ihnen noch fehlen und welche Neuanschaffungen Ihre Garderobe sinnvoll und gezielt ergänzen."
+          },
+          {
+            "title": "Individuelle Planung der Shopping-Route",
+            "description": "Ich wähle im Vorfeld passende Geschäfte und Marken aus, abgestimmt auf Ihren Stil, Ihre Figur, Ihre Farbpalette und Ihr Budget."
+          },
+          {
+            "title": "Persönliche Begleitung beim Shopping",
+            "description": "Ich unterstütze Sie bei der Auswahl von Kleidungsstücken, Schnitten, Farben und Größen, damit jeder Kauf eine sinnvolle Ergänzung Ihrer Garderobe ist."
+          },
+          {
+            "title": "Zusammenstellung kompletter Looks",
+            "description": "Während des Shoppings kreieren wir vollständige Outfits und schauen, wie sich die neuen Kleidungsstücke untereinander sowie mit Ihrer bestehenden Garderobe kombinieren lassen."
+          },
+          {
+            "title": "Finale Auswahl",
+            "description": "Gemeinsam wählen wir nur die Kleidungsstücke aus, die wirklich zu Ihnen, Ihrem Stil und Ihren persönlichen Zielen passen."
+          },
+          {
+            "title": "Unterstützung nach dem Shopping",
+            "description": "Auf Wunsch besprechen wir anschließend die gekauften Kleidungsstücke und weitere Kombinationsmöglichkeiten."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Preis der Shopping-Begleitung",
+            "value": "750 €"
+          }
+        ],
+        "displayPrice": "750 €"
+      },
+      "ru": {
+        "title": "ШОПИНГ-СОПРОВОЖДЕНИЕ",
+        "subtitle": "",
+        "detailHeading": "Что входит в услугу?",
+        "lead": "",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Определение целей и задач шопинга",
+            "description": "Обсудим ваши потребности, образ жизни, пожелания и бюджет."
+          },
+          {
+            "title": "Предварительный анализ гардероба и вашего запроса",
+            "description": "Определим, каких вещей не хватает и какие покупки действительно необходимы для формирования целостного и функционального гардероба."
+          },
+          {
+            "title": "Подготовка индивидуального шопинг-маршрута",
+            "description": "Заранее подберу магазины и бренды с учётом вашего стиля, фигуры, цветовой палитры и бюджета."
+          },
+          {
+            "title": "Персональное сопровождение во время шопинга",
+            "description": "Помогу с выбором вещей, фасонов, цветов и размеров, чтобы каждая покупка работала на ваш гардероб."
+          },
+          {
+            "title": "Формирование готовых образов",
+            "description": "Во время шопинга составим полноценные комплекты и определим, как новые вещи сочетать между собой и с вашим существующим гардеробом."
+          },
+          {
+            "title": "Финальный отбор",
+            "description": "Вместе выберем только те вещи, которые действительно подходят вам и соответствуют поставленным задачам."
+          },
+          {
+            "title": "Послешопинговая поддержка",
+            "description": "При необходимости после шопинга разберём приобретённые вещи и дополнительные варианты их сочетаний."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Стоимость шопинг-сопровождения",
+            "value": "750 €"
+          }
+        ],
+        "displayPrice": "750 €"
+      },
+      "ro": {
+        "title": "PERSONAL SHOPPING",
+        "subtitle": "",
+        "detailHeading": "Ce include serviciul?",
+        "lead": "",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Stabilirea obiectivelor de shopping",
+            "description": "Vom discuta despre nevoile, stilul dumneavoastră de viață, preferințele și bugetul disponibil."
+          },
+          {
+            "title": "Analiza preliminară a garderobei și a necesităților",
+            "description": "Vom determina ce articole lipsesc și ce achiziții sunt cu adevărat necesare pentru construirea unei garderobe complete și funcționale."
+          },
+          {
+            "title": "Pregătirea unui traseu de shopping personalizat",
+            "description": "Voi selecta în avans magazine și branduri potrivite, ținând cont de stilul, silueta, paleta cromatică și bugetul dumneavoastră."
+          },
+          {
+            "title": "Asistență personalizată în timpul cumpărăturilor",
+            "description": "Vă voi ajuta să alegeți articolele, croielile, culorile și mărimile potrivite, astfel încât fiecare achiziție să completeze în mod util garderoba."
+          },
+          {
+            "title": "Crearea unor ținute complete",
+            "description": "În timpul sesiunii de shopping vom crea ținute complete și vom stabili cum pot fi combinate piesele noi între ele și cu garderoba existentă."
+          },
+          {
+            "title": "Selecția finală",
+            "description": "Vom alege împreună doar acele articole care vi se potrivesc cu adevărat și corespund obiectivelor stabilite."
+          },
+          {
+            "title": "Asistență după shopping",
+            "description": "Dacă este necesar, după cumpărături vom analiza articolele achiziționate și alte variante de combinare a acestora."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Prețul serviciului de personal shopping",
+            "value": "750 €"
+          }
+        ],
+        "displayPrice": "750 €"
+      }
+    }
   },
   {
-    "id": "shopping-together",
-    "category": "shopping",
-    "price": "€320",
-    "duration": "threeHours",
-    "location": "inPerson",
-    "order": 4,
-    "active": true
+    "id": "made-to-measure",
+    "translations": {
+      "en": {
+        "title": "MADE-TO-MEASURE",
+        "subtitle": "",
+        "detailHeading": "What is included in the service?",
+        "lead": "",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Personal consultation",
+            "description": "We will discuss your wishes, style, the purpose of the garment, and the desired result."
+          },
+          {
+            "title": "Development of an individual design",
+            "description": "We will create a design for your garment, taking into account your appearance, figure, style, and personal preferences."
+          },
+          {
+            "title": "Selection of fabrics and materials",
+            "description": "We will choose the appropriate fabric, color, texture, trims, and other required materials."
+          },
+          {
+            "title": "Individual measurements",
+            "description": "We will take the necessary measurements to ensure a precise and comfortable fit."
+          },
+          {
+            "title": "Creation of an individual pattern",
+            "description": "The pattern will be created specifically according to your measurements and the characteristics of your figure."
+          },
+          {
+            "title": "Garment construction and fittings",
+            "description": "During the production process, fittings and any necessary adjustments will be carried out to achieve an optimal fit."
+          },
+          {
+            "title": "Final fitting",
+            "description": "We will check the fit, proportions, and details of the finished garment."
+          },
+          {
+            "title": "Your finished unique piece",
+            "description": "You will receive a unique garment created especially for you."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Made-to-measure price",
+            "value": "from €500"
+          }
+        ],
+        "displayPrice": "from €500"
+      },
+      "de": {
+        "title": "MASSANFERTIGUNG",
+        "subtitle": "",
+        "detailHeading": "Was beinhaltet die Maßanfertigung?",
+        "lead": "",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Persönliche Beratung",
+            "description": "Wir besprechen Ihre Wünsche, Ihren Stil, den Anlass und Ihre Vorstellungen vom gewünschten Kleidungsstück."
+          },
+          {
+            "title": "Entwicklung eines individuellen Designs",
+            "description": "Wir entwerfen Ihr persönliches Kleidungsstück, abgestimmt auf Ihre Figur, Ihren Stil und Ihre individuellen Wünsche."
+          },
+          {
+            "title": "Auswahl von Stoffen und Materialien",
+            "description": "Gemeinsam wählen wir den passenden Stoff, die Farbe, Struktur, Details und weitere Materialien aus."
+          },
+          {
+            "title": "Individuelle Maßabnahme",
+            "description": "Ihre Maße werden präzise genommen, um eine optimale und komfortable Passform zu gewährleisten."
+          },
+          {
+            "title": "Erstellung eines individuellen Schnittmusters",
+            "description": "Das Schnittmuster wird speziell nach Ihren Maßen und unter Berücksichtigung Ihrer Körperproportionen angefertigt."
+          },
+          {
+            "title": "Anfertigung und Anproben",
+            "description": "Während der Anfertigung finden Anproben und notwendige Anpassungen statt, um eine optimale Passform zu erzielen."
+          },
+          {
+            "title": "Finale Anprobe",
+            "description": "Bei der letzten Anprobe überprüfen wir Passform, Proportionen und alle Details des fertigen Kleidungsstücks."
+          },
+          {
+            "title": "Ihr fertiges Unikat",
+            "description": "Sie erhalten ein einzigartiges Kleidungsstück, das individuell für Sie entworfen und angefertigt wurde."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Preis für die Maßanfertigung",
+            "value": "ab 500 €"
+          }
+        ],
+        "displayPrice": "ab 500 €"
+      },
+      "ru": {
+        "title": "ИНДИВИДУАЛЬНЫЙ ПОШИВ",
+        "subtitle": "",
+        "detailHeading": "Что входит в услугу?",
+        "lead": "",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Персональная консультация",
+            "description": "Обсудим ваши пожелания, стиль, назначение изделия и желаемый результат."
+          },
+          {
+            "title": "Разработка индивидуального дизайна",
+            "description": "Создадим эскиз будущего изделия с учётом вашей внешности, фигуры, стиля и личных предпочтений."
+          },
+          {
+            "title": "Подбор ткани и материалов",
+            "description": "Подберём подходящую ткань, цвет, фактуру, фурнитуру и необходимые материалы."
+          },
+          {
+            "title": "Снятие индивидуальных мерок",
+            "description": "Снимем необходимые мерки для точной и комфортной посадки изделия."
+          },
+          {
+            "title": "Построение индивидуальной выкройки",
+            "description": "Выкройка создаётся специально по вашим параметрам и с учётом особенностей фигуры."
+          },
+          {
+            "title": "Пошив и примерки",
+            "description": "В процессе пошива проводятся примерки и необходимые корректировки для достижения оптимальной посадки."
+          },
+          {
+            "title": "Финальная примерка",
+            "description": "Проверяем посадку, пропорции и детали готового изделия."
+          },
+          {
+            "title": "Готовое изделие",
+            "description": "Вы получаете уникальную вещь, созданную индивидуально для вас."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Стоимость индивидуального пошива",
+            "value": "от 500 €"
+          }
+        ],
+        "displayPrice": "от 500 €"
+      },
+      "ro": {
+        "title": "CROITORIE LA COMANDĂ",
+        "subtitle": "",
+        "detailHeading": "Ce include serviciul?",
+        "lead": "",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Consultație personalizată",
+            "description": "Vom discuta despre dorințele, stilul dumneavoastră, destinația articolului vestimentar și rezultatul dorit."
+          },
+          {
+            "title": "Dezvoltarea unui design individual",
+            "description": "Vom crea schița viitorului articol vestimentar, ținând cont de aspectul, silueta, stilul și preferințele dumneavoastră personale."
+          },
+          {
+            "title": "Alegerea materialelor",
+            "description": "Vom selecta materialul, culoarea, textura, accesoriile și celelalte elemente necesare."
+          },
+          {
+            "title": "Luarea măsurilor individuale",
+            "description": "Vom lua toate măsurile necesare pentru o potrivire precisă și confortabilă."
+          },
+          {
+            "title": "Crearea unui tipar individual",
+            "description": "Tiparul va fi realizat special după măsurile dumneavoastră și ținând cont de particularitățile siluetei."
+          },
+          {
+            "title": "Confectionarea și probele",
+            "description": "Pe parcursul realizării articolului vor avea loc probe și ajustările necesare pentru obținerea unei potriviri optime."
+          },
+          {
+            "title": "Proba finală",
+            "description": "Vom verifica potrivirea, proporțiile și detaliile articolului final."
+          },
+          {
+            "title": "Piesa finală",
+            "description": "Veți primi un articol unic, creat individual pentru dumneavoastră."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Prețul croitoriei la comandă",
+            "value": "de la 500 €"
+          }
+        ],
+        "displayPrice": "de la 500 €"
+      }
+    }
+  },
+  {
+    "id": "professional-photoshoot",
+    "translations": {
+      "en": {
+        "title": "PROFESSIONAL PHOTOSHOOT",
+        "subtitle": "WITH STYLIST AND PHOTOGRAPHER",
+        "detailHeading": "What is included in the service?",
+        "lead": "",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Defining the concept and purpose of the photoshoot",
+            "description": "We will discuss your wishes, objectives, and the desired mood of the photoshoot."
+          },
+          {
+            "title": "Creating an individual moodboard",
+            "description": "We will select visual references, a color palette, styling direction, and atmosphere for the shoot."
+          },
+          {
+            "title": "Selection and styling of looks",
+            "description": "We will create several carefully considered looks that highlight your individuality and work harmoniously on camera."
+          },
+          {
+            "title": "Make-up and hairstyling",
+            "description": "Professional preparation for the shoot, adapted to the chosen concept and your individual features."
+          },
+          {
+            "title": "Selection of location, lighting, and details",
+            "description": "We will choose a suitable location and create a visual atmosphere that corresponds to the concept of the shoot."
+          },
+          {
+            "title": "Professional photoshoot",
+            "description": "During the shoot, you will be accompanied by a stylist and photographer, with support in preparing the looks, details, and each individual shot."
+          },
+          {
+            "title": "Selection of the best photographs",
+            "description": "After the shoot, the strongest images will be selected for further editing."
+          },
+          {
+            "title": "Professional retouching and delivery of photographs",
+            "description": "The selected images will be professionally edited and delivered to you as the finished material."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Photoshoot price",
+            "value": "from €1,000"
+          }
+        ],
+        "displayPrice": "from €1,000"
+      },
+      "de": {
+        "title": "PROFESSIONELLES FOTOSHOOTING",
+        "subtitle": "MIT STYLISTIN UND FOTOGRAFIN/FOTOGRAF",
+        "detailHeading": "Was beinhaltet das Fotoshooting?",
+        "lead": "",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Entwicklung des Konzepts und Definition des Ziels",
+            "description": "Wir besprechen Ihre Wünsche, den Anlass und die gewünschte Atmosphäre des Shootings."
+          },
+          {
+            "title": "Erstellung eines individuellen Moodboards",
+            "description": "Wir entwickeln eine visuelle Richtung mit passenden Referenzen, Farben, Stilwelten und der gewünschten Bildästhetik."
+          },
+          {
+            "title": "Auswahl und Styling der Looks",
+            "description": "Wir stellen mehrere durchdachte Looks zusammen, die Ihre Persönlichkeit unterstreichen und vor der Kamera harmonisch wirken."
+          },
+          {
+            "title": "Make-up und Hairstyling",
+            "description": "Professionelle Vorbereitung auf das Shooting, abgestimmt auf das Konzept und Ihre individuellen Merkmale."
+          },
+          {
+            "title": "Auswahl von Location, Licht und Details",
+            "description": "Wir wählen eine passende Location und schaffen eine Atmosphäre, die das Gesamtkonzept des Shootings optimal ergänzt."
+          },
+          {
+            "title": "Professionelles Fotoshooting",
+            "description": "Während des Shootings werden Sie von Stylistin und Fotografin/Fotograf begleitet und bei Looks, Details und der Vorbereitung der einzelnen Aufnahmen unterstützt."
+          },
+          {
+            "title": "Auswahl der besten Aufnahmen",
+            "description": "Nach dem Shooting werden die gelungensten Bilder für die weitere Bearbeitung ausgewählt."
+          },
+          {
+            "title": "Professionelle Retusche und Übergabe der Fotos",
+            "description": "Die ausgewählten Aufnahmen werden professionell bearbeitet und Ihnen anschließend fertig zur Verfügung gestellt."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Preis des Fotoshootings",
+            "value": "ab 1.000 €"
+          }
+        ],
+        "displayPrice": "ab 1.000 €"
+      },
+      "ru": {
+        "title": "ПРОФЕССИОНАЛЬНАЯ ФОТОСЕССИЯ",
+        "subtitle": "СО СТИЛИСТОМ И ФОТОГРАФОМ",
+        "detailHeading": "Что входит в услугу?",
+        "lead": "",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Определение концепции и цели съёмки",
+            "description": "Обсудим ваши пожелания, задачи и настроение будущей фотосессии."
+          },
+          {
+            "title": "Создание индивидуального мудборда",
+            "description": "Подберём визуальные референсы, цветовую гамму, стилистику и атмосферу съёмки."
+          },
+          {
+            "title": "Подбор и стилизация образов",
+            "description": "Создадим несколько продуманных образов, которые подчеркнут вашу индивидуальность и будут гармонично смотреться в кадре."
+          },
+          {
+            "title": "Макияж и укладка",
+            "description": "Профессиональная подготовка к съёмке с учётом выбранной концепции и ваших индивидуальных особенностей."
+          },
+          {
+            "title": "Подбор локации, света и деталей",
+            "description": "Выберем подходящую локацию и создадим визуальную атмосферу, соответствующую концепции съёмки."
+          },
+          {
+            "title": "Профессиональная фотосессия",
+            "description": "Во время съёмки вы получаете сопровождение стилиста и фотографа, а также помощь с образами, деталями и подготовкой каждого кадра."
+          },
+          {
+            "title": "Отбор лучших фотографий",
+            "description": "После съёмки будут выбраны наиболее удачные кадры для дальнейшей обработки."
+          },
+          {
+            "title": "Профессиональная ретушь и передача фотографий",
+            "description": "Выбранные кадры будут профессионально обработаны и переданы вам в готовом виде."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Стоимость фотосессии",
+            "value": "от 1 000 €"
+          }
+        ],
+        "displayPrice": "от 1 000 €"
+      },
+      "ro": {
+        "title": "ȘEDINȚĂ FOTO PROFESIONALĂ",
+        "subtitle": "CU STILIST ȘI FOTOGRAF",
+        "detailHeading": "Ce include serviciul?",
+        "lead": "",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Stabilirea conceptului și a scopului ședinței foto",
+            "description": "Vom discuta despre dorințele, obiectivele și atmosfera dorită pentru viitoarea ședință foto."
+          },
+          {
+            "title": "Crearea unui moodboard personalizat",
+            "description": "Vom selecta referințe vizuale, paleta cromatică, direcția stilistică și atmosfera ședinței."
+          },
+          {
+            "title": "Selectarea și stilizarea ținutelor",
+            "description": "Vom crea mai multe ținute atent gândite, care să vă evidențieze individualitatea și să arate armonios în fața camerei."
+          },
+          {
+            "title": "Machiaj și coafură",
+            "description": "Pregătire profesională pentru ședința foto, adaptată conceptului ales și particularităților dumneavoastră."
+          },
+          {
+            "title": "Selectarea locației, luminii și detaliilor",
+            "description": "Vom alege locația potrivită și vom crea o atmosferă vizuală care corespunde conceptului ședinței foto."
+          },
+          {
+            "title": "Ședință foto profesională",
+            "description": "În timpul ședinței veți beneficia de asistența stilistului și a fotografului, inclusiv ajutor pentru ținute, detalii și pregătirea fiecărui cadru."
+          },
+          {
+            "title": "Selectarea celor mai bune fotografii",
+            "description": "După ședință vor fi selectate cele mai reușite cadre pentru procesarea ulterioară."
+          },
+          {
+            "title": "Retuș profesional și predarea fotografiilor",
+            "description": "Imaginile selectate vor fi prelucrate profesional și vă vor fi livrate în forma finală."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Prețul ședinței foto",
+            "value": "de la 1.000 €"
+          }
+        ],
+        "displayPrice": "de la 1.000 €"
+      }
+    }
+  },
+  {
+    "id": "premium-styling-support",
+    "translations": {
+      "en": {
+        "title": "PREMIUM STYLING SUPPORT",
+        "subtitle": "Personal work with a stylist for one month",
+        "detailHeading": "Personal work with a stylist for one month",
+        "lead": "The styling program is created individually according to your goals, lifestyle, and current needs.",
+        "listLead": "The service may include:",
+        "points": [
+          {
+            "title": "Personal style consultations",
+            "description": ""
+          },
+          {
+            "title": "Wardrobe analysis and updating",
+            "description": ""
+          },
+          {
+            "title": "Creation and styling of outfits",
+            "description": ""
+          },
+          {
+            "title": "Recommendations on colors, cuts, and combinations",
+            "description": ""
+          },
+          {
+            "title": "Assistance in selecting clothing and accessories",
+            "description": ""
+          },
+          {
+            "title": "Personal shopping support",
+            "description": ""
+          },
+          {
+            "title": "Recommendations for specific purchases and brands",
+            "description": ""
+          },
+          {
+            "title": "Help preparing outfits for events, travel, business meetings, and other important occasions",
+            "description": ""
+          },
+          {
+            "title": "Support and answers to your questions throughout the entire period",
+            "description": ""
+          }
+        ],
+        "closing": "You decide which tasks are currently most important to you, and based on this I create your individual styling program.",
+        "pricing": [
+          {
+            "label": "Duration",
+            "value": "1 month"
+          },
+          {
+            "label": "Price",
+            "value": "from €1,500"
+          }
+        ],
+        "displayPrice": "from €1,500"
+      },
+      "de": {
+        "title": "PREMIUM-STYLING-BEGLEITUNG",
+        "subtitle": "Ihre persönliche Styling-Begleitung über einen Monat",
+        "detailHeading": "Ihre persönliche Styling-Begleitung über einen Monat",
+        "lead": "Das Programm wird individuell auf Ihre Ziele, Ihren Lebensstil und Ihre aktuellen Bedürfnisse abgestimmt.",
+        "listLead": "Die Begleitung kann folgende Leistungen umfassen:",
+        "points": [
+          {
+            "title": "Persönliche Stilberatung",
+            "description": ""
+          },
+          {
+            "title": "Garderobenanalyse und gezielte Optimierung",
+            "description": ""
+          },
+          {
+            "title": "Zusammenstellung und Styling individueller Looks",
+            "description": ""
+          },
+          {
+            "title": "Empfehlungen zu Farben, Schnitten und Kombinationen",
+            "description": ""
+          },
+          {
+            "title": "Unterstützung bei der Auswahl von Kleidung und Accessoires",
+            "description": ""
+          },
+          {
+            "title": "Persönliche Shopping-Begleitung",
+            "description": ""
+          },
+          {
+            "title": "Konkrete Kauf- und Markenempfehlungen",
+            "description": ""
+          },
+          {
+            "title": "Styling für besondere Anlässe, Reisen, Business-Termine und andere wichtige Events",
+            "description": ""
+          },
+          {
+            "title": "Persönliche Unterstützung und Beratung während des gesamten Begleitzeitraums",
+            "description": ""
+          }
+        ],
+        "closing": "Sie entscheiden, welche Themen für Sie aktuell im Vordergrund stehen. Auf dieser Basis erstelle ich Ihr individuelles Styling-Programm.",
+        "pricing": [
+          {
+            "label": "Dauer",
+            "value": "1 Monat"
+          },
+          {
+            "label": "Preis",
+            "value": "ab 1.500 €"
+          }
+        ],
+        "displayPrice": "ab 1.500 €"
+      },
+      "ru": {
+        "title": "ПРЕМИУМ-СОПРОВОЖДЕНИЕ",
+        "subtitle": "Персональная работа со стилистом в течение месяца",
+        "detailHeading": "Персональная работа со стилистом в течение месяца",
+        "lead": "Программа сопровождения создаётся индивидуально, исходя из ваших целей, образа жизни и актуальных задач.",
+        "listLead": "В сопровождение может входить:",
+        "points": [
+          {
+            "title": "Персональные консультации по стилю",
+            "description": ""
+          },
+          {
+            "title": "Разбор и обновление гардероба",
+            "description": ""
+          },
+          {
+            "title": "Составление и стилизация образов",
+            "description": ""
+          },
+          {
+            "title": "Рекомендации по цветам, фасонам и сочетаниям",
+            "description": ""
+          },
+          {
+            "title": "Помощь в подборе вещей и аксессуаров",
+            "description": ""
+          },
+          {
+            "title": "Сопровождение при покупках",
+            "description": ""
+          },
+          {
+            "title": "Рекомендации по конкретным покупкам и брендам",
+            "description": ""
+          },
+          {
+            "title": "Помощь в подготовке образов для мероприятий, путешествий, деловых встреч и других важных событий",
+            "description": ""
+          },
+          {
+            "title": "Поддержка и ответы на вопросы в течение всего периода сопровождения",
+            "description": ""
+          }
+        ],
+        "closing": "Вы сами определяете, какие задачи для вас наиболее актуальны, а я формирую персональную программу работы.",
+        "pricing": [
+          {
+            "label": "Продолжительность",
+            "value": "1 месяц"
+          },
+          {
+            "label": "Стоимость",
+            "value": "от 1 500 €"
+          }
+        ],
+        "displayPrice": "от 1 500 €"
+      },
+      "ro": {
+        "title": "ASISTENȚĂ PREMIUM DE STYLING",
+        "subtitle": "Lucru personalizat cu un stilist timp de o lună",
+        "detailHeading": "Lucru personalizat cu un stilist timp de o lună",
+        "lead": "Programul de styling este creat individual, în funcție de obiectivele, stilul dumneavoastră de viață și nevoile actuale.",
+        "listLead": "Serviciul poate include:",
+        "points": [
+          {
+            "title": "Consultații personale de stil",
+            "description": ""
+          },
+          {
+            "title": "Analiza și actualizarea garderobei",
+            "description": ""
+          },
+          {
+            "title": "Crearea și stilizarea ținutelor",
+            "description": ""
+          },
+          {
+            "title": "Recomandări privind culorile, croielile și combinațiile",
+            "description": ""
+          },
+          {
+            "title": "Ajutor în alegerea hainelor și accesoriilor",
+            "description": ""
+          },
+          {
+            "title": "Asistență personală la cumpărături",
+            "description": ""
+          },
+          {
+            "title": "Recomandări concrete de produse și branduri",
+            "description": ""
+          },
+          {
+            "title": "Ajutor în pregătirea ținutelor pentru evenimente, călătorii, întâlniri de afaceri și alte ocazii importante",
+            "description": ""
+          },
+          {
+            "title": "Suport și răspunsuri la întrebări pe toată durata programului",
+            "description": ""
+          }
+        ],
+        "closing": "Dumneavoastră decideți care sunt cele mai importante obiective în acest moment, iar pe această bază eu creez programul personalizat de styling.",
+        "pricing": [
+          {
+            "label": "Durată",
+            "value": "1 lună"
+          },
+          {
+            "label": "Preț",
+            "value": "de la 1.500 €"
+          }
+        ],
+        "displayPrice": "de la 1.500 €"
+      }
+    }
+  },
+  {
+    "id": "mens-styling",
+    "translations": {
+      "en": {
+        "title": "MEN'S STYLING",
+        "subtitle": "",
+        "detailHeading": "What is included in the package?",
+        "lead": "A personalized wardrobe system created according to your appearance, lifestyle, and individual needs.",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Defining your individual color palette",
+            "description": "We will select colors and shades that harmoniously complement your appearance and are easy to combine with one another."
+          },
+          {
+            "title": "Building a core wardrobe",
+            "description": "We will identify the key pieces that will form the foundation of your wardrobe and suit your lifestyle."
+          },
+          {
+            "title": "Developing your individual style",
+            "description": "We will select suitable cuts, silhouettes, and a style direction based on your figure, profession, everyday habits, and personal preferences."
+          },
+          {
+            "title": "Selecting footwear",
+            "description": "We will identify the key shoe styles for everyday wear, business, and special occasions."
+          },
+          {
+            "title": "Selecting accessories",
+            "description": "We will choose belts, bags, watches, glasses, and other details that complete your personal style."
+          },
+          {
+            "title": "Rules for combining wardrobe pieces",
+            "description": "I will teach you how to create harmonious outfits independently and how to combine colors, textures, footwear, and accessories correctly."
+          },
+          {
+            "title": "Wardrobe care",
+            "description": "You will receive recommendations for caring for, storing, and maintaining your clothes in good condition."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Package price",
+            "value": "€1,500"
+          }
+        ],
+        "displayPrice": "€1,500"
+      },
+      "de": {
+        "title": "HERRENSTYLING",
+        "subtitle": "",
+        "detailHeading": "Was beinhaltet das Paket?",
+        "lead": "Ein individuelles Garderobenkonzept, abgestimmt auf Ihr Erscheinungsbild, Ihren Lebensstil und Ihre persönlichen Anforderungen.",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Bestimmung Ihrer individuellen Farbpalette",
+            "description": "Wir finden Farben und Nuancen, die optimal zu Ihrem Erscheinungsbild passen und sich harmonisch miteinander kombinieren lassen."
+          },
+          {
+            "title": "Aufbau einer Basisgarderobe",
+            "description": "Wir definieren die wichtigsten Kleidungsstücke, die die Grundlage Ihrer Garderobe bilden und zu Ihrem Lebensstil passen."
+          },
+          {
+            "title": "Entwicklung Ihres persönlichen Stils",
+            "description": "Wir bestimmen passende Schnitte, Silhouetten und eine Stilrichtung, die auf Ihre Figur, Ihren Beruf, Ihren Alltag und Ihre persönlichen Vorlieben abgestimmt ist."
+          },
+          {
+            "title": "Auswahl der passenden Schuhe",
+            "description": "Wir definieren die wichtigsten Schuhmodelle für Alltag, Business und besondere Anlässe."
+          },
+          {
+            "title": "Auswahl der passenden Accessoires",
+            "description": "Wir wählen Gürtel, Taschen, Uhren, Brillen und weitere Details aus, die Ihren persönlichen Stil vervollständigen."
+          },
+          {
+            "title": "Kombinationsregeln für Ihre Garderobe",
+            "description": "Sie lernen, wie Sie Kleidungsstücke, Farben, Materialien, Schuhe und Accessoires selbstständig stilvoll miteinander kombinieren."
+          },
+          {
+            "title": "Pflege Ihrer Garderobe",
+            "description": "Sie erhalten Empfehlungen zur richtigen Pflege und Aufbewahrung Ihrer Kleidung, damit Qualität und Erscheinungsbild langfristig erhalten bleiben."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Preis des Pakets",
+            "value": "1.500 €"
+          }
+        ],
+        "displayPrice": "1.500 €"
+      },
+      "ru": {
+        "title": "СТИЛЬ ДЛЯ МУЖЧИН",
+        "subtitle": "",
+        "detailHeading": "Что входит в пакет?",
+        "lead": "Персональная система гардероба, созданная с учётом вашей внешности, образа жизни и задач.",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Определение индивидуальной цветовой палитры",
+            "description": "Подберём цвета и оттенки, которые гармонично подходят вашей внешности и легко сочетаются между собой."
+          },
+          {
+            "title": "Формирование базового гардероба",
+            "description": "Определим ключевые вещи, которые станут основой вашего гардероба и будут соответствовать вашему образу жизни."
+          },
+          {
+            "title": "Разработка индивидуального стиля",
+            "description": "Подберём подходящие фасоны, силуэты и стилистическое направление с учётом вашей фигуры, профессии, привычек и личных предпочтений."
+          },
+          {
+            "title": "Подбор обуви",
+            "description": "Определим основные модели обуви для повседневных, деловых и особых образов."
+          },
+          {
+            "title": "Подбор аксессуаров",
+            "description": "Подберём ремни, сумки, часы, очки и другие детали, которые делают мужской образ завершённым."
+          },
+          {
+            "title": "Правила сочетания вещей",
+            "description": "Научу вас самостоятельно составлять гармоничные комплекты и правильно сочетать цвета, фактуры, обувь и аксессуары."
+          },
+          {
+            "title": "Уход за гардеробом",
+            "description": "Вы получите рекомендации по уходу, хранению и поддержанию вещей в хорошем состоянии."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Стоимость пакета",
+            "value": "1 500 €"
+          }
+        ],
+        "displayPrice": "1 500 €"
+      },
+      "ro": {
+        "title": "STYLING PENTRU BĂRBAȚI",
+        "subtitle": "",
+        "detailHeading": "Ce include pachetul?",
+        "lead": "Un sistem de garderobă personalizat, creat în funcție de aspectul, stilul dumneavoastră de viață și obiectivele personale.",
+        "listLead": "",
+        "points": [
+          {
+            "title": "Stabilirea paletei cromatice personale",
+            "description": "Vom selecta culorile și nuanțele care se potrivesc armonios aspectului dumneavoastră și se combină ușor între ele."
+          },
+          {
+            "title": "Crearea unei garderobe de bază",
+            "description": "Vom identifica piesele-cheie care vor forma baza garderobei și se vor potrivi stilului dumneavoastră de viață."
+          },
+          {
+            "title": "Dezvoltarea stilului personal",
+            "description": "Vom selecta croielile, siluetele și direcția stilistică potrivite, ținând cont de siluetă, profesie, obiceiuri și preferințe personale."
+          },
+          {
+            "title": "Alegerea încălțămintei",
+            "description": "Vom identifica principalele modele de încălțăminte pentru ținutele de zi cu zi, de business și pentru ocazii speciale."
+          },
+          {
+            "title": "Alegerea accesoriilor",
+            "description": "Vom selecta curele, genți, ceasuri, ochelari și alte detalii care completează stilul personal."
+          },
+          {
+            "title": "Reguli pentru combinarea pieselor vestimentare",
+            "description": "Vă voi învăța cum să creați în mod independent ținute armonioase și cum să combinați corect culorile, texturile, încălțămintea și accesoriile."
+          },
+          {
+            "title": "Îngrijirea garderobei",
+            "description": "Veți primi recomandări privind îngrijirea, depozitarea și menținerea hainelor în stare bună."
+          }
+        ],
+        "closing": "",
+        "pricing": [
+          {
+            "label": "Prețul pachetului",
+            "value": "1.500 €"
+          }
+        ],
+        "displayPrice": "1.500 €"
+      }
+    }
   }
 ]

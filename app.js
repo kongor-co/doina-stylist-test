@@ -33,22 +33,13 @@ mobileNav?.querySelectorAll('a').forEach((link) => link.addEventListener('click'
 
 function setupTabs(container) {
   const tabs = [...container.querySelectorAll('[role="tab"]')];
-  const type = container.dataset.tabs;
   function activate(tab) {
     tabs.forEach((item) => {
       const selected = item === tab;
       item.setAttribute('aria-selected', String(selected));
       item.tabIndex = selected ? 0 : -1;
     });
-    if (type === 'services') {
-      const filter = tab.dataset.filter;
-      const panel = document.querySelector('#services-panel');
-      panel.setAttribute('aria-labelledby', tab.id);
-      panel.querySelectorAll('[data-category]').forEach((card) => {
-        card.hidden = filter !== 'all' && card.dataset.category !== filter;
-      });
-    }
-    if (type === 'media') {
+    if (container.dataset.tabs === 'media') {
       document.querySelector('#media-photos').hidden = tab.id !== 'media-tab-photos';
       document.querySelector('#media-videos').hidden = tab.id !== 'media-tab-videos';
     }

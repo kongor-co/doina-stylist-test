@@ -12,7 +12,7 @@ const base = siteUrl.pathname.endsWith('/') ? siteUrl.pathname : `${siteUrl.path
 siteUrl.pathname = base;
 const readJson = async (relative) => JSON.parse(await readFile(path.join(root, relative), 'utf8'));
 const messages = Object.fromEntries(await Promise.all(locales.map(async (lang) => [lang, await readJson(`locales/${lang}.json`)])));
-const services = (await readJson('content/services.json')).filter((item) => item.active).sort((a, b) => a.order - b.order);
+const services = await readJson('content/services.json');
 const products = await readJson('content/pj.json');
 const media = await readJson('content/media.json');
 const contact = await readJson('content/contact.json');
@@ -103,8 +103,9 @@ function sectionHeading(eyebrow, title, text = '') {
 function home(lang) {
   const m = messages[lang];
   const featured = services.slice(0, 3).map((service, index) => {
-    const copy = m.services.items[service.id];
-    return `<a class="featured-card" href="${localPath(lang, 'services')}#${service.id}"><span class="card-index">0${index + 1}</span><h3>${esc(copy.title)}</h3><p>${esc(copy.short)}</p><span class="card-bottom"><strong>${esc(service.price)}</strong><span>${esc(m.cta.viewService)} <span aria-hidden="true">↗</span></span></span></a>`;
+    const copy = service.translations[lang];
+    const summary = copy.lead || copy.points[0].description;
+    return `<a class="featured-card" href="${localPath(lang, 'services')}#${service.id}"><span class="card-index">0${index + 1}</span><h3>${esc(copy.title)}</h3><p>${esc(summary)}</p><span class="card-bottom"><strong>${esc(copy.displayPrice)}</strong><span>${esc(m.cta.viewService)} <span aria-hidden="true">↗</span></span></span></a>`;
   }).join('');
   const firstProduct = products[0];
   return `<section class="hero"><div class="hero-copy"><p class="eyebrow">${esc(m.home.eyebrow)}</p><p class="hero-descriptor">${esc(m.site.descriptor)}</p><h1>Doina<br>Stratulescu<span class="hero-dot">.</span></h1><p class="hero-slogan">${esc(m.site.slogan)}</p><div class="button-row"><a class="button button-primary" href="${localPath(lang, 'services')}">${esc(m.cta.services)} <span aria-hidden="true">↗</span></a><a class="button button-outline" href="${localPath(lang, 'contact')}">${esc(m.cta.contact)}</a></div></div><div class="hero-image-wrap">${image('assets/images/doina/doina-portrait.jpg', m.site.name, 'hero-image', true)}</div><div class="hero-side-note" aria-hidden="true">01 / 05</div></section>
@@ -115,16 +116,19 @@ function home(lang) {
   <section class="social-section section-shell">${sectionHeading('', m.home.socialTitle, m.home.socialText)}${socialLinks(m)}</section>`;
 }
 
-function serviceCard(lang, service) {
+function serviceCard(lang, service, index) {
   const m = messages[lang];
-  const copy = m.services.items[service.id];
-  return `<details class="service-card" id="${service.id}" data-category="${service.category}"><summary><span class="service-card-category">${esc(m.services.categories[service.category])}</span><span class="service-card-title">${esc(copy.title)}</span><span class="service-card-short">${esc(copy.short)}</span><span class="service-card-price">${esc(service.price)}</span><span class="service-card-expand" aria-hidden="true">+</span></summary><div class="service-card-detail"><p class="detail-lead">${esc(copy.full)}</p><div class="detail-grid"><div><h3>${esc(m.services.for)}</h3><p>${esc(copy.for)}</p></div><div><h3>${esc(m.services.includes)}</h3><ul>${copy.includes.map((line) => `<li>${esc(line)}</li>`).join('')}</ul></div><div><h3>${esc(m.services.process)}</h3><p>${esc(copy.process)}</p></div><div class="fact-list"><div><span>${esc(m.services.duration)}</span><strong>${esc(m.services.durations[service.duration])}</strong></div><div><span>${esc(m.services.location)}</span><strong>${esc(m.services.locations[service.location])}</strong></div><div><span>${esc(m.services.price)}</span><strong>${esc(service.price)}</strong></div></div></div><a class="button button-primary" href="${localPath(lang, 'contact')}">${esc(m.cta.contact)} <span aria-hidden="true">↗</span></a></div></details>`;
+  const copy = service.translations[lang];
+  const summary = copy.lead || copy.points[0].title;
+  const detailHeading = copy.detailHeading !== copy.subtitle ? copy.detailHeading : '';
+  const points = copy.points.map((point) => `<div class="service-inclusion"><h4>${esc(point.title)}</h4>${point.description ? `<p>${esc(point.description)}</p>` : ''}</div>`).join('');
+  const pricing = copy.pricing.map((item) => `<div><span>${esc(item.label)}</span><strong>${esc(item.value)}</strong></div>`).join('');
+  return `<details class="service-card" id="${service.id}" ${index === 0 ? 'open' : ''}><summary><span class="service-card-category">${String(index + 1).padStart(2, '0')} / ${String(services.length).padStart(2, '0')}</span><span class="service-card-title">${esc(copy.title)}</span><span class="service-card-short">${esc(summary)}</span><span class="service-card-price">${esc(copy.displayPrice)}</span><span class="service-card-expand" aria-hidden="true">+</span></summary><div class="service-card-detail">${copy.subtitle ? `<p class="eyebrow">${esc(copy.subtitle)}</p>` : ''}${copy.lead ? `<p class="detail-lead">${esc(copy.lead)}</p>` : ''}${detailHeading ? `<h3 class="service-detail-heading">${esc(detailHeading)}</h3>` : ''}${copy.listLead ? `<p class="detail-lead">${esc(copy.listLead)}</p>` : ''}<div class="service-inclusions">${points}</div>${copy.closing ? `<p class="service-closing">${esc(copy.closing)}</p>` : ''}<div class="service-pricing">${pricing}</div><a class="button button-primary" href="${localPath(lang, 'contact')}">${esc(m.cta.contact)} <span aria-hidden="true">↗</span></a></div></details>`;
 }
 
 function servicesPage(lang) {
   const m = messages[lang];
-  const categories = ['all', 'personal', 'wardrobe', 'colour', 'shopping'];
-  return `<section class="page-intro section-shell"><p class="eyebrow">${esc(m.site.descriptor)}</p><h1>${esc(m.services.title)}</h1><p>${esc(m.services.intro)}</p></section><section class="section-shell catalog-section"><div class="tabs" role="tablist" aria-label="${esc(m.services.title)}" data-tabs="services">${categories.map((category, i) => `<button type="button" role="tab" id="service-tab-${category}" aria-selected="${i === 0}" aria-controls="services-panel" data-filter="${category}" tabindex="${i === 0 ? '0' : '-1'}">${esc(m.services.categories[category])}</button>`).join('')}</div><div id="services-panel" role="tabpanel" aria-labelledby="service-tab-all" class="service-list">${services.map((service) => serviceCard(lang, service)).join('')}</div><p class="content-note">${esc(m.services.priceNote)}</p></section>`;
+  return `<section class="page-intro section-shell"><p class="eyebrow">${esc(m.site.descriptor)}</p><h1>${esc(m.services.title)}</h1><p>${esc(m.services.intro)}</p></section><section class="section-shell catalog-section"><div class="service-list">${services.map((service, index) => serviceCard(lang, service, index)).join('')}</div></section>`;
 }
 
 function productCard(lang, product, i) {

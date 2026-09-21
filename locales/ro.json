@@ -1,29 +1,187 @@
 {
-  "site": { "name": "Doina Stratulescu", "descriptor": "Stilist personal și designer", "slogan": "leading you to self discovery from within", "preview": "Conținut de prezentare: prețurile, biografia și datele de contact sunt provizorii." },
-  "nav": { "home": "Acasă", "services": "Servicii", "pj": "Colecția PJ", "about": "Despre Doina", "media": "Media", "contact": "Contact" },
-  "ui": { "skip": "Mergi la conținut", "menu": "Deschide meniul", "closeMenu": "Închide meniul", "theme": "Schimbă tema de culoare", "light": "Mod luminos", "dark": "Mod întunecat", "language": "Limbă", "viewDetails": "Vezi detalii", "close": "Închide", "previous": "Imaginea anterioară", "next": "Imaginea următoare", "image": "Imaginea", "of": "din", "placeholderPhoto": "Fotografie editorială provizorie" },
-  "cta": { "services": "Descoperă serviciile", "contact": "Contactează-o pe Doina", "collection": "Descoperă colecția", "viewService": "Vezi serviciul", "askPiece": "Întreabă despre această piesă", "photos": "Vezi fotografiile", "videos": "Vezi videoclipurile", "instagram": "Instagram", "tiktok": "TikTok", "home": "Înapoi acasă", "allPj": "Toate modelele", "allServices": "Toate serviciile" },
-  "home": { "eyebrow": "Un drum personal către propriul stil", "introTitle": "Stilul începe cu tine.", "introText": "O garderobă aleasă cu grijă poate reflecta cine ești astăzi și îți poate lăsa loc să evoluezi. Împreună descoperim culorile, formele și piesele care te reprezintă.", "featuredTitle": "Cum putem lucra împreună", "featuredText": "Începe cu o conversație, o nouă privire asupra garderobei sau o direcție pentru ce urmează.", "approachLabel": "Abordarea", "approachTitle": "De la descoperire la exprimare", "approachText": "Stilul este un proces personal. Observăm ce ți se potrivește, rafinăm restul și construim o garderobă care simplifică alegerile zilnice.", "steps": ["Descoperă", "Înțelege", "Rafinează", "Construiește", "Exprimă"], "pjLabel": "Creat de Doina", "pjTitle": "Colecția PJ", "pjText": "Piese atent gândite pentru orele pe care ți le păstrezi pentru tine.", "socialTitle": "Mai aproape", "socialText": "Idei noi, momente din culise și mai mult din lumea Doinei." },
+  "site": {
+    "name": "Doina Stratulescu",
+    "descriptor": "Stilist personal și designer",
+    "slogan": "leading you to self discovery from within",
+    "preview": "Conținut de prezentare: detaliile produselor PJ, biografia și datele de contact sunt provizorii."
+  },
+  "nav": {
+    "home": "Acasă",
+    "services": "Servicii",
+    "pj": "Colecția PJ",
+    "about": "Despre Doina",
+    "media": "Media",
+    "contact": "Contact"
+  },
+  "ui": {
+    "skip": "Mergi la conținut",
+    "menu": "Deschide meniul",
+    "closeMenu": "Închide meniul",
+    "theme": "Schimbă tema de culoare",
+    "light": "Mod luminos",
+    "dark": "Mod întunecat",
+    "language": "Limbă",
+    "viewDetails": "Vezi detalii",
+    "close": "Închide",
+    "previous": "Imaginea anterioară",
+    "next": "Imaginea următoare",
+    "image": "Imaginea",
+    "of": "din",
+    "placeholderPhoto": "Fotografie editorială provizorie"
+  },
+  "cta": {
+    "services": "Descoperă serviciile",
+    "contact": "Contactează-o pe Doina",
+    "collection": "Descoperă colecția",
+    "viewService": "Vezi serviciul",
+    "askPiece": "Întreabă despre această piesă",
+    "photos": "Vezi fotografiile",
+    "videos": "Vezi videoclipurile",
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "home": "Înapoi acasă",
+    "allPj": "Toate modelele",
+    "allServices": "Toate serviciile"
+  },
+  "home": {
+    "eyebrow": "Un drum personal către propriul stil",
+    "introTitle": "Stilul începe cu tine.",
+    "introText": "O garderobă aleasă cu grijă poate reflecta cine ești astăzi și îți poate lăsa loc să evoluezi. Împreună descoperim culorile, formele și piesele care te reprezintă.",
+    "featuredTitle": "Cum putem lucra împreună",
+    "featuredText": "Începe cu o conversație, o nouă privire asupra garderobei sau o direcție pentru ce urmează.",
+    "approachLabel": "Abordarea",
+    "approachTitle": "De la descoperire la exprimare",
+    "approachText": "Stilul este un proces personal. Observăm ce ți se potrivește, rafinăm restul și construim o garderobă care simplifică alegerile zilnice.",
+    "steps": [
+      "Descoperă",
+      "Înțelege",
+      "Rafinează",
+      "Construiește",
+      "Exprimă"
+    ],
+    "pjLabel": "Creat de Doina",
+    "pjTitle": "Colecția PJ",
+    "pjText": "Piese atent gândite pentru orele pe care ți le păstrezi pentru tine.",
+    "socialTitle": "Mai aproape",
+    "socialText": "Idei noi, momente din culise și mai mult din lumea Doinei."
+  },
   "services": {
-    "title": "Servicii de styling", "intro": "Alege sprijinul potrivit pentru etapa în care te afli.", "priceNote": "Prețurile afișate sunt orientative. Doina va confirma pachetele și prețurile finale.",
-    "categories": { "all": "Toate serviciile", "personal": "Styling personal", "wardrobe": "Garderobă", "colour": "Culoare și stil", "shopping": "Cumpărături" },
-    "for": "Pentru tine dacă", "includes": "Ce include", "process": "Cum decurge", "duration": "Durată", "location": "Locație", "price": "Preț", "durations": { "twoHours": "2 ore", "threeHours": "3 ore", "ninetyMinutes": "90 de minute" }, "locations": { "either": "Online sau în persoană", "inPerson": "În persoană" },
-    "items": {
-      "style-discovery": { "title": "Descoperirea stilului personal", "short": "Găsește culorile, formele și combinațiile care te reprezintă.", "full": "Un punct de plecare atent pentru un stil care reflectă viața și personalitatea ta.", "for": "Vrei să îți înțelegi mai bine stilul sau începi o etapă nouă.", "includes": ["Conversație despre stilul tău", "Ghidare pentru siluetă și culori", "Direcție personalizată"], "process": "Pornim de la obiectivele tale, explorăm preferințele și încheiem cu recomandări practice." },
-      "wardrobe-edit": { "title": "Revizuirea garderobei", "short": "Descoperă mai multe posibilități în hainele pe care le ai.", "full": "O analiză atentă a garderobei pentru combinații noi și pentru a identifica piesele lipsă.", "for": "Alegerea unei ținute pare dificilă, chiar dacă garderoba este plină.", "includes": ["Analiza garderobei", "Combinații de ținute", "Listă scurtă cu piese necesare"], "process": "Privim împreună piesele, creăm ținute și stabilim ce rămâne, ce se schimbă și ce pleacă." },
-      "colour-direction": { "title": "Direcția cromatică", "short": "Descoperă o paletă care îți aduce garderoba împreună.", "full": "O introducere în culorile și contrastele în care te simți bine și autentică.", "for": "Vrei să alegi culorile și combinațiile cu mai multă încredere.", "includes": ["Consultanță cromatică", "Ghid pentru paleta personală", "Idei de combinații"], "process": "Explorăm culorile în raport cu trăsăturile și preferințele tale, apoi le aplicăm în viața de zi cu zi." },
-      "shopping-together": { "title": "La cumpărături împreună", "short": "Alege cu un scop piese pe care le vei purta cu drag.", "full": "Cumpărături ghidate în funcție de nevoile, bugetul și garderoba ta.", "for": "Ai nevoie de câteva piese bune și de mai multă siguranță când cumperi.", "includes": ["Discuție de pregătire", "Sesiune de cumpărături ghidate", "Note de styling pentru piesele noi"], "process": "Stabilim prioritățile înainte, apoi alegem și combinăm piesele împreună." }
+    "title": "Servicii de styling",
+    "intro": "Descoperiți ce include fiecare serviciu și care este prețul său."
+  },
+  "pj": {
+    "title": "Colecția PJ",
+    "intro": "O colecție intimă de piese confortabile pentru orele liniștite.",
+    "priceNote": "Numele modelelor, materialele, disponibilitatea și prețurile sunt provizorii.",
+    "collection": "Ore liniștite",
+    "material": "Material",
+    "sizes": "Mărimi",
+    "colours": "Culori",
+    "status": "Disponibilitate",
+    "price": "Preț orientativ",
+    "madeToOrder": "La comandă",
+    "comingSoon": "În curând",
+    "detail": "Detaliile modelului",
+    "materials": {
+      "cottonSateen": "Satin de bumbac",
+      "cottonPoplin": "Poplin de bumbac",
+      "silkBlend": "Amestec de mătase"
+    },
+    "colourNames": {
+      "blueStripe": "Dungi albastre",
+      "powderPink": "Roz pudrat",
+      "softIvory": "Fildeș deschis"
+    },
+    "products": {
+      "blue-stripe": {
+        "name": "Dungi albastre",
+        "short": "Un set lejer cu dungi albastre și paspoal roșu fin.",
+        "description": "Un set simplu pentru seri tihnite și dimineți fără grabă.",
+        "alt": "Model în setul PJ cu dungi albastre"
+      },
+      "rose-morning": {
+        "name": "Dimineață roz",
+        "short": "Linii moi și o nuanță delicată de roz.",
+        "description": "Un model ușor și confortabil, cu o notă fină.",
+        "alt": "Model în setul PJ roz pal"
+      },
+      "soft-hour": {
+        "name": "Ora blândă",
+        "short": "O piesă discretă pentru fiecare zi.",
+        "description": "Un set lejer, cu formă fluidă și o paletă neutră, calmă.",
+        "alt": "Model în setul PJ de culoarea fildeșului"
+      }
     }
   },
-  "pj": { "title": "Colecția PJ", "intro": "O colecție intimă de piese confortabile pentru orele liniștite.", "priceNote": "Numele modelelor, materialele, disponibilitatea și prețurile sunt provizorii.", "collection": "Ore liniștite", "material": "Material", "sizes": "Mărimi", "colours": "Culori", "status": "Disponibilitate", "price": "Preț orientativ", "madeToOrder": "La comandă", "comingSoon": "În curând", "detail": "Detaliile modelului", "materials": { "cottonSateen": "Satin de bumbac", "cottonPoplin": "Poplin de bumbac", "silkBlend": "Amestec de mătase" }, "colourNames": { "blueStripe": "Dungi albastre", "powderPink": "Roz pudrat", "softIvory": "Fildeș deschis" }, "products": {
-    "blue-stripe": { "name": "Dungi albastre", "short": "Un set lejer cu dungi albastre și paspoal roșu fin.", "description": "Un set simplu pentru seri tihnite și dimineți fără grabă.", "alt": "Model în setul PJ cu dungi albastre" },
-    "rose-morning": { "name": "Dimineață roz", "short": "Linii moi și o nuanță delicată de roz.", "description": "Un model ușor și confortabil, cu o notă fină.", "alt": "Model în setul PJ roz pal" },
-    "soft-hour": { "name": "Ora blândă", "short": "O piesă discretă pentru fiecare zi.", "description": "Un set lejer, cu formă fluidă și o paletă neutră, calmă.", "alt": "Model în setul PJ de culoarea fildeșului" }
-  } },
-  "about": { "title": "Despre Doina", "intro": "Stilul personal te ajută să te simți mai bine în propria piele.", "storyTitle": "Povestea mea", "story": "Doina lucrează la întâlnirea dintre styling personal și design. Această biografie este provizorie până când sunt disponibile povestea și experiența ei profesională.", "philosophyTitle": "Filosofia mea", "philosophy": "Un stil cu sens nu îți cere să devii altcineva. Te ajută să observi ce ți se potrivește deja și să exprimi asta cu intenție.", "workTitle": "Cum lucrez", "work": "Începem prin a asculta. Apoi explorăm rutina, preferințele și aspirațiile tale și le transformăm în alegeri practice.", "designTitle": "Privirea unui designer", "design": "Designul adaugă lucrării Doinei atenție pentru material, proporție și senzația unei piese pe corp." },
-  "media": { "title": "Media", "intro": "Portrete, detalii și momente din lumea creativă a Doinei.", "photos": "Fotografii", "videos": "Videoclipuri", "videoNote": "Linkurile video sunt provizorii până la primirea filmelor Doinei.", "photosData": { "portrait": { "alt": "Doina în sacou în carouri, în aer liber", "caption": "Studiu de portret" }, "wardrobe": { "alt": "Scenă provizorie de styling pentru garderobă", "caption": "Garderoba" }, "pj": { "alt": "Modele purtând seturi din colecția PJ", "caption": "Ore liniștite" } }, "videosData": { "introduction": { "title": "Cunoaște-o pe Doina", "description": "Aici va apărea un videoclip de prezentare." }, "process": { "title": "Procesul de styling", "description": "Aici va apărea o scurtă prezentare a procesului." } } },
-  "contact": { "title": "Să vorbim despre stilul tău.", "intro": "Spune-i Doinei ce cauți, fie un serviciu de styling, fie o piesă din colecția PJ.", "email": "Scrie-i Doinei", "instagram": "Mesaj pe Instagram", "tiktok": "Găsește-o pe Doina pe TikTok", "whatsapp": "Mesaj pe WhatsApp", "placeholder": "Aceste date de contact și linkuri sociale sunt provizorii. Înlocuiește-le înainte de a prezenta site-ul clienților." },
-  "legal": { "privacy": "Confidențialitate", "imprint": "Date de identificare", "pending": "Informațiile vor fi adăugate după primirea datelor aprobate." },
-  "notFound": { "title": "Pagina nu a fost găsită.", "text": "Este posibil ca linkul să se fi schimbat. Revino la pagina principală pentru a continua." },
-  "meta": { "home": "Styling personal, design atent și un mod autentic de a te îmbrăca alături de Doina Stratulescu.", "services": "Descoperă serviciile de styling personal, ce includ și prețurile orientative.", "pj": "Descoperă colecția PJ creată de Doina Stratulescu.", "about": "Află despre filosofia de styling și abordarea de design a Doinei.", "media": "Vezi portrete, proiecte de styling și videoclipuri din lumea Doinei.", "contact": "Contactează-o pe Doina pentru servicii de styling sau modele PJ.", "privacy": "Informații despre confidențialitate pentru site-ul Doinei Stratulescu.", "imprint": "Date de identificare pentru site-ul Doinei Stratulescu." }
+  "about": {
+    "title": "Despre Doina",
+    "intro": "Stilul personal te ajută să te simți mai bine în propria piele.",
+    "storyTitle": "Povestea mea",
+    "story": "Doina lucrează la întâlnirea dintre styling personal și design. Această biografie este provizorie până când sunt disponibile povestea și experiența ei profesională.",
+    "philosophyTitle": "Filosofia mea",
+    "philosophy": "Un stil cu sens nu îți cere să devii altcineva. Te ajută să observi ce ți se potrivește deja și să exprimi asta cu intenție.",
+    "workTitle": "Cum lucrez",
+    "work": "Începem prin a asculta. Apoi explorăm rutina, preferințele și aspirațiile tale și le transformăm în alegeri practice.",
+    "designTitle": "Privirea unui designer",
+    "design": "Designul adaugă lucrării Doinei atenție pentru material, proporție și senzația unei piese pe corp."
+  },
+  "media": {
+    "title": "Media",
+    "intro": "Portrete, detalii și momente din lumea creativă a Doinei.",
+    "photos": "Fotografii",
+    "videos": "Videoclipuri",
+    "videoNote": "Linkurile video sunt provizorii până la primirea filmelor Doinei.",
+    "photosData": {
+      "portrait": {
+        "alt": "Doina în sacou în carouri, în aer liber",
+        "caption": "Studiu de portret"
+      },
+      "wardrobe": {
+        "alt": "Scenă provizorie de styling pentru garderobă",
+        "caption": "Garderoba"
+      },
+      "pj": {
+        "alt": "Modele purtând seturi din colecția PJ",
+        "caption": "Ore liniștite"
+      }
+    },
+    "videosData": {
+      "introduction": {
+        "title": "Cunoaște-o pe Doina",
+        "description": "Aici va apărea un videoclip de prezentare."
+      },
+      "process": {
+        "title": "Procesul de styling",
+        "description": "Aici va apărea o scurtă prezentare a procesului."
+      }
+    }
+  },
+  "contact": {
+    "title": "Să vorbim despre stilul tău.",
+    "intro": "Spune-i Doinei ce cauți, fie un serviciu de styling, fie o piesă din colecția PJ.",
+    "email": "Scrie-i Doinei",
+    "instagram": "Mesaj pe Instagram",
+    "tiktok": "Găsește-o pe Doina pe TikTok",
+    "whatsapp": "Mesaj pe WhatsApp",
+    "placeholder": "Aceste date de contact și linkuri sociale sunt provizorii. Înlocuiește-le înainte de a prezenta site-ul clienților."
+  },
+  "legal": {
+    "privacy": "Confidențialitate",
+    "imprint": "Date de identificare",
+    "pending": "Informațiile vor fi adăugate după primirea datelor aprobate."
+  },
+  "notFound": {
+    "title": "Pagina nu a fost găsită.",
+    "text": "Este posibil ca linkul să se fi schimbat. Revino la pagina principală pentru a continua."
+  },
+  "meta": {
+    "home": "Styling personal, design atent și un mod autentic de a te îmbrăca alături de Doina Stratulescu.",
+    "services": "Serviciile Doinei Stratulescu: consultanță de stil, garderobă, shopping, croitorie și ședințe foto cu prețuri.",
+    "pj": "Descoperă colecția PJ creată de Doina Stratulescu.",
+    "about": "Află despre filosofia de styling și abordarea de design a Doinei.",
+    "media": "Vezi portrete, proiecte de styling și videoclipuri din lumea Doinei.",
+    "contact": "Contactează-o pe Doina pentru servicii de styling sau modele PJ.",
+    "privacy": "Informații despre confidențialitate pentru site-ul Doinei Stratulescu.",
+    "imprint": "Date de identificare pentru site-ul Doinei Stratulescu."
+  }
 }
