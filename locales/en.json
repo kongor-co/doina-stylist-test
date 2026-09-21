@@ -1,0 +1,117 @@
+{
+  "site": {
+    "name": "Doina Stratulesscu",
+    "descriptor": "Personal Stylist and Designer",
+    "slogan": "leading you to self discovery from within",
+    "preview": "Preview content: photography, prices, biography and contact links are placeholders."
+  },
+  "nav": { "home": "Home", "services": "Services", "pj": "PJ Collection", "about": "About Doina", "media": "Media", "contact": "Contact" },
+  "ui": { "skip": "Skip to content", "menu": "Open menu", "closeMenu": "Close menu", "theme": "Switch colour theme", "light": "Light mode", "dark": "Dark mode", "language": "Language", "viewDetails": "View details", "close": "Close", "previous": "Previous image", "next": "Next image", "image": "Image", "of": "of", "placeholderPhoto": "Editorial placeholder photograph" },
+  "cta": { "services": "Explore services", "contact": "Contact Doina", "collection": "Explore the collection", "viewService": "View service", "askPiece": "Ask about this piece", "photos": "View photos", "videos": "Watch videos", "instagram": "Instagram", "tiktok": "TikTok", "home": "Return home", "allPj": "All designs", "allServices": "All services" },
+  "home": {
+    "eyebrow": "A personal way to get dressed",
+    "introTitle": "Style begins with you.",
+    "introText": "A considered wardrobe can reflect who you are today and give you room to become. Together, we explore the colours, shapes and pieces that feel like yours.",
+    "featuredTitle": "How we can work together",
+    "featuredText": "Begin with a conversation, a fresh look at your wardrobe or a new direction for what comes next.",
+    "approachLabel": "The approach",
+    "approachTitle": "From discovery to expression",
+    "approachText": "Styling is a personal process. We notice what feels right, refine what does not and build a wardrobe that makes everyday choices easier.",
+    "steps": ["Discover", "Understand", "Refine", "Build", "Express"],
+    "pjLabel": "Designed by Doina",
+    "pjTitle": "The PJ Collection",
+    "pjText": "Thoughtful pieces for the hours you keep for yourself.",
+    "socialTitle": "A closer look",
+    "socialText": "Find new ideas, behind the scenes moments and a little more of Doina's world."
+  },
+  "services": {
+    "title": "Styling services",
+    "intro": "Choose the kind of support that meets you where you are.",
+    "priceNote": "Prices shown are illustrative placeholders. Final packages and prices will be confirmed by Doina.",
+    "categories": { "all": "All services", "personal": "Personal styling", "wardrobe": "Wardrobe", "colour": "Colour and style", "shopping": "Shopping" },
+    "for": "For you if",
+    "includes": "What is included",
+    "process": "How it works",
+    "duration": "Duration",
+    "location": "Location",
+    "price": "Price",
+    "durations": { "twoHours": "2 hours", "threeHours": "3 hours", "ninetyMinutes": "90 minutes" },
+    "locations": { "either": "Online or in person", "inPerson": "In person" },
+    "items": {
+      "style-discovery": { "title": "Personal Style Discovery", "short": "Find the colours, shapes and combinations that feel like you.", "full": "A thoughtful starting point for defining a style that reflects your life and personality.", "for": "You want a clearer sense of your style or are entering a new chapter.", "includes": ["A personal style conversation", "Silhouette and colour guidance", "A tailored direction to take forward"], "process": "We begin with your goals, explore your preferences and finish with practical recommendations." },
+      "wardrobe-edit": { "title": "The Wardrobe Edit", "short": "Make more of what you already own.", "full": "A focused review of your wardrobe to reveal useful combinations and identify what is missing.", "for": "Getting dressed feels harder than it should, even with a full wardrobe.", "includes": ["Wardrobe review", "Outfit combinations", "A concise gap list"], "process": "We review your pieces together, create outfits and make a plan for what stays, changes or goes." },
+      "colour-direction": { "title": "Colour Direction", "short": "Discover a palette that brings your wardrobe together.", "full": "An introduction to the colours and contrasts that help you feel at ease and look like yourself.", "for": "You want more confidence choosing colours and building combinations.", "includes": ["Colour consultation", "Personal palette guidance", "Combination ideas"], "process": "We explore colour against your features and preferences, then translate it into everyday choices." },
+      "shopping-together": { "title": "Shopping Together", "short": "Shop with purpose and leave with pieces you will wear.", "full": "Guided shopping built around your needs, budget and the wardrobe you already have.", "for": "You need a few strong pieces and a more confident way to shop.", "includes": ["Preparation call", "Guided shopping session", "Styling notes for new pieces"], "process": "We agree on priorities before the session, then shop and style selections together." }
+    }
+  },
+  "pj": {
+    "title": "PJ Collection",
+    "intro": "An intimate collection of easy pieces, designed with care for quiet hours.",
+    "priceNote": "Design names, materials, availability and prices are placeholders.",
+    "collection": "Quiet Hours",
+    "material": "Material",
+    "sizes": "Sizes",
+    "colours": "Colours",
+    "status": "Availability",
+    "price": "Illustrative price",
+    "madeToOrder": "Made to order",
+    "comingSoon": "Coming soon",
+    "detail": "Design details",
+    "materials": { "cottonSateen": "Cotton sateen", "cottonPoplin": "Cotton poplin", "silkBlend": "Silk blend" },
+    "colourNames": { "royalBlue": "Royal blue", "powderPink": "Powder pink", "warmBeige": "Warm beige" },
+    "products": {
+      "midnight-blue": { "name": "Midnight Blue", "short": "A relaxed silhouette with a quietly confident colour.", "description": "A simple set imagined for slow evenings and unhurried mornings.", "alt": "Placeholder editorial image for Midnight Blue pajamas" },
+      "rose-morning": { "name": "Rose Morning", "short": "Soft lines and a gentle blush tone.", "description": "A light, comfortable design with a delicate feel.", "alt": "Placeholder editorial image for Rose Morning pajamas" },
+      "soft-hour": { "name": "Soft Hour", "short": "An understated piece for everyday ease.", "description": "An easy set with a fluid shape and a calm neutral palette.", "alt": "Placeholder editorial image for Soft Hour pajamas" }
+    }
+  },
+  "about": {
+    "title": "About Doina",
+    "intro": "Personal style is a way of feeling more at home in yourself.",
+    "storyTitle": "My story",
+    "story": "Doina works at the meeting point of personal styling and design. This biography is a placeholder until her own story and professional background are provided.",
+    "philosophyTitle": "My philosophy",
+    "philosophy": "The most meaningful style does not ask you to become someone else. It helps you notice what already feels true and express it with intention.",
+    "workTitle": "How I work",
+    "work": "We start by listening. From there, we explore your routines, preferences and ambitions, then turn those insights into practical choices you can live in.",
+    "designTitle": "A designer's eye",
+    "design": "Design brings another dimension to Doina's work: attention to fabric, proportion and the feeling of a piece on the body."
+  },
+  "media": {
+    "title": "Media",
+    "intro": "Portraits, details and moments from Doina's creative world.",
+    "photos": "Photos",
+    "videos": "Videos",
+    "videoNote": "Video links are placeholders until Doina's films are supplied.",
+    "photosData": {
+      "portrait": { "alt": "Placeholder portrait for Doina's media gallery", "caption": "Portrait study" },
+      "wardrobe": { "alt": "Placeholder wardrobe styling scene", "caption": "The wardrobe" },
+      "pj": { "alt": "Placeholder pajama editorial scene", "caption": "Quiet Hours" }
+    },
+    "videosData": {
+      "introduction": { "title": "Meet Doina", "description": "An introduction video will appear here." },
+      "process": { "title": "The styling process", "description": "A short look at the process will appear here." }
+    }
+  },
+  "contact": {
+    "title": "Let's talk about your style.",
+    "intro": "Tell Doina what you are looking for, whether it is a styling service or a piece from the PJ Collection.",
+    "email": "Email Doina",
+    "instagram": "Message on Instagram",
+    "tiktok": "Find Doina on TikTok",
+    "whatsapp": "Message on WhatsApp",
+    "placeholder": "These contact details and social links are placeholders. Replace them before sharing the site with clients."
+  },
+  "legal": { "privacy": "Privacy", "imprint": "Imprint", "pending": "Information will be added when approved details are provided." },
+  "notFound": { "title": "This page could not be found.", "text": "The link may have moved. You can return to the home page and continue exploring." },
+  "meta": {
+    "home": "Personal styling, considered design and a more authentic way to get dressed with Doina Stratulesscu.",
+    "services": "Explore personal styling services, what is included and illustrative prices.",
+    "pj": "Explore the PJ Collection designed by Doina Stratulesscu.",
+    "about": "Learn about Doina's personal styling philosophy and design approach.",
+    "media": "See portraits, styling work and videos from Doina's creative world.",
+    "contact": "Contact Doina about styling services or PJ designs.",
+    "privacy": "Privacy information for Doina Stratulesscu's website.",
+    "imprint": "Imprint information for Doina Stratulesscu's website."
+  }
+}

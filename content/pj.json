@@ -1,0 +1,29 @@
+[
+  {
+    "id": "midnight-blue",
+    "price": "€190",
+    "material": "cottonSateen",
+    "sizes": ["XS", "S", "M", "L"],
+    "colors": ["royalBlue"],
+    "status": "madeToOrder",
+    "images": ["/assets/images/pj/editorial-pj.jpg", "/assets/images/pj/editorial-pj.jpg"]
+  },
+  {
+    "id": "rose-morning",
+    "price": "€175",
+    "material": "cottonPoplin",
+    "sizes": ["XS", "S", "M", "L"],
+    "colors": ["powderPink"],
+    "status": "comingSoon",
+    "images": ["/assets/images/pj/editorial-pj.jpg", "/assets/images/pj/editorial-pj.jpg"]
+  },
+  {
+    "id": "soft-hour",
+    "price": "€210",
+    "material": "silkBlend",
+    "sizes": ["S", "M", "L"],
+    "colors": ["warmBeige"],
+    "status": "madeToOrder",
+    "images": ["/assets/images/pj/editorial-pj.jpg", "/assets/images/pj/editorial-pj.jpg"]
+  }
+]

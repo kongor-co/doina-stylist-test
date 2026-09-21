@@ -1,0 +1,38 @@
+[
+  {
+    "id": "style-discovery",
+    "category": "personal",
+    "price": "€250",
+    "duration": "twoHours",
+    "location": "either",
+    "order": 1,
+    "active": true
+  },
+  {
+    "id": "wardrobe-edit",
+    "category": "wardrobe",
+    "price": "€390",
+    "duration": "threeHours",
+    "location": "inPerson",
+    "order": 2,
+    "active": true
+  },
+  {
+    "id": "colour-direction",
+    "category": "colour",
+    "price": "€180",
+    "duration": "ninetyMinutes",
+    "location": "either",
+    "order": 3,
+    "active": true
+  },
+  {
+    "id": "shopping-together",
+    "category": "shopping",
+    "price": "€320",
+    "duration": "threeHours",
+    "location": "inPerson",
+    "order": 4,
+    "active": true
+  }
+]
