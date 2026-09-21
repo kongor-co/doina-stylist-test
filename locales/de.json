@@ -50,9 +50,7 @@
     "featuredText": "Beginne mit einem Gespräch, einem neuen Blick auf deine Garderobe oder einer Richtung für das, was kommt.",
     "pjLabel": "Von Doina entworfen",
     "pjTitle": "Die PJ Kollektion",
-    "pjText": "Durchdachte Stücke für die Stunden, die dir gehören.",
-    "socialTitle": "Ein näherer Einblick",
-    "socialText": "Neue Ideen, Einblicke hinter die Kulissen und mehr aus Doinas Welt."
+    "pjText": "Durchdachte Stücke für die Stunden, die dir gehören."
   },
   "services": {
     "title": "Styling Leistungen",
@@ -116,8 +114,7 @@
   },
   "media": {
     "title": "Medien",
-    "intro": "Professionelle Porträts, Einblicke in Doinas Arbeitsumfeld und Videos.",
-    "photos": "Professionelle Fotos",
+    "photos": "Fotoshootings",
     "work": "Bei der Arbeit",
     "videos": "Videos",
     "professionalCaption": "Doina, professionelles Porträt",
@@ -126,7 +123,6 @@
   },
   "contact": {
     "title": "Lass uns über deinen Stil sprechen.",
-    "intro": "Erzähle Doina, wonach du suchst, ob Styling oder ein Stück aus der PJ Kollektion.",
     "email": "Doina eine E-Mail senden",
     "instagram": "Nachricht auf Instagram",
     "tiktok": "Doina auf TikTok finden"

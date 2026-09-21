@@ -50,9 +50,7 @@
     "featuredText": "Începe cu o conversație, o nouă privire asupra garderobei sau o direcție pentru ce urmează.",
     "pjLabel": "Creat de Doina",
     "pjTitle": "Colecția PJ",
-    "pjText": "Piese atent gândite pentru orele pe care ți le păstrezi pentru tine.",
-    "socialTitle": "Mai aproape",
-    "socialText": "Idei noi, momente din culise și mai mult din lumea Doinei."
+    "pjText": "Piese atent gândite pentru orele pe care ți le păstrezi pentru tine."
   },
   "services": {
     "title": "Servicii de styling",
@@ -116,8 +114,7 @@
   },
   "media": {
     "title": "Media",
-    "intro": "Portrete profesionale, momente de la lucru și videoclipuri cu Doina.",
-    "photos": "Fotografii profesionale",
+    "photos": "Ședințe foto",
     "work": "La lucru",
     "videos": "Videoclipuri",
     "professionalCaption": "Doina, portret profesional",
@@ -126,7 +123,6 @@
   },
   "contact": {
     "title": "Să vorbim despre stilul tău.",
-    "intro": "Spune-i Doinei ce cauți, fie un serviciu de styling, fie o piesă din colecția PJ.",
     "email": "Scrie-i Doinei",
     "instagram": "Mesaj pe Instagram",
     "tiktok": "Găsește-o pe Doina pe TikTok"

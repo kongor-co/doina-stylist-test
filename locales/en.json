@@ -50,9 +50,7 @@
     "featuredText": "Begin with a conversation, a fresh look at your wardrobe or a new direction for what comes next.",
     "pjLabel": "Designed by Doina",
     "pjTitle": "The PJ Collection",
-    "pjText": "Thoughtful pieces for the hours you keep for yourself.",
-    "socialTitle": "A closer look",
-    "socialText": "Find new ideas, behind the scenes moments and a little more of Doina's world."
+    "pjText": "Thoughtful pieces for the hours you keep for yourself."
   },
   "services": {
     "title": "Styling services",
@@ -116,8 +114,7 @@
   },
   "media": {
     "title": "Media",
-    "intro": "Professional portraits, moments at work and videos featuring Doina.",
-    "photos": "Professional photos",
+    "photos": "Photoshootings",
     "work": "At work",
     "videos": "Videos",
     "professionalCaption": "Doina, professional portrait",
@@ -126,7 +123,6 @@
   },
   "contact": {
     "title": "Let's talk about your style.",
-    "intro": "Tell Doina what you are looking for, whether it is a styling service or a piece from the PJ Collection.",
     "email": "Email Doina",
     "instagram": "Message on Instagram",
     "tiktok": "Find Doina on TikTok"

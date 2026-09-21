@@ -72,14 +72,12 @@ const galleryData = document.querySelector('#gallery-data');
 if (lightbox && galleryData) {
   const groups = JSON.parse(galleryData.textContent);
   const photo = lightbox.querySelector('img');
-  const caption = lightbox.querySelector('figcaption');
   let items = [];
   let index = 0;
   function show(next) {
     index = (next + items.length) % items.length;
     photo.src = items[index].src;
     photo.alt = items[index].alt;
-    caption.textContent = items[index].caption;
   }
   document.querySelectorAll('[data-gallery-open]').forEach((button) => button.addEventListener('click', () => {
     items = groups[button.dataset.galleryGroup] || [];
