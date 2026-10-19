@@ -3,7 +3,7 @@
     "name": "Doina Stratulescu",
     "descriptor": "Personal Stylist and Designer",
     "slogan": "leading you to self discovery from within",
-    "preview": "Preview content: PJ product details and biography are placeholders."
+    "preview": "Preview content: PJ Collection details are placeholders."
   },
   "nav": {
     "home": "Home",
@@ -102,15 +102,57 @@
   },
   "about": {
     "title": "About Doina",
-    "intro": "Personal style is a way of feeling more at home in yourself.",
-    "storyTitle": "My story",
-    "story": "Doina works at the meeting point of personal styling and design. This biography is a placeholder until her own story and professional background are provided.",
+    "intro": "Fashion has always been a part of my life. I didn’t simply choose it. I feel as though it chose me.",
+    "storyTitle": "My Story: A Passion That Became My Calling",
+    "sections": [
+      {
+        "title": "Where it began",
+        "paragraphs": [
+          "My love story with fashion began in childhood, in a world filled with imagination, colors, and little textile treasures.",
+          "I fondly remember turning scraps of fabric given to me by my godmother into beautiful little dresses for my dolls. I decorated them with crocheted lace, beads, fur trims, and all kinds of delicate details. My mother’s crocheted and knitted creations also became a source of inspiration for my own little designs. Every piece of fabric, every bit of lace, and every thread offered me the opportunity to create something new and beautiful.",
+          "But my creativity didn’t stop at dressing dolls. Together with my childhood friends, I would transform our courtyard into a real fashion runway. My mother’s scarves, blouses, and dresses became our spectacular outfits, and we organized fashion shows filled with excitement, laughter, and imagination.",
+          "It was my favorite game. Surrounded by fabrics, colors, and improvised outfits, I felt completely in my element. Without even realizing it, I was already taking my first steps toward what would one day become my profession and greatest passion.",
+          "Looking back, I realize that fashion didn’t enter my life by chance. It grew alongside me, nurtured by the little joys of childhood, the inspiration I received from my family, and my desire to transform simple things into something special."
+        ]
+      },
+      {
+        "title": "Learning the craft",
+        "paragraphs": [
+          "As the years passed, my passion became a conscious choice. I decided to study fashion design, and those four years of education gave me the opportunity to develop my artistic talent, drawing skills, and creative vision.",
+          "But my curiosity didn’t end there. I wanted to understand fashion beyond its artistic side – to discover how an idea comes to life, from the first sketch to the finished garment. This led me to continue my studies at the Technical University of Moldova in Chișinău, specializing in engineering within the light industry.",
+          "Alongside my studies, I began designing and sewing clothing for my own clients. Every project was a new challenge and a source of joy. I loved seeing how a garment created especially for someone could bring not only beauty but also confidence.",
+          "After graduating, my desire to grow and evolve took me to Germany, where I was accepted into a master’s degree program at HTW Berlin. It was an intense chapter of my life, filled with valuable experiences, discoveries, and challenges.",
+          "It wasn’t always easy. I worked night shifts at a hotel reception while attending university during the day. There were moments of exhaustion and self-doubt, but the support of my professors and fellow students, my perseverance, and my belief in myself helped me keep moving forward. That experience taught me that dreams come true not only through talent, but also through hard work, discipline, and genuine passion.",
+          "After completing my master’s degree, my life entered a new chapter. Alexandru was already part of my life, I had another job, and for a while, I believed that my journey in fashion had come to an end. I took a two-year break."
+        ]
+      },
+      {
+        "title": "Finding my way back",
+        "paragraphs": [
+          "I tried to walk away from fashion, but fashion never walked away from me.",
+          "The desire to create, inspire, and bring beauty into people’s lives kept returning. At the same time, I felt that my own personal style no longer represented who I was. The clothes I wore seemed monotonous, and I found myself surrounded by too little color and individuality.",
+          "I longed for more expression. More color. More life.",
+          "That’s when I discovered a new dimension of fashion: personal styling and image consulting.",
+          "I completed a professional styling course, where I deepened my understanding of the relationship between clothing, personality, body proportions, and color harmony. I came to appreciate even more how different and unique we all are, and how powerful personal style can be when it truly reflects who we are."
+        ]
+      },
+      {
+        "title": "My work today",
+        "paragraphs": [
+          "Today, I dedicate my work to helping people rediscover themselves through their personal style.",
+          "As a Personal Stylist and Image Consultant, I guide my clients through a personalized journey of transformation. Together, we discover the colors that enhance their natural beauty, the silhouettes that flatter their figure, and the clothing pieces that reflect their personality.",
+          "From personal style consultations and color analysis to wardrobe organization and personal shopping, every step serves a purpose: creating a wardrobe that is harmonious, functional, and authentic.",
+          "For me, style isn’t about blindly following trends. It’s about discovering what truly represents you, feeling comfortable in your own skin, and having the courage to express your individuality.",
+          "Alongside my personal styling services, I collaborate with fashion boutiques and brands, helping them showcase their collections through creative styling, photography, and engaging video content. I love bringing garments to life, telling their stories, and creating an authentic connection between brands and the people they want to reach.",
+          "Today, I know that fashion is about so much more than clothes. It’s about identity, emotion, confidence, and the freedom to be yourself.",
+          "And my greatest satisfaction comes from helping people discover that freedom and shine through their own unique style."
+        ]
+      }
+    ],
     "philosophyTitle": "My philosophy",
-    "philosophy": "The most meaningful style does not ask you to become someone else. It helps you notice what already feels true and express it with intention.",
-    "workTitle": "How I work",
-    "work": "We start by listening. From there, we explore your routines, preferences and ambitions, then turn those insights into practical choices you can live in.",
-    "designTitle": "A designer's eye",
-    "design": "Design brings another dimension to Doina's work: attention to fabric, proportion and the feeling of a piece on the body."
+    "philosophy": "“Style is not about becoming someone else, but about discovering and expressing who you truly are.”",
+    "closing": "With love for beauty and aesthetics,",
+    "signature": "Doina"
   },
   "media": {
     "title": "Media",
@@ -140,7 +182,7 @@
     "home": "Personal styling, considered design and a more authentic way to get dressed with Doina Stratulescu.",
     "services": "Explore Doina Stratulescu's styling, wardrobe, shopping, made-to-measure and photoshoot services with prices.",
     "pj": "Explore the PJ Collection designed by Doina Stratulescu.",
-    "about": "Learn about Doina's personal styling philosophy and design approach.",
+    "about": "Discover Doina's personal story, professional path and philosophy as a Personal Stylist and Designer.",
     "media": "Explore professional portraits, Doina at work and videos.",
     "contact": "Contact Doina about styling services or PJ designs.",
     "privacy": "Privacy information for Doina Stratulescu's website.",

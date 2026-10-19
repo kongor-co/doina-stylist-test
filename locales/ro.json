@@ -3,7 +3,7 @@
     "name": "Doina Stratulescu",
     "descriptor": "Stilist personal și designer",
     "slogan": "leading you to self discovery from within",
-    "preview": "Conținut de prezentare: detaliile produselor PJ și biografia sunt provizorii."
+    "preview": "Conținut provizoriu: detaliile colecției PJ sunt exemple."
   },
   "nav": {
     "home": "Acasă",
@@ -102,15 +102,57 @@
   },
   "about": {
     "title": "Despre Doina",
-    "intro": "Stilul personal te ajută să te simți mai bine în propria piele.",
-    "storyTitle": "Povestea mea",
-    "story": "Doina lucrează la întâlnirea dintre styling personal și design. Această biografie este provizorie până când sunt disponibile povestea și experiența ei profesională.",
+    "intro": "Moda a fost dintotdeauna parte din viața mea. Nu am ales-o pur și simplu. Simt că ea m-a ales pe mine.",
+    "storyTitle": "Povestea mea: O pasiune care a devenit destin",
+    "sections": [
+      {
+        "title": "Unde a început totul",
+        "paragraphs": [
+          "Povestea mea de dragoste cu moda a început încă din copilărie, într-o lume plină de imaginație, culoare și mici comori textile.",
+          "Îmi amintesc cu drag cum transformam bucățelele de materiale primite de la nana mea în rochițe pentru păpuși. Le decoram cu dantelă croșetată, mărgele, blăniță și tot felul de detalii delicate. Lucrurile croșetate și împletite de mama mea deveneau și ele o sursă de inspirație pentru micile mele creații. Fiecare petic de material, fiecare bucățică de dantelă sau fir de ață îmi oferea posibilitatea de a inventa ceva nou și frumos.",
+          "Dar creativitatea mea nu se oprea la rochițele păpușilor. Împreună cu prietenele mele, transformam curtea într-un adevărat podium de modă. Batistele, bluzițele și rochiile mamei deveneau ținutele noastre spectaculoase, iar noi organizam prezentări de modă pline de entuziasm, râsete și fantezie.",
+          "Era jocul meu preferat. Acolo, printre materiale, culori și ținute improvizate, mă simțeam cu adevărat în elementul meu. Fără să-mi dau seama, făceam deja primii pași spre ceea ce avea să devină, peste ani, profesia și marea mea pasiune.",
+          "Privind în urmă, îmi dau seama că moda nu a apărut întâmplător în viața mea. Ea a crescut odată cu mine, din micile bucurii ale copilăriei, din inspirația oferită de familie și din dorința de a transforma lucrurile simple în ceva special."
+        ]
+      },
+      {
+        "title": "Formarea mea",
+        "paragraphs": [
+          "Odată cu trecerea anilor, pasiunea mea a devenit o alegere conștientă. Am decis să studiez designul vestimentar, iar cei patru ani de formare mi-au oferit ocazia să-mi dezvolt talentul artistic, abilitățile de desen și viziunea creativă.",
+          "Dar curiozitatea mea nu s-a oprit aici. Îmi doream să înțeleg moda dincolo de partea ei artistică – să descopăr cum prinde viață o idee, de la prima schiță până la produsul finit. Astfel, mi-am continuat studiile la Universitatea Tehnică a Moldovei, în Chișinău, în domeniul ingineriei industriei ușoare.",
+          "În paralel cu studiile, am început să creez și să cos ținute pentru propriii mei clienți. Fiecare proiect era o nouă provocare și o bucurie. Îmi plăcea să văd cum o piesă vestimentară realizată special pentru cineva putea aduce nu doar frumusețe, ci și încredere în sine.",
+          "După absolvire, dorința de a evolua m-a purtat spre Germania, unde am fost admisă la programul de master al HTW Berlin. A fost o etapă intensă, plină de experiențe valoroase, descoperiri și provocări.",
+          "Nu a fost întotdeauna ușor. Lucram noaptea la recepția unui hotel, iar ziua mergeam la universitate. Au existat momente de oboseală și îndoială, dar sprijinul profesorilor și al colegilor, perseverența și încrederea în propriile forțe m-au ajutat să merg mai departe. Am învățat atunci că visurile se împlinesc nu doar prin talent, ci și prin muncă, disciplină și multă pasiune.",
+          "După finalizarea masterului, viața mea a intrat într-o nouă etapă. Alexandru apăruse deja în viața mea, aveam un alt loc de muncă și, pentru o vreme, am crezut că drumul meu în modă se încheiase. Am luat o pauză de doi ani."
+        ]
+      },
+      {
+        "title": "Întoarcerea la modă",
+        "paragraphs": [
+          "Am încercat să mă îndepărtez de modă, dar moda nu s-a îndepărtat niciodată de mine.",
+          "Dorul de a crea, de a inspira și de a aduce frumusețe în viața oamenilor revenea mereu. În același timp, simțeam că propriul meu stil nu mă mai reprezenta. Hainele pe care le purtam mi se păreau monotone, iar în jurul meu vedeam prea puțină culoare și individualitate.",
+          "Îmi doream mai multă expresivitate. Mai multă culoare. Mai multă viață.",
+          "Așa am descoperit o nouă dimensiune a modei: stilismul vestimentar și consultanța de imagine.",
+          "Am urmat un curs de specializare în styling, unde am aprofundat relația dintre vestimentație, personalitate, proporții și armonia culorilor. Am înțeles și mai bine cât de diferiți și unici suntem și cât de puternic poate deveni stilul personal atunci când reflectă cu adevărat cine suntem."
+        ]
+      },
+      {
+        "title": "Munca mea de astăzi",
+        "paragraphs": [
+          "Astăzi, îmi dedic activitatea oamenilor care își doresc să se redescopere prin intermediul stilului.",
+          "În calitate de consultant de imagine și stilist vestimentar, îmi însoțesc clienții într-un proces personalizat de transformare. Împreună descoperim culorile care le pun în valoare frumusețea naturală, croielile care le avantajează silueta și piesele vestimentare care le reflectă personalitatea.",
+          "De la consultații de stil și analiză cromatică, până la reorganizarea garderobei și sesiuni de personal shopping, fiecare etapă are un scop: crearea unei garderobe armonioase, funcționale și autentice.",
+          "Pentru mine, stilul nu înseamnă să urmezi orbește tendințele, ci să descoperi ceea ce te reprezintă, să te simți confortabil în propria piele și să ai curajul de a-ți exprima individualitatea.",
+          "În paralel, colaborez cu magazine și branduri de modă, contribuind la promovarea colecțiilor lor prin styling, fotografie și conținut video creativ. Îmi place să dau viață pieselor vestimentare, să le pun în valoare povestea și să creez o legătură autentică între branduri și oamenii cărora li se adresează.",
+          "Astăzi știu că moda nu este doar despre haine. Este despre identitate, emoție, încredere și libertatea de a fi tu însuți.",
+          "Iar cea mai mare satisfacție a mea este să ajut oamenii să descopere această libertate și să strălucească în propriul lor stil."
+        ]
+      }
+    ],
     "philosophyTitle": "Filosofia mea",
-    "philosophy": "Un stil cu sens nu îți cere să devii altcineva. Te ajută să observi ce ți se potrivește deja și să exprimi asta cu intenție.",
-    "workTitle": "Cum lucrez",
-    "work": "Începem prin a asculta. Apoi explorăm rutina, preferințele și aspirațiile tale și le transformăm în alegeri practice.",
-    "designTitle": "Privirea unui designer",
-    "design": "Designul adaugă lucrării Doinei atenție pentru material, proporție și senzația unei piese pe corp."
+    "philosophy": "„Stilul nu înseamnă să devii altcineva, ci să descoperi și să exprimi cine ești cu adevărat.”",
+    "closing": "Cu dragoste pentru frumos,",
+    "signature": "Doina"
   },
   "media": {
     "title": "Media",
@@ -140,7 +182,7 @@
     "home": "Styling personal, design atent și un mod autentic de a te îmbrăca alături de Doina Stratulescu.",
     "services": "Serviciile Doinei Stratulescu: consultanță de stil, garderobă, shopping, croitorie și ședințe foto cu prețuri.",
     "pj": "Descoperă colecția PJ creată de Doina Stratulescu.",
-    "about": "Află despre filosofia de styling și abordarea de design a Doinei.",
+    "about": "Descoperă povestea personală, parcursul profesional și filosofia Doinei ca stilist vestimentar și designer.",
     "media": "Descoperă portrete profesionale, imagini cu Doina la lucru și videoclipuri.",
     "contact": "Contactează-o pe Doina pentru servicii de styling sau modele PJ.",
     "privacy": "Informații despre confidențialitate pentru site-ul Doinei Stratulescu.",

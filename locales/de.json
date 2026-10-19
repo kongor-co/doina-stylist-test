@@ -3,7 +3,7 @@
     "name": "Doina Stratulescu",
     "descriptor": "Personal Stylistin und Designerin",
     "slogan": "leading you to self discovery from within",
-    "preview": "Vorschau: PJ-Produktdetails und Biografie sind Platzhalter."
+    "preview": "Vorschau: Die Angaben zur PJ Kollektion sind Platzhalter."
   },
   "nav": {
     "home": "Start",
@@ -102,15 +102,58 @@
   },
   "about": {
     "title": "Über Doina",
-    "intro": "Persönlicher Stil hilft dir, dich in dir selbst wohler zu fühlen.",
-    "storyTitle": "Meine Geschichte",
-    "story": "Doina arbeitet an der Schnittstelle von Personal Styling und Design. Diese Biografie ist ein Platzhalter, bis ihre eigene Geschichte und ihr beruflicher Hintergrund vorliegen.",
+    "intro": "Mode war schon immer ein Teil meines Lebens. Ich habe mich nicht einfach für sie entschieden. Ich habe das Gefühl, dass sie mich ausgewählt hat.",
+    "storyTitle": "Meine Geschichte: Eine Leidenschaft, die zu meiner Berufung wurde",
+    "sections": [
+      {
+        "title": "Wo alles begann",
+        "paragraphs": [
+          "Meine Liebesgeschichte mit der Mode begann bereits in meiner Kindheit, in einer Welt voller Fantasie, Farben und kleiner textiler Schätze.",
+          "Ich erinnere mich noch heute voller Freude daran, wie ich aus den Stoffresten, die ich von meiner Patentante bekam, kleine Kleider für meine Puppen nähte. Ich verzierte sie mit gehäkelter Spitze, Perlen, Fellbesätzen und vielen liebevollen Details. Auch die Häkel- und Strickarbeiten meiner Mutter wurden zu einer Inspirationsquelle für meine kleinen Kreationen. Jedes Stück Stoff, jedes bisschen Spitze und jeder Faden bot mir die Möglichkeit, etwas Neues und Schönes zu erschaffen.",
+          "Doch meine Kreativität beschränkte sich nicht nur auf die Puppenkleider. Gemeinsam mit meinen Freundinnen verwandelte ich unseren Hof in einen echten Laufsteg. Die Tücher, Blusen und Kleider meiner Mutter wurden zu unseren spektakulären Outfits, und wir veranstalteten Modenschauen voller Begeisterung, Lachen und Fantasie.",
+          "Es war mein absolutes Lieblingsspiel. Zwischen Stoffen, Farben und improvisierten Outfits fühlte ich mich ganz in meinem Element. Ohne es damals zu ahnen, machte ich bereits meine ersten Schritte in Richtung dessen, was viele Jahre später mein Beruf und meine große Leidenschaft werden sollte.",
+          "Wenn ich heute zurückblicke, wird mir bewusst, dass die Mode nicht zufällig in mein Leben gekommen ist. Sie ist mit mir gewachsen – aus den kleinen Freuden meiner Kindheit, aus der Inspiration meiner Familie und aus dem Wunsch, einfache Dinge in etwas Besonderes zu verwandeln."
+        ]
+      },
+      {
+        "title": "Das Handwerk lernen",
+        "paragraphs": [
+          "Mit den Jahren wurde aus meiner Leidenschaft eine bewusste Entscheidung. Ich entschied mich für eine vierjährige Ausbildung im Modedesign, in der ich mein künstlerisches Talent, meine zeichnerischen Fähigkeiten und meine kreative Vision weiterentwickeln konnte.",
+          "Doch meine Neugier ging noch weiter. Ich wollte Mode nicht nur von ihrer künstlerischen Seite kennenlernen, sondern auch verstehen, wie aus einer Idee ein fertiges Kleidungsstück entsteht – von der ersten Skizze bis zum fertigen Produkt. Deshalb setzte ich mein Studium an der Technischen Universität Moldau in Chișinău im Bereich Ingenieurwesen der Leichtindustrie fort.",
+          "Parallel zu meinem Studium begann ich, individuelle Kleidungsstücke für meine eigenen Kundinnen und Kunden zu entwerfen und zu nähen. Jedes Projekt war eine neue Herausforderung und zugleich eine große Freude. Besonders faszinierte mich, wie ein eigens angefertigtes Kleidungsstück nicht nur die äußere Erscheinung verschönern, sondern auch das Selbstbewusstsein eines Menschen stärken konnte.",
+          "Nach meinem Studienabschluss führte mich mein Wunsch nach Weiterentwicklung nach Deutschland, wo ich zum Masterstudium an der HTW Berlin zugelassen wurde. Es war eine intensive Zeit voller wertvoller Erfahrungen, neuer Erkenntnisse und Herausforderungen.",
+          "Nicht immer war es einfach. Nachts arbeitete ich an der Rezeption eines Hotels, tagsüber besuchte ich die Universität. Es gab Momente der Erschöpfung und des Zweifels. Doch die Unterstützung meiner Professorinnen und Professoren sowie meiner Kommilitoninnen und Kommilitonen, meine Ausdauer und der Glaube an mich selbst halfen mir, meinen Weg weiterzugehen. Damals lernte ich, dass Träume nicht allein durch Talent wahr werden, sondern auch durch harte Arbeit, Disziplin und viel Leidenschaft.",
+          "Nach meinem Masterabschluss begann ein neuer Lebensabschnitt. Alexandru war bereits in meinem Leben, ich hatte einen anderen Job und glaubte eine Zeit lang, dass mein Weg in der Modewelt zu Ende gegangen sei. Ich legte eine zweijährige Pause ein."
+        ]
+      },
+      {
+        "title": "Der Weg zurück",
+        "paragraphs": [
+          "Ich versuchte, mich von der Mode zu entfernen, doch die Mode hat mich nie losgelassen.",
+          "Die Sehnsucht danach, kreativ zu sein, Menschen zu inspirieren und Schönheit in ihr Leben zu bringen, kehrte immer wieder zurück. Gleichzeitig spürte ich, dass mein eigener Stil mich nicht mehr wirklich widerspiegelte.",
+          "Meine Kleidung erschien mir eintönig, und auch in meinem Umfeld vermisste ich Farben und Individualität.",
+          "Ich sehnte mich nach mehr Ausdruck. Mehr Farbe. Mehr Leben.",
+          "So entdeckte ich eine neue Dimension der Mode: Personal Styling und Imageberatung.",
+          "Ich absolvierte eine Weiterbildung im Bereich Styling, in der ich mein Wissen über das Zusammenspiel von Kleidung, Persönlichkeit, Körperproportionen und Farbharmonie vertiefte. Dabei wurde mir noch bewusster, wie unterschiedlich und einzigartig wir Menschen sind und wie kraftvoll persönlicher Stil sein kann, wenn er unser wahres Wesen widerspiegelt."
+        ]
+      },
+      {
+        "title": "Meine Arbeit heute",
+        "paragraphs": [
+          "Heute widme ich meine Arbeit Menschen, die sich durch ihren persönlichen Stil neu entdecken möchten.",
+          "Als Personal Stylistin und Imageberaterin begleite ich meine Kundinnen und Kunden auf einem individuellen Weg der Veränderung. Gemeinsam entdecken wir die Farben, die ihre natürliche Schönheit unterstreichen, die Schnitte, die ihrer Figur schmeicheln, und die Kleidungsstücke, die ihre Persönlichkeit zum Ausdruck bringen.",
+          "Von der individuellen Stilberatung und Farbanalyse über die Organisation und Optimierung der Garderobe bis hin zum gemeinsamen Personal Shopping verfolgt jeder Schritt ein Ziel: eine harmonische, funktionale und authentische Garderobe zu gestalten.",
+          "Für mich bedeutet Stil nicht, Trends blind zu folgen, sondern herauszufinden, was wirklich zu einem passt, sich in seiner eigenen Haut wohlzufühlen und den Mut zu haben, seine Individualität auszudrücken.",
+          "Darüber hinaus arbeite ich mit Modegeschäften und Fashion-Brands zusammen und unterstütze sie dabei, ihre Kollektionen durch kreatives Styling, Fotografie und Videocontent zu präsentieren. Ich liebe es, Kleidungsstücke zum Leben zu erwecken, ihre Geschichte sichtbar zu machen und eine authentische Verbindung zwischen Marken und ihrer Zielgruppe zu schaffen.",
+          "Heute weiß ich, dass Mode weit mehr ist als Kleidung. Sie steht für Identität, Emotionen, Selbstbewusstsein und die Freiheit, man selbst zu sein.",
+          "Meine größte Freude ist es, Menschen dabei zu helfen, diese Freiheit zu entdecken und in ihrem ganz persönlichen Stil zu strahlen."
+        ]
+      }
+    ],
     "philosophyTitle": "Meine Philosophie",
-    "philosophy": "Stil mit Bedeutung verlangt nicht, jemand anderes zu werden. Er macht sichtbar, was sich bereits richtig anfühlt, und drückt es bewusst aus.",
-    "workTitle": "So arbeite ich",
-    "work": "Am Anfang steht das Zuhören. Dann betrachten wir deinen Alltag, deine Vorlieben und Wünsche und machen daraus praktische Entscheidungen.",
-    "designTitle": "Der Blick einer Designerin",
-    "design": "Design ergänzt Doinas Arbeit durch Aufmerksamkeit für Stoffe, Proportionen und das Gefühl eines Kleidungsstücks am Körper."
+    "philosophy": "„Stil bedeutet nicht, jemand anderes zu werden, sondern zu entdecken und zum Ausdruck zu bringen, wer du wirklich bist.“",
+    "closing": "Mit Liebe zur Schönheit und Ästhetik,",
+    "signature": "Doina"
   },
   "media": {
     "title": "Medien",
@@ -140,7 +183,7 @@
     "home": "Personal Styling, durchdachtes Design und ein authentischer Stil mit Doina Stratulescu.",
     "services": "Entdecken Sie die Stilberatung, den Garderoben-Check, Shopping, Maßanfertigung und Fotoshootings mit Preisen.",
     "pj": "Entdecke die PJ Kollektion von Doina Stratulescu.",
-    "about": "Lerne Doinas Styling Philosophie und Designansatz kennen.",
+    "about": "Lerne Doinas persönliche Geschichte, beruflichen Weg und Philosophie als Personal Stylistin und Designerin kennen.",
     "media": "Entdecken Sie professionelle Porträts, Doina bei der Arbeit und Videos.",
     "contact": "Kontaktiere Doina zu Styling Leistungen oder PJ Designs.",
     "privacy": "Datenschutzinformationen für die Website von Doina Stratulescu.",
