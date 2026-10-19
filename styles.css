@@ -416,28 +416,37 @@ a:hover { color: var(--color-text); }
   padding: .75rem 1rem 0;
   background: transparent;
   border: 0;
+  color: #101010;
 }
 
 .header-inner {
   min-height: 4.8rem;
   width: min(100%, 1400px);
   padding: 0 1.2rem;
-  background: color-mix(in srgb, var(--color-nav) 92%, transparent);
-  border: 1px solid var(--color-border);
+  background: #ffffff;
+  border: 1px solid #d8d8d4;
   border-radius: var(--radius-pill);
   box-shadow: 0 12px 35px #0000000d;
-  backdrop-filter: blur(18px);
 }
 
-.brand-mark { width: 8.5rem; height: 2.8rem; }
+.site-header .brand-mark,
+html[data-theme="dark"] .site-header .brand-mark { width: 8.5rem; height: 2.8rem; filter: none; mix-blend-mode: multiply; }
+.site-header .brand,
+.site-header .desktop-nav a,
+.site-header .language-links a,
+.site-header .mobile-nav a,
+.site-header .mobile-nav-tools,
+.site-header .theme-toggle,
+.site-header .menu-toggle { color: #101010; }
 .desktop-nav { align-self: center; gap: .35rem; }
 .desktop-nav a { align-self: center; border: 0; border-radius: var(--radius-pill); padding: .65rem .8rem; }
-.desktop-nav a:hover { background: var(--color-soft-surface); }
-.desktop-nav a[aria-current="page"] { background: var(--color-text); color: var(--color-background); }
-.language-links a[aria-current="true"] { color: var(--color-text); }
-.theme-toggle { min-width: 2.75rem; min-height: 2.75rem; justify-content: center; border-radius: 50%; }
-.menu-toggle { border: 1px solid var(--color-border); border-radius: 50%; }
-.mobile-nav { margin: .5rem auto 0; max-width: 1400px; border: 1px solid var(--color-border); border-radius: var(--radius-large); box-shadow: var(--shadow-raised); }
+.desktop-nav a:hover { background: #e9e9e5; }
+.desktop-nav a[aria-current="page"] { background: #101010; color: #ffffff; }
+.language-links a[aria-current="true"] { color: #101010; }
+.theme-toggle { min-width: 2.75rem; min-height: 2.75rem; justify-content: center; border-color: #d8d8d4; border-radius: 50%; }
+.menu-toggle { border: 1px solid #d8d8d4; border-radius: 50%; }
+.mobile-nav { margin: .5rem auto 0; max-width: 1400px; border: 1px solid #d8d8d4; border-radius: var(--radius-large); background: #ffffff; color: #101010; box-shadow: var(--shadow-raised); }
+.site-header .mobile-nav-links a { border-color: #d8d8d4; }
 .mobile-nav-links a { font-family: inherit; font-weight: 600; }
 .social-links a { border-color: currentColor; }
 
