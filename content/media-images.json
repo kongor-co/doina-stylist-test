@@ -1,0 +1,772 @@
+{
+  "assets/images/doina/professional/+11.jpg": {
+    "width": 3936,
+    "height": 5915,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/professional/plus-11-480.webp",
+        "width": 480,
+        "height": 721
+      },
+      {
+        "src": "assets/images/doina/optimized/professional/plus-11-800.webp",
+        "width": 800,
+        "height": 1202
+      },
+      {
+        "src": "assets/images/doina/optimized/professional/plus-11-1600.webp",
+        "width": 1600,
+        "height": 2404
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/professional/plus-11-1600.webp"
+  },
+  "assets/images/doina/professional/+44.jpg": {
+    "width": 4024,
+    "height": 6048,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/professional/plus-44-480.webp",
+        "width": 480,
+        "height": 721
+      },
+      {
+        "src": "assets/images/doina/optimized/professional/plus-44-800.webp",
+        "width": 800,
+        "height": 1202
+      },
+      {
+        "src": "assets/images/doina/optimized/professional/plus-44-1600.webp",
+        "width": 1600,
+        "height": 2405
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/professional/plus-44-1600.webp"
+  },
+  "assets/images/doina/professional/+45.jpg": {
+    "width": 4024,
+    "height": 6048,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/professional/plus-45-480.webp",
+        "width": 480,
+        "height": 721
+      },
+      {
+        "src": "assets/images/doina/optimized/professional/plus-45-800.webp",
+        "width": 800,
+        "height": 1202
+      },
+      {
+        "src": "assets/images/doina/optimized/professional/plus-45-1600.webp",
+        "width": 1600,
+        "height": 2405
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/professional/plus-45-1600.webp"
+  },
+  "assets/images/doina/professional/+52.jpg": {
+    "width": 4024,
+    "height": 6048,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/professional/plus-52-480.webp",
+        "width": 480,
+        "height": 721
+      },
+      {
+        "src": "assets/images/doina/optimized/professional/plus-52-800.webp",
+        "width": 800,
+        "height": 1202
+      },
+      {
+        "src": "assets/images/doina/optimized/professional/plus-52-1600.webp",
+        "width": 1600,
+        "height": 2405
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/professional/plus-52-1600.webp"
+  },
+  "assets/images/doina/professional/+82.jpg": {
+    "width": 4024,
+    "height": 6048,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/professional/plus-82-480.webp",
+        "width": 480,
+        "height": 721
+      },
+      {
+        "src": "assets/images/doina/optimized/professional/plus-82-800.webp",
+        "width": 800,
+        "height": 1202
+      },
+      {
+        "src": "assets/images/doina/optimized/professional/plus-82-1600.webp",
+        "width": 1600,
+        "height": 2405
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/professional/plus-82-1600.webp"
+  },
+  "assets/images/doina/professional/+116.jpg": {
+    "width": 4024,
+    "height": 6048,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/professional/plus-116-480.webp",
+        "width": 480,
+        "height": 721
+      },
+      {
+        "src": "assets/images/doina/optimized/professional/plus-116-800.webp",
+        "width": 800,
+        "height": 1202
+      },
+      {
+        "src": "assets/images/doina/optimized/professional/plus-116-1600.webp",
+        "width": 1600,
+        "height": 2405
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/professional/plus-116-1600.webp"
+  },
+  "assets/images/doina/professional/+120.jpg": {
+    "width": 4024,
+    "height": 6048,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/professional/plus-120-480.webp",
+        "width": 480,
+        "height": 721
+      },
+      {
+        "src": "assets/images/doina/optimized/professional/plus-120-800.webp",
+        "width": 800,
+        "height": 1202
+      },
+      {
+        "src": "assets/images/doina/optimized/professional/plus-120-1600.webp",
+        "width": 1600,
+        "height": 2405
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/professional/plus-120-1600.webp"
+  },
+  "assets/images/doina/professional/+137.jpg": {
+    "width": 4024,
+    "height": 6048,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/professional/plus-137-480.webp",
+        "width": 480,
+        "height": 721
+      },
+      {
+        "src": "assets/images/doina/optimized/professional/plus-137-800.webp",
+        "width": 800,
+        "height": 1202
+      },
+      {
+        "src": "assets/images/doina/optimized/professional/plus-137-1600.webp",
+        "width": 1600,
+        "height": 2405
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/professional/plus-137-1600.webp"
+  },
+  "assets/images/doina/professional/+138.jpg": {
+    "width": 4024,
+    "height": 6048,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/professional/plus-138-480.webp",
+        "width": 480,
+        "height": 721
+      },
+      {
+        "src": "assets/images/doina/optimized/professional/plus-138-800.webp",
+        "width": 800,
+        "height": 1202
+      },
+      {
+        "src": "assets/images/doina/optimized/professional/plus-138-1600.webp",
+        "width": 1600,
+        "height": 2405
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/professional/plus-138-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0601.JPG": {
+    "width": 960,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0601-480.webp",
+        "width": 480,
+        "height": 640
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0601-800.webp",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0601-1600.webp",
+        "width": 960,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0601-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0603.JPG": {
+    "width": 960,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0603-480.webp",
+        "width": 480,
+        "height": 640
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0603-800.webp",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0603-1600.webp",
+        "width": 960,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0603-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0625.JPG": {
+    "width": 960,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0625-480.webp",
+        "width": 480,
+        "height": 640
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0625-800.webp",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0625-1600.webp",
+        "width": 960,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0625-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0627.JPG": {
+    "width": 960,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0627-480.webp",
+        "width": 480,
+        "height": 640
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0627-800.webp",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0627-1600.webp",
+        "width": 960,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0627-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0628.JPG": {
+    "width": 960,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0628-480.webp",
+        "width": 480,
+        "height": 640
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0628-800.webp",
+        "width": 800,
+        "height": 1067
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0628-1600.webp",
+        "width": 960,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0628-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0743.JPG": {
+    "width": 851,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0743-480.webp",
+        "width": 480,
+        "height": 722
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0743-800.webp",
+        "width": 800,
+        "height": 1203
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0743-1600.webp",
+        "width": 851,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0743-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0744.JPG": {
+    "width": 851,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0744-480.webp",
+        "width": 480,
+        "height": 722
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0744-800.webp",
+        "width": 800,
+        "height": 1203
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0744-1600.webp",
+        "width": 851,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0744-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0745.JPG": {
+    "width": 851,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0745-480.webp",
+        "width": 480,
+        "height": 722
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0745-800.webp",
+        "width": 800,
+        "height": 1203
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0745-1600.webp",
+        "width": 851,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0745-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0746.JPG": {
+    "width": 851,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0746-480.webp",
+        "width": 480,
+        "height": 722
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0746-800.webp",
+        "width": 800,
+        "height": 1203
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0746-1600.webp",
+        "width": 851,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0746-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0747.JPG": {
+    "width": 851,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0747-480.webp",
+        "width": 480,
+        "height": 722
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0747-800.webp",
+        "width": 800,
+        "height": 1203
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0747-1600.webp",
+        "width": 851,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0747-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0748.JPG": {
+    "width": 851,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0748-480.webp",
+        "width": 480,
+        "height": 722
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0748-800.webp",
+        "width": 800,
+        "height": 1203
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0748-1600.webp",
+        "width": 851,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0748-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0749.JPG": {
+    "width": 851,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0749-480.webp",
+        "width": 480,
+        "height": 722
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0749-800.webp",
+        "width": 800,
+        "height": 1203
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0749-1600.webp",
+        "width": 851,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0749-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0750.JPG": {
+    "width": 851,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0750-480.webp",
+        "width": 480,
+        "height": 722
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0750-800.webp",
+        "width": 800,
+        "height": 1203
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0750-1600.webp",
+        "width": 851,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0750-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0751.JPG": {
+    "width": 851,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0751-480.webp",
+        "width": 480,
+        "height": 722
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0751-800.webp",
+        "width": 800,
+        "height": 1203
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0751-1600.webp",
+        "width": 851,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0751-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0752.JPG": {
+    "width": 851,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0752-480.webp",
+        "width": 480,
+        "height": 722
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0752-800.webp",
+        "width": 800,
+        "height": 1203
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0752-1600.webp",
+        "width": 851,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0752-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0753.JPG": {
+    "width": 851,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0753-480.webp",
+        "width": 480,
+        "height": 722
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0753-800.webp",
+        "width": 800,
+        "height": 1203
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0753-1600.webp",
+        "width": 851,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0753-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0754.JPG": {
+    "width": 851,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0754-480.webp",
+        "width": 480,
+        "height": 722
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0754-800.webp",
+        "width": 800,
+        "height": 1203
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0754-1600.webp",
+        "width": 851,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0754-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0755.JPG": {
+    "width": 851,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0755-480.webp",
+        "width": 480,
+        "height": 722
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0755-800.webp",
+        "width": 800,
+        "height": 1203
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0755-1600.webp",
+        "width": 851,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0755-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0756.JPG": {
+    "width": 851,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0756-480.webp",
+        "width": 480,
+        "height": 722
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0756-800.webp",
+        "width": 800,
+        "height": 1203
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0756-1600.webp",
+        "width": 851,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0756-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0757.JPG": {
+    "width": 851,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0757-480.webp",
+        "width": 480,
+        "height": 722
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0757-800.webp",
+        "width": 800,
+        "height": 1203
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0757-1600.webp",
+        "width": 851,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0757-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0758.JPG": {
+    "width": 851,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0758-480.webp",
+        "width": 480,
+        "height": 722
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0758-800.webp",
+        "width": 800,
+        "height": 1203
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0758-1600.webp",
+        "width": 851,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0758-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0759.JPG": {
+    "width": 851,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0759-480.webp",
+        "width": 480,
+        "height": 722
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0759-800.webp",
+        "width": 800,
+        "height": 1203
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0759-1600.webp",
+        "width": 851,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0759-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0760.JPG": {
+    "width": 851,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0760-480.webp",
+        "width": 480,
+        "height": 722
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0760-800.webp",
+        "width": 800,
+        "height": 1203
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0760-1600.webp",
+        "width": 851,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0760-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0761.JPG": {
+    "width": 851,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0761-480.webp",
+        "width": 480,
+        "height": 722
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0761-800.webp",
+        "width": 800,
+        "height": 1203
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0761-1600.webp",
+        "width": 851,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0761-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0762.JPG": {
+    "width": 851,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0762-480.webp",
+        "width": 480,
+        "height": 722
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0762-800.webp",
+        "width": 800,
+        "height": 1203
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0762-1600.webp",
+        "width": 851,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0762-1600.webp"
+  },
+  "assets/images/doina/work/IMG_0763.JPG": {
+    "width": 851,
+    "height": 1280,
+    "variants": [
+      {
+        "src": "assets/images/doina/optimized/work/img-0763-480.webp",
+        "width": 480,
+        "height": 722
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0763-800.webp",
+        "width": 800,
+        "height": 1203
+      },
+      {
+        "src": "assets/images/doina/optimized/work/img-0763-1600.webp",
+        "width": 851,
+        "height": 1280
+      }
+    ],
+    "lightbox": "assets/images/doina/optimized/work/img-0763-1600.webp"
+  }
+}

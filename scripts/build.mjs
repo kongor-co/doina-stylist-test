@@ -15,6 +15,7 @@ const messages = Object.fromEntries(await Promise.all(locales.map(async (lang) =
 const services = await readJson('content/services.json');
 const products = await readJson('content/pj.json');
 const media = await readJson('content/media.json');
+const mediaImages = await readJson('content/media-images.json');
 const contact = await readJson('content/contact.json');
 const photoGroups = Object.fromEntries(await Promise.all(['professional', 'work'].map(async (group) => {
   const directory = `assets/images/doina/${group}`;
@@ -103,6 +104,15 @@ function image(relative, alt, className = '', eager = false) {
   return `<img class="${className}" src="${asset(relative)}" alt="${esc(alt)}" width="900" height="1350" ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">`;
 }
 
+function mediaImage(relative, alt, eager = false) {
+  const optimized = mediaImages[relative];
+  if (!optimized) return image(relative, alt, '', eager);
+  const fallback = optimized.variants.find((variant) => variant.width >= 800) || optimized.variants.at(-1);
+  const srcset = optimized.variants.map((variant) => `${asset(variant.src)} ${variant.width}w`).join(', ');
+  const sizes = '(max-width: 450px) calc(100vw - 1.5rem), (max-width: 700px) calc(50vw - 1.5rem), (max-width: 1320px) calc(33vw - 2rem), 430px';
+  return `<picture><source type="image/webp" srcset="${srcset}" sizes="${sizes}"><img src="${asset(relative)}" alt="${esc(alt)}" width="${fallback.width}" height="${fallback.height}" ${eager ? 'fetchpriority="high"' : 'loading="lazy" fetchpriority="low"'} decoding="async"></picture>`;
+}
+
 function sectionHeading(eyebrow, title, text = '') {
   return `<div class="section-heading">${eyebrow ? `<p class="eyebrow">${esc(eyebrow)}</p>` : ''}<h2>${esc(title)}</h2>${text ? `<p>${esc(text)}</p>` : ''}</div>`;
 }
@@ -167,12 +177,12 @@ function mediaPage(lang) {
   ];
   const photoTabs = groups.map((group, index) => `<button type="button" role="tab" id="media-tab-${group.key}" aria-selected="${index === 0}" aria-controls="media-${group.key}" tabindex="${index === 0 ? '0' : '-1'}">${esc(group.label)}</button>`).join('');
   const galleries = groups.map((group, groupIndex) => {
-    const photos = photoGroups[group.key].map((src, index) => `<button type="button" class="gallery-item" data-gallery-group="${group.key}" data-gallery-open="${index}" aria-label="${esc(group.caption)} ${index + 1}">${image(src, `${group.caption} ${index + 1}`)}</button>`).join('');
+    const photos = photoGroups[group.key].map((src, index) => `<button type="button" class="gallery-item" data-gallery-group="${group.key}" data-gallery-open="${index}" aria-label="${esc(group.caption)} ${index + 1}">${mediaImage(src, `${group.caption} ${index + 1}`, groupIndex === 0 && index < 3)}</button>`).join('');
     return `<div id="media-${group.key}" role="tabpanel" aria-labelledby="media-tab-${group.key}" class="media-panel" ${groupIndex === 0 ? '' : 'hidden'}><div class="gallery-grid">${photos}</div></div>`;
   }).join('');
   const videos = media.videos.map((src, index) => `<div class="video-card"><video controls preload="metadata" playsinline aria-label="${esc(m.media.videoLabel)} ${index + 1}"><source src="${asset(src)}" type="video/mp4"><a href="${asset(src)}">${esc(m.media.videoLabel)} ${index + 1}</a></video></div>`).join('');
-  const galleryData = Object.fromEntries(groups.map((group) => [group.key, photoGroups[group.key].map((src, index) => ({ src: asset(src), alt: `${group.caption} ${index + 1}` }))]));
-  return `<section class="page-intro section-shell"><p class="eyebrow">${esc(m.site.name)}</p><h1>${esc(m.media.title)}</h1></section><section class="section-shell catalog-section"><div class="tabs" role="tablist" aria-label="${esc(m.media.title)}" data-tabs="media">${photoTabs}<button type="button" role="tab" id="media-tab-videos" aria-selected="false" aria-controls="media-videos" tabindex="-1">${esc(m.media.videos)}</button></div>${galleries}<div id="media-videos" role="tabpanel" aria-labelledby="media-tab-videos" class="media-panel" hidden><div class="video-grid">${videos}</div></div></section><dialog class="lightbox" data-lightbox aria-label="${esc(m.media.title)}"><div class="lightbox-frame"><button type="button" class="lightbox-close" data-lightbox-close aria-label="${esc(m.ui.close)}">×</button><button type="button" class="lightbox-prev" data-lightbox-prev aria-label="${esc(m.ui.previous)}">‹</button><figure><img src="" alt=""></figure><button type="button" class="lightbox-next" data-lightbox-next aria-label="${esc(m.ui.next)}">›</button></div></dialog><script type="application/json" id="gallery-data">${JSON.stringify(galleryData).replaceAll('<', '\\u003c')}</script>`;
+  const galleryData = Object.fromEntries(groups.map((group) => [group.key, photoGroups[group.key].map((src, index) => ({ src: asset(mediaImages[src]?.lightbox || src), alt: `${group.caption} ${index + 1}` }))]));
+  return `<section class="page-intro section-shell"><p class="eyebrow">${esc(m.site.name)}</p><h1>${esc(m.media.title)}</h1></section><section class="section-shell catalog-section"><div class="tabs" role="tablist" aria-label="${esc(m.media.title)}" data-tabs="media">${photoTabs}<button type="button" role="tab" id="media-tab-videos" aria-selected="false" aria-controls="media-videos" tabindex="-1">${esc(m.media.videos)}</button></div>${galleries}<div id="media-videos" role="tabpanel" aria-labelledby="media-tab-videos" class="media-panel" hidden><div class="video-grid">${videos}</div></div></section><dialog class="lightbox" data-lightbox aria-label="${esc(m.media.title)}"><div class="lightbox-frame"><button type="button" class="lightbox-close" data-lightbox-close aria-label="${esc(m.ui.close)}">×</button><button type="button" class="lightbox-prev" data-lightbox-prev aria-label="${esc(m.ui.previous)}">‹</button><figure><img src="" alt="" decoding="async"></figure><button type="button" class="lightbox-next" data-lightbox-next aria-label="${esc(m.ui.next)}">›</button></div></dialog><script type="application/json" id="gallery-data">${JSON.stringify(galleryData).replaceAll('<', '\\u003c')}</script>`;
 }
 
 function contactPage(lang) {

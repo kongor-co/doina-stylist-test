@@ -78,6 +78,12 @@ if (lightbox && galleryData) {
     index = (next + items.length) % items.length;
     photo.src = items[index].src;
     photo.alt = items[index].alt;
+    for (const offset of [-1, 1]) {
+      const nearby = items[(index + offset + items.length) % items.length];
+      const preload = new Image();
+      preload.decoding = 'async';
+      preload.src = nearby.src;
+    }
   }
   document.querySelectorAll('[data-gallery-open]').forEach((button) => button.addEventListener('click', () => {
     items = groups[button.dataset.galleryGroup] || [];
