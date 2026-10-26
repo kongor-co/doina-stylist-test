@@ -50,7 +50,7 @@ function languageLinks(lang, route, detail, className = '') {
 
 function header(m, lang, route, detail) {
   const active = selectedPage(route);
-  const links = ['home', 'services', 'pj', 'about', 'media', 'contact'];
+  const links = ['home', 'about', 'media', 'services', 'contact', 'pj'];
   const nav = links.map((key) => `<a href="${localPath(lang, key)}" ${active === key ? 'aria-current="page"' : ''}>${esc(m.nav[key])}</a>`).join('');
   return `<a class="skip-link" href="#main">${esc(m.ui.skip)}</a>
   <header class="site-header">
@@ -119,16 +119,8 @@ function sectionHeading(eyebrow, title, text = '') {
 
 function home(lang) {
   const m = messages[lang];
-  const featured = services.slice(0, 3).map((service) => {
-    const copy = service.translations[lang];
-    const summary = copy.lead || copy.points[0].description;
-    return `<a class="featured-card" href="${localPath(lang, 'services')}#${service.id}"><h3>${esc(copy.title)}</h3><p>${esc(summary)}</p><span class="card-bottom"><strong>${esc(copy.displayPrice)}</strong><span>${esc(m.cta.viewService)} <span aria-hidden="true">↗</span></span></span></a>`;
-  }).join('');
-  const firstProduct = products[0];
   return `<section class="hero"><div class="hero-copy"><p class="eyebrow">${esc(m.home.eyebrow)}</p><p class="hero-descriptor">${esc(m.site.descriptor)}</p><h1>Doina<br>Stratulescu<span class="hero-dot">.</span></h1><p class="hero-slogan">${esc(m.site.slogan)}</p><div class="button-row"><a class="button button-primary" href="${localPath(lang, 'services')}">${esc(m.cta.services)} <span aria-hidden="true">↗</span></a><a class="button button-outline" href="${localPath(lang, 'contact')}">${esc(m.cta.contact)}</a></div></div><div class="hero-image-wrap">${image('assets/images/doina/doina-portrait.jpg', m.site.name, 'hero-image', true)}</div></section>
-  <section class="intro-section section-shell"><div class="intro-mark">✳</div><div><p class="eyebrow">${esc(m.site.slogan)}</p><h2>${esc(m.home.introTitle)}</h2><p>${esc(m.home.introText)}</p></div></section>
-  <section class="section-shell services-preview">${sectionHeading('', m.home.featuredTitle, m.home.featuredText)}<div class="featured-grid">${featured}</div><a class="text-link" href="${localPath(lang, 'services')}">${esc(m.cta.allServices)} <span aria-hidden="true">↗</span></a></section>
-  <section class="section-shell pj-preview"><div class="pj-preview-image">${image(firstProduct.images[0], m.pj.products[firstProduct.id].alt)}</div><div class="pj-preview-copy"><p class="eyebrow">${esc(m.home.pjLabel)}</p><h2>${esc(m.home.pjTitle)}</h2><p>${esc(m.home.pjText)}</p><a class="button button-outline" href="${localPath(lang, 'pj')}">${esc(m.cta.collection)} <span aria-hidden="true">↗</span></a></div></section>`;
+  <section class="intro-section section-shell"><div class="intro-copy"><p class="eyebrow">${esc(m.site.slogan)}</p><h2>${esc(m.home.introTitle)}</h2><p>${esc(m.home.introText)}</p></div></section>`;
 }
 
 function serviceCard(lang, service, index) {
